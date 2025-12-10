@@ -30,7 +30,7 @@ const HeroVideo = () => {
       
       <video
         className="hero-video"
-        src="/svbanquethalls/video03.mp4"
+        src="/video03.mp4"
         autoPlay
         muted
         loop

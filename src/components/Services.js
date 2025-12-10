@@ -22,7 +22,7 @@ const Services = () => {
       teluguTitle: "ఆహారం",
       description: "Customizable Event Catering",
       teluguDesc: "మీ ఇష్టానుసారం వంటకాలు",
-      image: "/svbanquethalls/foodnew.jpg",
+      image: "/foodnew.jpg",
       icon: <FaUtensils />,
       details: [
         "Vendor Flexibility: Bring your own vendors for catering.",
@@ -36,7 +36,7 @@ const Services = () => {
       teluguTitle: "కార్యక్రమాలు",
       description: "Freedom to celebrate your way.",
       teluguDesc: "మీ ఇష్టం మీ వేడుక",
-      image: "/svbanquethalls/events.jpg",
+      image: "/events.jpg",
       icon: <FaCalendarAlt />,
       details: [
         "Decoration: Bring your own or choose in-house decorators to create the perfect ambiance.",
@@ -50,7 +50,7 @@ const Services = () => {
       teluguTitle: "మా వేదికలు",
       description: "Spaces to celebrate all events.",
       teluguDesc: "అన్ని వేడుకలకు అనువైన",
-      image: "/svbanquethalls/venues.jpg",
+      image: "/venues.jpg",
       icon: <FaBuilding />,
       details: [
         "2 A/C Halls: Elegant and comfortable, featuring cozy curtains and premium sound systems.",
@@ -64,7 +64,7 @@ const Services = () => {
       teluguTitle: "పార్కింగ్",
       description: "Effortless parking for all events.",
       teluguDesc: "సులభమైన వాహన స్థలం",
-      image: "/svbanquethalls/parking.jpg",
+      image: "/parking.jpg",
       icon: <FaParking />,
       details: [
         "Valet Parking: Available upon request for patrons' event bookings.",
@@ -78,7 +78,7 @@ const Services = () => {
       teluguTitle: "అందుబాటు",
       description: "Inclusive spaces for all attendees.",
       teluguDesc: "అందరికీ అనువైన వసతులు",
-      image: "/svbanquethalls/accessibility.jpg",
+      image: "/accessibility.jpg",
       icon: <FaWheelchair />,
       details: [
         "Elevator Access: Convenient elevators to ensure ease of movement for all guests.",
@@ -92,7 +92,7 @@ const Services = () => {
       teluguTitle: "సౌకర్యాలు",
       description: "Ensuring a comfortable experience.",
       teluguDesc: "మీ సౌకర్యం మా ప్రాధాన్యత",
-      image: "/svbanquethalls/amenities.jpg",
+      image: "/amenities.jpg",
       icon: <FaWifi />,
       details: [
         "Power Backup: Uninterrupted electricity to keep your events running smoothly.",
