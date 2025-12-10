@@ -1,4 +1,13 @@
 import React, { useState, useEffect } from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import HeroVideo from "./components/HeroVideo";
+import Services from "./components/Services";
+import Testimonials from "./components/Testimonials";
+import ContactForm from "./components/ContactForm";
+import BottomBar from "./components/BottomBar";
+import StickyCTA from "./components/StickyCTA";
+import "./App.css";
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
