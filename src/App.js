@@ -61,9 +61,6 @@ function App() {
   return (
     <ErrorBoundary>
       <div className="App">
-        <div style={{background: 'yellow', color: 'black', padding: '10px', fontWeight: 'bold', zIndex: 9999}}>
-          DEBUG: App.js loaded and rendering at {new Date().toLocaleString()}
-        </div>
         {/* Loading Screen */}
         {showLoading && (
           <div className="loading-screen">
