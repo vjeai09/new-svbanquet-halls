@@ -250,9 +250,8 @@
 .hero-subtitle span {
   word-wrap: break-word;
   overflow-wrap: break-word;
-  white-space: pre-line;
+  white-space: normal;
   max-width: 100%;
-  display: block;
 }
 
 /* Hero Description */

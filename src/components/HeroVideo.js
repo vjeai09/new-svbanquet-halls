@@ -1,28 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Typewriter from 'typewriter-effect';
 import "./HeroVideo.css";
 
 const HeroVideo = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
   useEffect(() => {
     AOS.init({
       duration: 1200,
       once: false,
       mirror: true,
     });
-
-    // Check if mobile
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-    
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    
-    return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
   return (
@@ -62,12 +50,7 @@ const HeroVideo = () => {
           <div className="hero-subtitle" data-aos="fade-up" data-aos-delay="600">
             <Typewriter
               options={{
-                strings: isMobile ? [
-                  'వివాహ వేడుకలు<br/>Wedding Celebrations',
-                  'పుట్టినరోజు వేడుకలు<br/>Birthday Parties', 
-                  'కార్పొరేట్ సభలు<br/>Corporate Events',
-                  'సాంప్రదాయ కార్యక్రమాలు<br/>Traditional Functions'
-                ] : [
+                strings: [
                   'వివాహ వేడుకలు | Wedding Celebrations',
                   'పుట్టినరోజు వేడుకలు | Birthday Parties', 
                   'కార్పొరేట్ సభలు | Corporate Events',
