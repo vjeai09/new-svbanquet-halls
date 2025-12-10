@@ -238,6 +238,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 10px;
+}
+
+.hero-subtitle span {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-width: 100%;
 }
 
 /* Hero Description */
@@ -410,7 +420,11 @@
 
   .hero-subtitle {
     font-size: 1.3rem;
-    min-height: 50px;
+    min-height: 80px;
+    line-height: 1.6;
+    padding: 0 15px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .hero-description {
@@ -468,6 +482,12 @@
 
   .hero-subtitle {
     font-size: 1.1rem;
+    min-height: 90px;
+    line-height: 1.7;
+    padding: 0 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
   }
 
   .hero-description {
