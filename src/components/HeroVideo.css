@@ -234,13 +234,17 @@
   margin: 30px 0;
   min-height: 60px;
   color: #FFD700;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.95);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   line-height: 1.5;
-  padding: 0 10px;
+  padding: 15px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 215, 0, 0.3);
 }
 
 .hero-subtitle span {
@@ -256,8 +260,12 @@
   font-size: 1.4rem;
   line-height: 1.8;
   margin: 25px 0 35px;
-  color: #fff;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
 }
 
 .english-text {
@@ -266,6 +274,7 @@
   font-size: 1.2rem;
   color: #FFD700;
   font-style: italic;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
 }
 
 /* Hero Buttons */
@@ -422,13 +431,15 @@
     font-size: 1.3rem;
     min-height: 80px;
     line-height: 1.6;
-    padding: 0 15px;
+    padding: 15px 20px;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    background: rgba(0, 0, 0, 0.6);
   }
 
   .hero-description {
     font-size: 1.1rem;
+    padding: 12px 15px;
   }
 
   .english-text {
@@ -484,14 +495,16 @@
     font-size: 1.1rem;
     min-height: 90px;
     line-height: 1.7;
-    padding: 0 20px;
+    padding: 15px 25px;
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
+    background: rgba(0, 0, 0, 0.7);
   }
 
   .hero-description {
     font-size: 1rem;
+    padding: 10px 15px;
   }
 
   .cultural-motif {
