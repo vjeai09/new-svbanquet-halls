@@ -167,7 +167,7 @@ const Testimonials = () => {
       <div className="testimonials-cta" data-aos="fade-up" data-aos-delay="200">
         <p className="cta-text">మీ అభిప్రాయం కూడా పంచుకోండి | Share Your Experience</p>
         <a
-          href="https://g.page/r/CZY9SMhOUkf0EBM/review"
+          href="https://g.page/r/CZY9jEQOUmf0EBM/review"
           target="_blank"
           rel="noopener noreferrer"
           className="cta-button review-button"
