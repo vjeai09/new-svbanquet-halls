@@ -344,8 +344,13 @@
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  color: #FFD700;
+  color: #ffffff;
   z-index: 4;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px 25px;
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 215, 0, 0.5);
 }
 
 .mouse {
@@ -378,9 +383,10 @@
 .scroll-indicator p {
   font-size: 0.9rem;
   margin-top: 10px;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
   letter-spacing: 2px;
   font-weight: 600;
+  color: #FFD700;
 }
 
 /* Responsive Design */
