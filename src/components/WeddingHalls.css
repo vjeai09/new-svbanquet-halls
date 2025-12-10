@@ -1,0 +1,105 @@
+.wedding-halls {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .wedding-halls h2 {
+    font-size: 32px;
+    color: #FF01B6; /* Magenta */
+    margin-bottom: 20px;
+  }
+  
+  .wedding-halls p {
+    font-size: 18px;
+    color: #555; /* Neutral text */
+    margin-bottom: 20px;
+  }
+  
+  .wedding-halls .cta-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #FFD700; /* Gold */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .wedding-halls .cta-button:hover {
+    background-color: #FFB200; /* Darker gold */
+    transform: scale(1.05);
+  }
+  
+  /* Modal Styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .modal-content h3 {
+    font-size: 28px;
+    color: #FF01B6; /* Magenta */
+    margin-bottom: 15px;
+  }
+  
+  .modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .modal-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content ul {
+    list-style: disc;
+    margin: 0 auto 20px;
+    padding: 0 20px;
+    text-align: left;
+    color: #333;
+  }
+  
+  .modal-content .cta-button {
+    background-color: #FF01B6; /* Magenta */
+    color: #fff;
+  }
+  
+  .modal-content .cta-button.close-button:hover {
+    background-color: #d40096; /* Darker magenta */
+  }
+  
+  /* Animation for Modal */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

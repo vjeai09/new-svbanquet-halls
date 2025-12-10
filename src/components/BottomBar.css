@@ -1,0 +1,125 @@
+/* Bottom Bar Styles */
+.bottom-bar {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  align-items: center; /* Align buttons vertically */
+  height: 62px; /* Slightly taller for breathing space */
+  padding: 0; /* Remove any internal padding */
+  margin: 0; /* Remove any accidental margin */
+  background:  #000000; /* Gold to Black gradient */
+  position: fixed;
+  bottom: 40px;
+  width: 100%; /* Full width */
+  z-index: 1000; /* Keep above content */
+  gap: 24px; /* Slightly increase space between buttons */
+  box-sizing: border-box; /* Include padding in dimensions */
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Sticky Footer Styles */
+.sticky-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: #333333; /* Dark gray for differentiation */
+  color: #FFD700; /* Gold text for contrast */
+  font-size: 14px;
+  font-weight: 500;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999; /* Below bottom bar */
+  padding: 0 16px;
+  box-sizing: border-box;
+  border-top: 2px solid #FFD700; /* Optional gold border for separation */
+}
+
+/* Button Styles */
+.cta-button {
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+  justify-content: center; /* Center content horizontally */
+  width: 170px; /* Slightly wider for text clarity */
+  height: 50px; /* Adjusted height for consistency */
+  padding: 10px 16px; /* Add more padding for breathing room */
+  margin: 0; /* Remove any accidental margin */
+  background-color: #FFD700; /* Gold background for buttons */
+  color: #000000; /* Black text and icons for contrast */
+  font-size: 16px; /* Text size for readability */
+  font-weight: bold; /* Bold font for emphasis */
+  text-decoration: none; /* Remove underline */
+  border-radius: 12px; /* Slightly rounder corners */
+  line-height: 1; /* Reset line height */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow for a modern look */
+  box-sizing: border-box; /* Include padding in dimensions */
+  transition: transform 0.2s ease, background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Icon Alignment */
+.cta-button svg {
+  vertical-align: middle; /* Align icons with text */
+  margin-right: 8px; /* Space between icon and text */
+  width: 24px; /* Increase icon size for better visibility */
+  height: 24px; /* Match icon size */
+}
+
+/* Button Hover Effect */
+.cta-button:hover {
+  background-color: #FFB200; /* Darker gold background on hover */
+  color: #000000; /* Keep text black */
+  transform: scale(1.07); /* Slightly stronger enlargement on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+ /* Add more shadow on hover */
+}
+
+/* Responsive Adjustments for Mobile */
+@media (max-width: 768px) {
+  .bottom-bar {
+    display: flex !important; /* Ensure the bottom bar is visible */
+    height: 60px; /* Adjust height for smaller screens */
+  }
+
+  .cta-button {
+    min-width: 140px; /* Compact width for smaller screens */
+    height: 46px; /* Compact height */
+    font-size: 14px; /* Slightly smaller font size */
+    border-radius: 10px; /* Slightly reduced corners for compact look */
+  }
+
+  div[style*="position: fixed; top: 75%; right: 20px;"] {
+    display: flex !important; /* Ensure floating buttons are visible on mobile */
+    flex-direction: column; /* Keep buttons stacked vertically */
+    gap: 15px; /* Maintain space between buttons */
+  }
+}
+
+/* Hide Floating Buttons and Bottom Bar on Larger Screens */
+@media (min-width: 769px) {
+  .bottom-bar {
+    display: none !important; /* Hide the bottom bar on desktop */
+  }
+
+  div[style*="position: fixed; top: 75%; right: 20px;"] {
+    display: none !important; /* Hide the floating buttons on desktop */
+  }
+}
+
+/* Responsive View for Sticky Footer */
+@media (min-width: 769px) {
+  .sticky-footer {
+    display: none; /* Hide footer on desktop */
+  }
+}
+
+/* Adjust Body Padding */
+body {
+  padding-bottom: 102px; /* Bottom bar + footer height */
+}
+
+/* Responsive View for Sticky Footer */
+@media (min-width: 769px) {
+  .sticky-footer {
+    display: none; /* Hide footer on desktop */
+  }
+}

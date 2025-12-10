@@ -1,0 +1,48 @@
+/* Service Details Section */
+.service-details {
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Light gray background for consistency */
+    text-align: center;
+  }
+  
+  .service-details h2 {
+    font-size: 36px;
+    color: #FF01B6; /* Magenta for headings */
+    margin-bottom: 20px;
+  }
+  
+  .service-details p {
+    font-size: 18px;
+    color: #555555; /* Muted gray for descriptions */
+    margin-bottom: 20px;
+  }
+  
+  .service-details ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .service-details ul li {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  /* Call to Action Button in Service Details */
+  .service-details .cta-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff; /* White text */
+    background-color: #FFD700; /* Gold button */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .service-details .cta-button:hover {
+    background-color: #FFB200; /* Darker gold */
+    transform: scale(1.05);
+  }
+  

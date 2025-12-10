@@ -1,0 +1,562 @@
+/* Premium Testimonials Section with Carousel */
+.testimonials {
+  padding: 100px 20px;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #fff9e6 50%,
+    #ffffff 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating Decorative Elements */
+.testimonial-deco {
+  position: absolute;
+  font-size: 3rem;
+  opacity: 0.3;
+  animation: float 8s ease-in-out infinite;
+  z-index: 1;
+  filter: drop-shadow(0 0 10px rgba(218, 165, 32, 0.5));
+}
+
+.deco-1 {
+  top: 10%;
+  left: 5%;
+  animation-delay: 0s;
+}
+
+.deco-2 {
+  top: 20%;
+  right: 8%;
+  animation-delay: 2s;
+}
+
+.deco-3 {
+  bottom: 15%;
+  left: 10%;
+  animation-delay: 4s;
+}
+
+.deco-4 {
+  bottom: 10%;
+  right: 5%;
+  animation-delay: 6s;
+}
+
+/* Section Divider */
+.testimonials .section-divider {
+  height: 4px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto 60px;
+  background: linear-gradient(90deg, transparent, #DAA520, transparent);
+  position: relative;
+}
+
+.testimonials .section-divider::before,
+.testimonials .section-divider::after {
+  content: '✦';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #DAA520;
+  font-size: 1.5rem;
+}
+
+.testimonials .section-divider::before {
+  left: -30px;
+}
+
+.testimonials .section-divider::after {
+  right: -30px;
+}
+
+/* Header */
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 2;
+}
+
+.testimonials-title {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.testimonials-title .telugu-title {
+  background: linear-gradient(135deg, #8B0000 0%, #DAA520 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: 'Noto Sans Telugu', sans-serif;
+  font-size: 3rem;
+}
+
+.testimonials-title .english-title {
+  color: #8B0000;
+  font-size: 2.8rem;
+}
+
+.testimonials-subtitle {
+  font-family: 'Noto Sans Telugu', 'Arial', sans-serif;
+  font-size: 1.3rem;
+  color: #666;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+/* Testimonial Container */
+.testimonial-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* Swiper Customization */
+.testimonials-swiper {
+  padding: 50px 0 80px;
+}
+
+.testimonials-swiper .swiper-slide {
+  width: 650px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Testimonial Card */
+.testimonial {
+  background: white;
+  border-radius: 30px;
+  padding: 50px 40px;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(218, 165, 32, 0.3);
+  position: relative;
+  transition: all 0.3s ease;
+  border: 3px solid transparent;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.swiper-slide-active .testimonial {
+  border-color: #DAA520;
+  box-shadow: 
+    0 25px 70px rgba(218, 165, 32, 0.3),
+    0 0 0 2px rgba(218, 165, 32, 0.5);
+  transform: scale(1.02);
+}
+
+/* Background Pattern */
+.testimonial-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 15px,
+      rgba(218, 165, 32, 0.02) 15px,
+      rgba(218, 165, 32, 0.02) 30px
+    );
+  border-radius: 30px;
+  pointer-events: none;
+}
+
+/* Quote Icon */
+.quote-icon {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  font-size: 3.5rem;
+  color: rgba(218, 165, 32, 0.2);
+  z-index: 1;
+}
+
+/* Avatar */
+.testimonial-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  position: relative;
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.2),
+    inset 0 0 20px rgba(255, 255, 255, 0.3);
+  z-index: 2;
+}
+
+.avatar-text {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+  font-family: 'Playfair Display', serif;
+}
+
+.avatar-ring {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 3px solid #DAA520;
+  border-radius: 50%;
+  animation: avatarPulse 2s ease-in-out infinite;
+}
+
+@keyframes avatarPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* Rating */
+.testimonial-rating {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+.star {
+  color: #ddd;
+  transition: all 0.2s ease;
+}
+
+.star.filled {
+  color: #FFD700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  animation: starTwinkle 1.5s ease-in-out infinite;
+}
+
+.star.filled:nth-child(1) { animation-delay: 0s; }
+.star.filled:nth-child(2) { animation-delay: 0.1s; }
+.star.filled:nth-child(3) { animation-delay: 0.2s; }
+.star.filled:nth-child(4) { animation-delay: 0.3s; }
+.star.filled:nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes starTwinkle {
+  0%, 100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(1.1);
+    filter: brightness(1.3);
+  }
+}
+
+/* Review Text */
+.testimonial-text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: center;
+  margin: 30px 0;
+  font-style: italic;
+  position: relative;
+  z-index: 2;
+  flex-grow: 1;
+}
+
+/* Footer */
+.testimonial-footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.testimonial-author h4 {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 1.4rem;
+  color: #8B0000;
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.testimonial-source {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #888;
+}
+
+.google-icon {
+  color: #4285F4;
+  font-size: 1.1rem;
+}
+
+/* Corner Decorations */
+.corner-deco {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-style: solid;
+  border-color: rgba(218, 165, 32, 0.4);
+}
+
+.corner-top-left {
+  top: 15px;
+  left: 15px;
+  border-width: 3px 0 0 3px;
+  border-radius: 10px 0 0 0;
+}
+
+.corner-top-right {
+  top: 15px;
+  right: 15px;
+  border-width: 3px 3px 0 0;
+  border-radius: 0 10px 0 0;
+}
+
+.corner-bottom-left {
+  bottom: 15px;
+  left: 15px;
+  border-width: 0 0 3px 3px;
+  border-radius: 0 0 0 10px;
+}
+
+.corner-bottom-right {
+  bottom: 15px;
+  right: 15px;
+  border-width: 0 3px 3px 0;
+  border-radius: 0 0 10px 0;
+}
+
+/* Swiper Navigation Buttons */
+.testimonials-swiper .swiper-button-prev,
+.testimonials-swiper .swiper-button-next {
+  color: #DAA520;
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.testimonials-swiper .swiper-button-prev:hover,
+.testimonials-swiper .swiper-button-next:hover {
+  background: linear-gradient(135deg, #8B0000 0%, #DAA520 100%);
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(218, 165, 32, 0.4);
+}
+
+.testimonials-swiper .swiper-button-prev::after,
+.testimonials-swiper .swiper-button-next::after {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+/* Swiper Pagination */
+.testimonials-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #DAA520;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.testimonials-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 30px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #8B0000 0%, #DAA520 100%);
+}
+
+/* CTA Section */
+.testimonials-cta {
+  text-align: center;
+  margin-top: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-text {
+  font-family: 'Noto Sans Telugu', 'Arial', sans-serif;
+  font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.review-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 40px;
+  background: linear-gradient(135deg, #4285F4 0%, #34A853 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(66, 133, 244, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.review-button:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(66, 133, 244, 0.5);
+  background: linear-gradient(135deg, #34A853 0%, #4285F4 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 70px 15px;
+  }
+
+  .testimonials-title {
+    font-size: 2.5rem;
+  }
+
+  .testimonials-title .telugu-title {
+    font-size: 2rem;
+  }
+
+  .testimonials-title .english-title {
+    font-size: 2rem;
+  }
+
+  .testimonials-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .testimonials-swiper .swiper-slide {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .testimonial {
+    padding: 40px 30px;
+    min-height: 400px;
+  }
+
+  .testimonial-avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  .avatar-text {
+    font-size: 2rem;
+  }
+
+  .testimonial-rating {
+    font-size: 1.3rem;
+  }
+
+  .testimonial-text {
+    font-size: 1.05rem;
+  }
+
+  .testimonial-author h4 {
+    font-size: 1.2rem;
+  }
+
+  .testimonials-swiper .swiper-button-prev,
+  .testimonials-swiper .swiper-button-next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .testimonials-swiper .swiper-button-prev::after,
+  .testimonials-swiper .swiper-button-next::after {
+    font-size: 1.2rem;
+  }
+
+  .cta-text {
+    font-size: 1.1rem;
+  }
+
+  .review-button {
+    padding: 15px 35px;
+    font-size: 1.1rem;
+  }
+
+  .testimonial-deco {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials-title {
+    font-size: 2rem;
+  }
+
+  .testimonials-title .telugu-title {
+    font-size: 1.6rem;
+  }
+
+  .testimonials-title .english-title {
+    font-size: 1.6rem;
+  }
+
+  .testimonial {
+    padding: 30px 20px;
+    min-height: 380px;
+  }
+
+  .testimonial-avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .avatar-text {
+    font-size: 1.6rem;
+  }
+
+  .quote-icon {
+    font-size: 2.5rem;
+    top: 20px;
+    left: 20px;
+  }
+
+  .testimonial-text {
+    font-size: 1rem;
+    margin: 25px 0;
+  }
+
+  .corner-deco {
+    width: 30px;
+    height: 30px;
+  }
+
+  .review-button {
+    width: 90%;
+    justify-content: center;
+  }
+}

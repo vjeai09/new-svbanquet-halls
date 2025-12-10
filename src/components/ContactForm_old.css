@@ -1,0 +1,119 @@
+.contact-form {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 700px;
+  position: relative;
+}
+
+.contact-form h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.contact-form p {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+/* Hide the text for mobile devices */
+.desktop-text {
+  display: block;
+}
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 180px;
+  margin-bottom: 10px; /* Ensure there is space between buttons */
+}
+
+.call-now {
+  background-color: #28a745; /* Green for call */
+}
+
+.whatsapp {
+  background-color: #25d366; /* WhatsApp green */
+}
+
+.get-directions {
+  background-color: #007bff; /* Blue for directions */
+}
+
+.cta-button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.email-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.map-container {
+  margin-top: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  border: none;
+  width: 100%;
+  height: 300px;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .desktop-text {
+    display: none; /* Hide text on mobile */
+  }
+
+  .contact-actions {
+    justify-content: space-evenly; /* Align buttons horizontally */
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .cta-button {
+    width: 45%; /* Buttons take up 45% of the width on mobile */
+    margin-bottom: 10px;
+  }
+
+  /* Increase space below the map on mobile */
+  .map-container {
+    margin-top: 50px; /* More space above the map */
+    margin-bottom: 40px; /* Add more space below the map */
+  }
+
+  /* "Get Directions" button is visible on mobile only */
+  .get-directions {
+    width: 100%; /* Ensure Get Directions button takes full width */
+    margin-top: 10px; /* Add space between buttons and map */
+  }
+}

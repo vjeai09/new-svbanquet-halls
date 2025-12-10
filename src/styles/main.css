@@ -1,0 +1,14 @@
+/* src/styles/main.css */
+.hero {
+    padding: 50px;
+    text-align: left;
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      text-align: center;
+      padding: 20px;
+    }
+  }
+  
+  

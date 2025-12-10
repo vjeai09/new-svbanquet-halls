@@ -1,0 +1,558 @@
+/* Premium Services Section with Cultural Elements */
+.services {
+  padding: 80px 20px;
+  background: linear-gradient(
+    180deg,
+    #fff9e6 0%,
+    #ffffff 50%,
+    #fff9e6 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.services::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #8B0000, #DAA520, #8B0000);
+}
+
+/* Section Divider */
+.section-divider {
+  height: 4px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto 60px;
+  background: linear-gradient(90deg, transparent, #DAA520, transparent);
+  position: relative;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: '✦';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #DAA520;
+  font-size: 1.5rem;
+}
+
+.section-divider::before {
+  left: -30px;
+}
+
+.section-divider::after {
+  right: -30px;
+}
+
+/* Services Header */
+.services-header {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.decorative-element {
+  font-size: 3rem;
+  animation: pulse 2s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px rgba(218, 165, 32, 0.6));
+}
+
+.left-element {
+  animation-delay: 0s;
+}
+
+.right-element {
+  animation-delay: 1s;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+.header-content {
+  flex: 1;
+  max-width: 800px;
+}
+
+.services-title {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.telugu-title {
+  background: linear-gradient(135deg, #8B0000 0%, #DAA520 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: 'Noto Sans Telugu', sans-serif;
+  font-size: 3rem;
+}
+
+.english-title {
+  color: #8B0000;
+  font-size: 2.8rem;
+}
+
+.services-subtitle {
+  font-family: 'Noto Sans Telugu', 'Arial', sans-serif;
+  font-size: 1.3rem;
+  color: #666;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+/* Service List Grid */
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Service Card */
+.service-card {
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(218, 165, 32, 0.2);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  position: relative;
+  border: 2px solid transparent;
+}
+
+.service-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 
+    0 20px 50px rgba(218, 165, 32, 0.3),
+    0 0 0 2px rgba(218, 165, 32, 0.5);
+  border-color: #DAA520;
+}
+
+.service-card.active {
+  border-color: #8B0000;
+  box-shadow: 
+    0 20px 50px rgba(139, 0, 0, 0.3),
+    0 0 0 3px rgba(139, 0, 0, 0.3);
+}
+
+/* Card Background Pattern */
+.card-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(218, 165, 32, 0.03) 10px,
+      rgba(218, 165, 32, 0.03) 20px
+    );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Icon Badge */
+.service-icon-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8B0000 0%, #DAA520 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.3),
+    inset 0 0 20px rgba(255, 255, 255, 0.2);
+  animation: iconRotate 3s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .icon-circle {
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: 
+    0 15px 35px rgba(218, 165, 32, 0.5),
+    inset 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes iconRotate {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+}
+
+/* Image Container */
+.service-image-container {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-image {
+  transform: scale(1.15);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  transition: background 0.3s ease;
+}
+
+.service-card:hover .image-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(139, 0, 0, 0.2) 0%,
+    rgba(218, 165, 32, 0.4) 100%
+  );
+}
+
+/* Service Content */
+.service-content {
+  padding: 30px;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(
+    to bottom,
+    white 0%,
+    #fffcf5 100%
+  );
+}
+
+.service-title {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #8B0000;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.service-title-telugu {
+  font-family: 'Noto Sans Telugu', sans-serif;
+  font-size: 1.5rem;
+  color: #DAA520;
+  font-weight: 600;
+}
+
+.service-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.service-description-telugu {
+  font-family: 'Noto Sans Telugu', sans-serif;
+  font-size: 1rem;
+  color: #777;
+  font-style: italic;
+}
+
+/* Learn More Button */
+.learn-more-button {
+  width: 100%;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #8B0000 0%, #DAA520 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(139, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.learn-more-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.learn-more-button:hover::before {
+  left: 100%;
+}
+
+.learn-more-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(218, 165, 32, 0.5);
+  background: linear-gradient(135deg, #DAA520 0%, #8B0000 100%);
+}
+
+.button-arrow {
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+}
+
+.learn-more-button:hover .button-arrow {
+  transform: translateX(5px);
+}
+
+/* Service Details */
+.service-details {
+  padding: 30px;
+  background: linear-gradient(
+    135deg,
+    rgba(139, 0, 0, 0.05) 0%,
+    rgba(218, 165, 32, 0.05) 100%
+  );
+  border-top: 3px solid #DAA520;
+  animation: slideDown 0.4s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 1000px;
+  }
+}
+
+.details-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.details-header h4 {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 1.5rem;
+  color: #8B0000;
+  margin: 0;
+}
+
+.details-icon {
+  font-size: 1.5rem;
+  color: #DAA520;
+  animation: sparkle 1.5s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+.service-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-details li {
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  background: white;
+  border-radius: 15px;
+  border-left: 4px solid #DAA520;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.service-details li:hover {
+  transform: translateX(10px);
+  box-shadow: 0 5px 20px rgba(218, 165, 32, 0.3);
+  border-left-color: #8B0000;
+}
+
+.detail-icon {
+  color: #DAA520;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services {
+    padding: 60px 15px;
+  }
+
+  .services-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .decorative-element {
+    font-size: 2rem;
+  }
+
+  .services-title {
+    font-size: 2.5rem;
+  }
+
+  .telugu-title {
+    font-size: 2rem;
+  }
+
+  .english-title {
+    font-size: 2rem;
+  }
+
+  .services-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .service-list {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 10px;
+  }
+
+  .service-card {
+    max-width: 100%;
+  }
+
+  .icon-circle {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .service-image-container {
+    height: 220px;
+  }
+
+  .service-title {
+    font-size: 1.6rem;
+  }
+
+  .service-title-telugu {
+    font-size: 1.3rem;
+  }
+
+  .service-description {
+    font-size: 1rem;
+  }
+
+  .learn-more-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+
+  .service-details {
+    padding: 20px;
+  }
+
+  .details-header h4 {
+    font-size: 1.3rem;
+  }
+
+  .service-details li {
+    padding: 12px 15px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-title {
+    font-size: 2rem;
+  }
+
+  .telugu-title {
+    font-size: 1.6rem;
+  }
+
+  .english-title {
+    font-size: 1.6rem;
+  }
+
+  .service-icon-badge {
+    top: 10px;
+    right: 10px;
+  }
+
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .service-image-container {
+    height: 200px;
+  }
+}

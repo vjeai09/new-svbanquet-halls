@@ -1,0 +1,64 @@
+.sticky-cta {
+  position: fixed;
+  bottom: 20px; /* Keep the buttons above the bottom edge on desktop */
+  right: 20px; /* Keep the buttons on the right for desktop */
+  display: flex; /* Arrange buttons side by side */
+  gap: 15px; /* Ensure spacing between buttons */
+  z-index: 9999; /* Ensure buttons stay on top of other content */
+  align-items: center; /* Align buttons centrally */
+}
+
+/* Glue the buttons to the bottom bar on mobile */
+@media (max-width: 768px) {
+  .sticky-cta {
+    position: absolute;
+    bottom: 60px; /* Adjust this depending on your bottom bar height */
+    right: 10px; /* Adjust position slightly from the right edge */
+    gap: 10px; /* Smaller gap */
+    z-index: 9999;
+  }
+
+  /* Adjust button size for mobile screens */
+  .sticky-cta a {
+    font-size: 20px; /* Smaller icon size */
+    padding: 10px; /* Adjust padding */
+  }
+}
+
+.sticky-cta a {
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #25D366; /* WhatsApp color */
+  color: white;
+  font-size: 24px; /* Icon size */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.sticky-cta a.phone {
+  background-color: #34b7f1; /* Phone button color */
+}
+
+.sticky-cta a:hover {
+  background-color: #128C7E; /* Hover effect for WhatsApp */
+}
+
+.sticky-cta a.phone:hover {
+  background-color: #007bff; /* Hover effect for Phone */
+}
+
+/* Adjust button size for mobile screens */
+@media (max-width: 768px) {
+  .sticky-cta a {
+    font-size: 20px; /* Smaller icon size */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .sticky-cta {
+    bottom: 10px; /* Bring it up slightly for mobile */
+    right: 10px; /* Adjust the right position */
+    gap: 10px; /* Smaller gap */
+  }
+}

@@ -1,0 +1,365 @@
+/* Header Container */
+.header-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  overflow: hidden; /* Prevent gap during transition */
+}
+.header-container.scrolled {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  /* Black background for header when scrolled */
+}
+
+/* Top Bar */
+.top-bar {
+  display: flex;
+  justify-content: center; /* Center align the content horizontally */
+  align-items: center; /* Align items vertically */
+  height: 50px; /* Keeps the bar height consistent */
+  background-color: #FFD700; /* Gold background */
+  color: white; /* White text for readability */
+  padding: 0 20px; /* Adds space on left and right */
+  gap: 40px; /* Adds equal space between sections */
+  opacity: 1; /* Keeps it fully visible */
+  transition: opacity 0.3s ease, height 0.3s ease; /* Smooth transitions for height and visibility */
+}
+.header-container.scrolled .top-bar {
+  opacity: 0; /* Gradually fades out */
+  height: 0; /* Shrinks height smoothly */
+  pointer-events: none; /* Disable interactions */
+}
+
+/* Main Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px; /* Fixed height for the main header */
+  padding: 0 20px;
+  background-color: #000000; /* Black background for main header */
+  border-bottom: 1px solid #000000;
+  transition: background-color 0.3s ease;
+}
+.header-container.scrolled .main-header {
+  background-color: #000000; /* Matches the top bar color */
+}
+
+/* Logo */
+.logo img {
+  width: auto;
+  height: 100px; /* Increased height for better visibility */
+  max-height: 100%;
+  object-fit: contain;
+  transition: height 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1); /* Slight zoom */
+  transition: transform 0.3s ease;
+}
+
+/* Navigation */
+
+nav ul {
+  display: flex; /* Always visible on desktop */
+  flex-direction: row; /* Horizontal layout */
+  background-color: #000; /* Black background */
+  padding: 15px; /* Padding around menu */
+  gap: 20px; /* Space between items */
+  position: static; /* Default positioning */
+  opacity: 1; /* Fully visible */
+  visibility: visible; /* Ensure visibility */
+  transform: none; /* No transformation */
+}
+
+nav ul.active {
+  display: flex; /* Show menu when active */
+}
+
+/* Individual link styles */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold; /* Makes the text bolder for visibility */
+  transition: color 0.3s ease, transform 0.3s ease; /* Adds smooth transitions for color and scale */
+  padding: 5px 10px; /* Adds padding for better clickable area */
+  border-radius: 4px; /* Rounded corners for the link */
+}
+
+/* Hover effect */
+
+nav ul li a:hover {
+  color: #FFD700; /* Gold text color */
+  background-color: rgba(255, 255, 255, 0.2); /* Light background */
+  transform: scale(1.05); /* Slight zoom */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+
+/* Active link state (when clicked or scrolled into view) */
+nav ul li a.active {
+  color: #FFD700; /* Gold color for active links */
+  font-weight: bold; /* Keep the font bold for active link */
+  background-color: rgba(255, 255, 255, 0.3); /* Highlight active link with background */
+  transform: scale(1.05); /* Slight scaling effect to indicate it's active */
+}
+
+/* Focus state for accessibility */
+nav ul li a:focus {
+  outline: none; /* Remove the default focus outline */
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.8); /* Add a gold glow for focus state */
+}
+
+/* CTA Buttons - Call Now and Get Directions */
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* CTA Button Styles */
+.cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #FFD700; /* Gold background */
+  color: black; /* Black text */
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button svg {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+}
+
+/* Button Hover Effects */
+
+.cta-button:hover {
+  background-color: #FFB200; /* Darker gold */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow */
+  transform: scale(1.05); /* Slight zoom */
+}
+
+
+/* Book Now Button */
+.book-now-btn {
+  background-color: #FFD700; /* Gold background */
+  color: black; /* Black text */
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.book-now-btn:hover {
+  background-color: #FFB200; /* Darker gold for hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top-bar {
+    display: none; /* Hide the top bar on mobile */
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #FFD700; /* Gold background */
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  nav ul.active {
+    display: flex;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  nav ul li a {
+    color: black; /* Black text for mobile */
+    font-size: 18px;
+  }
+
+  /* Hide CTA buttons on mobile */
+  .cta-buttons {
+    display: none;
+  }
+}
+
+/* Contact Info Styling */
+.contact-info {
+  display: flex;
+  align-items: center; /* Align vertically */
+  gap: 10px; /* Spacing between phone and email */
+}
+.contact-info span,
+.contact-info a {
+  font-size: 16px; /* Consistent font size */
+  color: black; /* Black text for readability */
+  text-decoration: none; /* No underline */
+}
+.contact-info a:hover {
+  text-decoration: underline; /* Adds hover effect */
+}
+
+/* Social Icons Styling */
+/* Social Icons Container */
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between icons */
+}
+
+/* Styling the links */
+
+/* Social Icons Container */
+.social-icons a {
+  color: black; /* Default color */
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+
+/* Hover effect for links */
+.social-icons a:hover {
+  color: white ; /* Change color to gold on hover */
+  opacity: 1 ; /* Ensure opacity stays 1 */
+}
+
+
+
+/* Specifically target SVG elements inside links */
+.social-icons a svg {
+  fill: black; /* Set default fill color */
+  transition: fill 0.3s ease; /* Smooth transition on fill change */
+}
+
+
+
+
+/* Hover Effect */
+.social-icons a:hover {
+  color: white; /* Gold color on hover */
+}
+
+/* Ensure fill color changes on hover */
+.social-icons a:hover svg {
+  fill: white; /* Apply gold fill color to the SVG icon */
+}
+/* Mobile View */
+.hamburger {
+  display: none; /* Default to hidden */
+}
+@media (max-width: 768px) {
+  .top-bar {
+    display: none; /* Hide the top bar on mobile */
+  }
+  .main-header {
+    display: flex;
+    justify-content: space-between; /* Space out the logo and hamburger menu */
+    align-items: center; /* Align vertically */
+    height: 60px; /* Set consistent height */
+    padding: 0 20px; /* Increase padding for cleaner layout */
+    background-color: #000000; /* Set background color for the main header */
+  }
+  .logo img {
+    width: auto; /* Maintain aspect ratio */
+    height: 60px; /* Adjusted height for mobile */
+  }
+  nav ul {
+    display: flex; /* Keep flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    position: absolute; /* Position relative to header */
+    top: 60px; /* Offset below header */
+    right: 20px; /* Align to the right */
+    background-color: #FFD700; /* Gold background */
+    padding: 15px; /* Padding inside menu */
+    border-radius: 8px; /* Rounded corners */
+    z-index: 1000; /* Ensure visibility above other elements */
+    opacity: 0; /* Initially invisible */
+    visibility: hidden; /* Initially hidden */
+    transform: translateY(-10px); /* Shifted up slightly */
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; /* Smooth animations */
+  }
+
+  /* Active State (Menu Visible) */
+  nav ul.active {
+    opacity: 1; /* Fully visible */
+    visibility: visible; /* Ensure visibility */
+    transform: translateY(0); /* Reset position */
+  }
+
+
+  .hamburger {
+    display: block; /* Show the hamburger menu button */
+    font-size: 28px; /* Slightly larger size for better visibility */
+    cursor: pointer; /* Change the cursor to a pointer */
+    background-color: #000000; /* Black background to match the header */
+    color: #FFD700; /* Gold color for hamburger icon */
+    border: none; /* Remove border */
+    padding: 8px; /* Add padding for better alignment */
+    border-radius: 5px; /* Slightly rounded corners */
+    transition: color 0.3s ease;
+    z-index: 1100; /* Ensure it's above other elements */
+
+  }
+  
+  
+
+
+  .hamburger:hover {
+    background-color: black; /* Darker gold background on hover */
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cta-button {
+  animation: fadeIn 0.8s ease-out;
+}
+
+@media (min-width: 769px) {
+  nav ul {
+    display: flex !important; /* Always show menu on desktop */
+    flex-direction: row; /* Ensure links are in a row */
+    position: static; /* Remove absolute positioning */
+    background-color: transparent; /* No background for desktop */
+    gap: 20px; /* Space between links */
+    padding: 0; /* Remove extra padding */
+    margin: 0; /* Ensure no margin */
+  }
+
+  .cta-buttons {
+    display: flex; /* Show CTA buttons on desktop */
+    gap: 20px; /* Add space between buttons */
+  }
+
+  .hamburger {
+    display: none; /* Hide hamburger menu on desktop */
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

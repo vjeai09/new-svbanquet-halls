@@ -1,0 +1,526 @@
+/* Premium Contact Form Section */
+.contact-form {
+  padding: 100px 20px;
+  background: linear-gradient(
+    180deg,
+    #fff9e6 0%,
+    #ffffff 50%,
+    #fff9e6 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating Decorative Elements */
+.contact-deco {
+  position: absolute;
+  font-size: 3rem;
+  opacity: 0.25;
+  animation: float 8s ease-in-out infinite;
+  z-index: 1;
+  filter: drop-shadow(0 0 10px rgba(218, 165, 32, 0.5));
+}
+
+.contact-form .deco-1 {
+  top: 10%;
+  left: 8%;
+  animation-delay: 0s;
+}
+
+.contact-form .deco-2 {
+  top: 30%;
+  right: 10%;
+  animation-delay: 2s;
+}
+
+.contact-form .deco-3 {
+  bottom: 20%;
+  left: 12%;
+  animation-delay: 4s;
+}
+
+/* Section Divider */
+.contact-form .section-divider {
+  height: 4px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto 60px;
+  background: linear-gradient(90deg, transparent, #DAA520, transparent);
+  position: relative;
+}
+
+.contact-form .section-divider::before,
+.contact-form .section-divider::after {
+  content: '✦';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #DAA520;
+  font-size: 1.5rem;
+}
+
+.contact-form .section-divider::before {
+  left: -30px;
+}
+
+.contact-form .section-divider::after {
+  right: -30px;
+}
+
+/* Header */
+.contact-header {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-title {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-title .telugu-title {
+  background: linear-gradient(135deg, #8B0000 0%, #DAA520 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: 'Noto Sans Telugu', sans-serif;
+  font-size: 3rem;
+}
+
+.contact-title .english-title {
+  color: #8B0000;
+  font-size: 2.8rem;
+}
+
+.contact-subtitle {
+  font-family: 'Noto Sans Telugu', 'Arial', sans-serif;
+  font-size: 1.3rem;
+  color: #666;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+/* Contact Cards Container */
+.contact-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Contact Card */
+.contact-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(218, 165, 32, 0.2);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #8B0000, #DAA520);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 
+    0 20px 50px rgba(218, 165, 32, 0.3),
+    0 0 0 2px rgba(218, 165, 32, 0.5);
+  border-color: #DAA520;
+}
+
+.contact-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Card Icon Wrapper */
+.card-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: white;
+  box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.2),
+    inset 0 0 20px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover .card-icon-wrapper {
+  transform: scale(1.1) rotate(10deg);
+}
+
+.phone-icon {
+  background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%);
+}
+
+.whatsapp-icon {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+}
+
+.location-icon {
+  background: linear-gradient(135deg, #DAA520 0%, #FF8C00 100%);
+}
+
+.card-icon {
+  animation: iconBounce 2s ease-in-out infinite;
+}
+
+@keyframes iconBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Card Content */
+.card-title {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #8B0000;
+  margin-bottom: 15px;
+}
+
+.card-info {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-desc {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Contact Actions */
+.contact-actions {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 60px auto;
+  max-width: 1000px;
+  position: relative;
+  z-index: 2;
+}
+
+/* CTA Buttons */
+.contact-actions .cta-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 35px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: 2px solid transparent;
+}
+
+.button-icon {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.button-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.button-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.button-subtitle {
+  font-family: 'Noto Sans Telugu', sans-serif;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+/* Call Now Button */
+.call-now {
+  background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%);
+  color: white;
+  border-color: #DC143C;
+}
+
+.call-now:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(139, 0, 0, 0.4);
+  background: linear-gradient(135deg, #DC143C 0%, #8B0000 100%);
+}
+
+/* WhatsApp Button */
+.whatsapp {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: white;
+  border-color: #25D366;
+}
+
+.whatsapp:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
+  background: linear-gradient(135deg, #128C7E 0%, #25D366 100%);
+}
+
+/* Get Directions Button */
+.get-directions {
+  background: linear-gradient(135deg, #DAA520 0%, #FF8C00 100%);
+  color: white;
+  border-color: #DAA520;
+}
+
+.get-directions:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(218, 165, 32, 0.4);
+  background: linear-gradient(135deg, #FF8C00 0%, #DAA520 100%);
+}
+
+.cta-button:hover .button-icon {
+  transform: scale(1.2) rotate(10deg);
+}
+
+/* Button Shine Effect */
+.button-shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.cta-button:hover .button-shine {
+  left: 100%;
+}
+
+/* Map Wrapper */
+.map-wrapper {
+  max-width: 1200px;
+  margin: 60px auto 0;
+  position: relative;
+  z-index: 2;
+}
+
+.map-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.map-header-icon {
+  font-size: 2rem;
+  color: #DAA520;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.map-header h3 {
+  font-family: 'Noto Sans Telugu', 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #8B0000;
+  margin: 0;
+}
+
+/* Map Container */
+.map-container {
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.15),
+    0 0 0 3px rgba(218, 165, 32, 0.3);
+  position: relative;
+}
+
+.map-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 25px;
+  box-shadow: inset 0 0 30px rgba(218, 165, 32, 0.1);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
+  height: 450px;
+}
+
+/* Mobile View Adjustments */
+.mobile-view {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-view {
+    display: inline-flex;
+  }
+
+  .desktop-text {
+    display: block;
+  }
+
+  .contact-form {
+    padding: 70px 15px;
+  }
+
+  .contact-title {
+    font-size: 2.5rem;
+  }
+
+  .contact-title .telugu-title {
+    font-size: 2rem;
+  }
+
+  .contact-title .english-title {
+    font-size: 2rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .contact-cards-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .contact-card {
+    padding: 35px 25px;
+  }
+
+  .card-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+  }
+
+  .contact-actions {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .contact-actions .cta-button {
+    width: 100%;
+    justify-content: center;
+    padding: 18px 30px;
+  }
+
+  .map-header h3 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .map-container iframe {
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-title .telugu-title {
+    font-size: 1.6rem;
+  }
+
+  .contact-title .english-title {
+    font-size: 1.6rem;
+  }
+
+  .contact-deco {
+    font-size: 2rem;
+  }
+
+  .card-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .button-icon {
+    font-size: 1.6rem;
+  }
+
+  .button-title {
+    font-size: 1.1rem;
+  }
+
+  .button-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .map-header-icon {
+    font-size: 1.5rem;
+  }
+
+  .map-header h3 {
+    font-size: 1.2rem;
+  }
+
+  .map-container iframe {
+    height: 300px;
+  }
+}
