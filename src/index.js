@@ -40,6 +40,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App"; // Ensure the path is correct
 
+console.log("DEBUG: index.js loaded and root created", new Date().toLocaleString());
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
