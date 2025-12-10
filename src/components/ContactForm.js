@@ -74,7 +74,6 @@ const ContactForm = () => {
           </span>
           <span className="button-content">
             <span className="button-title">Call Now</span>
-            <span className="button-subtitle">మాకు ఫోన్ చేయండి</span>
           </span>
           <span className="button-shine"></span>
         </a>
@@ -90,7 +89,6 @@ const ContactForm = () => {
           </span>
           <span className="button-content">
             <span className="button-title">WhatsApp Us</span>
-            <span className="button-subtitle">WhatsApp చేయండి</span>
           </span>
           <span className="button-shine"></span>
         </a>
@@ -106,7 +104,6 @@ const ContactForm = () => {
           </span>
           <span className="button-content">
             <span className="button-title">Get Directions</span>
-            <span className="button-subtitle">దిశానిర్దేశాలు</span>
           </span>
           <span className="button-shine"></span>
         </a>
