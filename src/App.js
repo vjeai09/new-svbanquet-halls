@@ -1,4 +1,28 @@
 import React, { useState, useEffect } from "react";
+
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false, error: null };
+  }
+  static getDerivedStateFromError(error) {
+    return { hasError: true, error };
+  }
+  componentDidCatch(error, errorInfo) {
+    console.error("ErrorBoundary caught an error:", error, errorInfo);
+  }
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div style={{background: 'red', color: 'white', padding: '20px', fontWeight: 'bold'}}>
+          <h2>Something went wrong.</h2>
+          <pre>{this.state.error && this.state.error.toString()}</pre>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HeroVideo from "./components/HeroVideo";
@@ -35,55 +59,57 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <div style={{background: 'yellow', color: 'black', padding: '10px', fontWeight: 'bold', zIndex: 9999}}>
-        DEBUG: App.js loaded and rendering at {new Date().toLocaleString()}
-      </div>
-      {/* Loading Screen */}
-      {showLoading && (
-        <div className="loading-screen">
-          <div className="loading-content">
-            <div className="loading-spinner"></div>
-            <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "2rem" }}>
-              SV Banquet Halls
-            </h2>
-            <p style={{ fontFamily: "'Noto Sans Telugu', sans-serif", marginTop: "10px" }}>
-              మీ ప్రత్యేక క్షణాలకు | Your Special Moments
-            </p>
-          </div>
+    <ErrorBoundary>
+      <div className="App">
+        <div style={{background: 'yellow', color: 'black', padding: '10px', fontWeight: 'bold', zIndex: 9999}}>
+          DEBUG: App.js loaded and rendering at {new Date().toLocaleString()}
         </div>
-      )}
+        {/* Loading Screen */}
+        {showLoading && (
+          <div className="loading-screen">
+            <div className="loading-content">
+              <div className="loading-spinner"></div>
+              <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "2rem" }}>
+                SV Banquet Halls
+              </h2>
+              <p style={{ fontFamily: "'Noto Sans Telugu', sans-serif", marginTop: "10px" }}>
+                మీ ప్రత్యేక క్షణాలకు | Your Special Moments
+              </p>
+            </div>
+          </div>
+        )}
 
-      {/* Scroll Progress Bar */}
-      <div 
-        className="scroll-progress" 
-        style={{ transform: `scaleX(${scrollProgress / 100})` }}
-      ></div>
+        {/* Scroll Progress Bar */}
+        <div 
+          className="scroll-progress" 
+          style={{ transform: `scaleX(${scrollProgress / 100})` }}
+        ></div>
 
-      {/* Header component */}
-      <Header />
+        {/* Header component */}
+        <Header />
 
-      {/* Content sections with corresponding component IDs for scrolling */}
-      <main id="main-content">
-        <section id="hero-video">
-          <HeroVideo />
-        </section>
-        <section id="services">
-          <Services />
-        </section>
-        <section id="testimonials">
-          <Testimonials />
-        </section>
-        <section id="contact">
-          <ContactForm />
-        </section>
-      </main>
+        {/* Content sections with corresponding component IDs for scrolling */}
+        <main id="main-content">
+          <section id="hero-video">
+            <HeroVideo />
+          </section>
+          <section id="services">
+            <Services />
+          </section>
+          <section id="testimonials">
+            <Testimonials />
+          </section>
+          <section id="contact">
+            <ContactForm />
+          </section>
+        </main>
 
-      {/* Footer, BottomBar, and StickyCTA */}
-      <Footer />
-      <BottomBar />
-      <StickyCTA />
-    </div>
+        {/* Footer, BottomBar, and StickyCTA */}
+        <Footer />
+        <BottomBar />
+        <StickyCTA />
+      </div>
+    </ErrorBoundary>
   );
 }
 
