@@ -93,11 +93,18 @@ const ContactForm = () => {
           <span className="button-shine"></span>
         </a>
 
-        <a
-          href="https://www.google.com/maps/dir/?api=1&destination=17.347142,78.566921"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          type="button"
           className="cta-button get-directions mobile-view"
+          style={{ cursor: 'not-allowed', opacity: 0.7 }}
+          onClick={() => {
+            const banner = document.getElementById('directions-notice-banner');
+            if (banner) {
+              banner.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              banner.classList.add('highlight-banner');
+              setTimeout(() => banner.classList.remove('highlight-banner'), 2000);
+            }
+          }}
         >
           <span className="button-icon">
             <FaMapMarkerAlt />
@@ -106,15 +113,15 @@ const ContactForm = () => {
             <span className="button-title">Get Directions</span>
           </span>
           <span className="button-shine"></span>
-        </a>
+        </button>
       </div>
 
       {/* Temporary Notice */}
-      <div className="notice-banner" data-aos="fade-up" data-aos-delay="450">
-        <p>
-          <strong>Please Note:</strong> Our Google Business listing is temporarily unavailable.<br/>
-          For accurate directions, please call us at <a href="tel:+916305333751">+91 6305333751</a> or use the map below.<br/>
-          <span style={{color: '#b85c00', fontWeight: 'bold'}}>If Google Maps shows a different venue name, please ignore it and follow the location pin on the map. The pin is accurate for SV Banquet Halls, Mansoorabad.</span>
+      <div id="directions-notice-banner" className="notice-banner" data-aos="fade-up" data-aos-delay="450">
+        <p style={{margin:0}}>
+          <strong style={{color:'#b85c00'}}>Directions Unavailable:</strong><br/>
+          <span style={{color:'#856404'}}>We’re working to restore our Google listing. For now, please call <a href="tel:+916305333751" style={{color:'#b85c00',textDecoration:'underline'}}>+91 6305333751</a> for friendly help with directions.<br/>
+          We apologize for the inconvenience and thank you for your patience. Safe travels!</span>
         </p>
       </div>
 
