@@ -94,7 +94,7 @@ const ContactForm = () => {
         </a>
 
         <a
-          href="https://www.google.com/maps/dir/?api=1&destination=17.347138888889,78.566916666667"
+          href="https://www.google.com/maps/dir/?api=1&destination=17.347142,78.566921"
           target="_blank"
           rel="noopener noreferrer"
           className="cta-button get-directions mobile-view"
