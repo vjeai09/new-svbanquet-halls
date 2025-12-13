@@ -94,7 +94,7 @@ const ContactForm = () => {
         </a>
 
         <a
-          href="https://www.google.com/maps/dir/?api=1&destination=S%20V%20Banquet%20Halls,%20Mansoorabad,%20Telangana%20500074,%20India"
+          href="https://www.google.com/maps/dir/?api=1&destination=17.347183283533173,78.56439697527573"
           target="_blank"
           rel="noopener noreferrer"
           className="cta-button get-directions mobile-view"
@@ -107,6 +107,15 @@ const ContactForm = () => {
           </span>
           <span className="button-shine"></span>
         </a>
+      </div>
+
+      {/* Temporary Notice */}
+      <div className="notice-banner" data-aos="fade-up" data-aos-delay="450">
+        <p>
+          <strong>Please Note:</strong> Our Google Business listing is temporarily unavailable. 
+          For accurate directions, please call us at <a href="tel:+916305333751">+91 6305333751</a> or use the map below. 
+          We're located in Mansoorabad, Hyderabad.
+        </p>
       </div>
 
       {/* Map Container */}
