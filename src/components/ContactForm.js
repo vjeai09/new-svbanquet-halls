@@ -112,9 +112,9 @@ const ContactForm = () => {
       {/* Temporary Notice */}
       <div className="notice-banner" data-aos="fade-up" data-aos-delay="450">
         <p>
-          <strong>Please Note:</strong> Our Google Business listing is temporarily unavailable. 
-          For accurate directions, please call us at <a href="tel:+916305333751">+91 6305333751</a> or use the map below. 
-          We're located in Mansoorabad, Hyderabad.
+          <strong>Please Note:</strong> Our Google Business listing is temporarily unavailable.<br/>
+          For accurate directions, please call us at <a href="tel:+916305333751">+91 6305333751</a> or use the map below.<br/>
+          <span style={{color: '#b85c00', fontWeight: 'bold'}}>If Google Maps shows a different venue name, please ignore it and follow the location pin on the map. The pin is accurate for SV Banquet Halls, Mansoorabad.</span>
         </p>
       </div>
 
