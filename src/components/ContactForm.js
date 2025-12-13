@@ -93,11 +93,13 @@ const ContactForm = () => {
           <span className="button-shine"></span>
         </a>
 
-        <a
-          href="https://www.google.com/maps/dir/?api=1&destination=17.3471389,78.5669167"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          type="button"
           className="cta-button get-directions mobile-view"
+          style={{ cursor: 'pointer', opacity: 1 }}
+          onClick={() => {
+            window.open('https://maps.app.goo.gl/sy8FM3SuQBRGd6vr7', '_blank');
+          }}
         >
           <span className="button-icon">
             <FaMapMarkerAlt />
@@ -106,7 +108,7 @@ const ContactForm = () => {
             <span className="button-title">Get Directions</span>
           </span>
           <span className="button-shine"></span>
-        </a>
+        </button>
       </div>
 
       {/* Temporary Notice */}
