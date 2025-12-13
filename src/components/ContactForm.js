@@ -96,9 +96,10 @@ const ContactForm = () => {
         <button
           type="button"
           className="cta-button get-directions mobile-view"
-          style={{ cursor: 'pointer', opacity: 1 }}
-          onClick={() => {
-            window.open('https://maps.app.goo.gl/sy8FM3SuQBRGd6vr7', '_blank');
+          style={{ cursor: 'not-allowed', opacity: 0.6 }}
+          disabled
+          onClick={(e) => {
+            e.preventDefault();
           }}
         >
           <span className="button-icon">
