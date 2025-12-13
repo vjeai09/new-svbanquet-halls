@@ -93,18 +93,11 @@ const ContactForm = () => {
           <span className="button-shine"></span>
         </a>
 
-        <button
-          type="button"
+        <a
+          href="https://www.google.com/maps/dir/?api=1&destination=17.3471389,78.5669167"
+          target="_blank"
+          rel="noopener noreferrer"
           className="cta-button get-directions mobile-view"
-          style={{ cursor: 'not-allowed', opacity: 0.7 }}
-          onClick={() => {
-            const banner = document.getElementById('directions-notice-banner');
-            if (banner) {
-              banner.scrollIntoView({ behavior: 'smooth', block: 'center' });
-              banner.classList.add('highlight-banner');
-              setTimeout(() => banner.classList.remove('highlight-banner'), 2000);
-            }
-          }}
         >
           <span className="button-icon">
             <FaMapMarkerAlt />
@@ -113,7 +106,7 @@ const ContactForm = () => {
             <span className="button-title">Get Directions</span>
           </span>
           <span className="button-shine"></span>
-        </button>
+        </a>
       </div>
 
       {/* Temporary Notice */}
