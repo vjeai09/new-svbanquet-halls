@@ -109,14 +109,6 @@ const ContactForm = () => {
         </a>
       </div>
 
-      {/* Temporary Notice */}
-      <div id="directions-notice-banner" className="notice-banner" data-aos="fade-up" data-aos-delay="450">
-        <p style={{margin:0}}>
-          <strong style={{color:'#b85c00'}}>Directions Unavailable:</strong><br/>
-          <span style={{color:'#856404'}}>We’re working to restore our Google listing. For now, please call <a href="tel:+916305333751" style={{color:'#b85c00',textDecoration:'underline'}}>+91 6305333751</a> for friendly help with directions.<br/>
-          We apologize for the inconvenience and thank you for your patience. Safe travels!</span>
-        </p>
-      </div>
 
       {/* Map Container */}
       <div className="map-wrapper" data-aos="zoom-in" data-aos-delay="500">
