@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaPhone, FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
 import "./ContactForm.css";
 
 const ContactForm = () => {
-  const [showDirectionsModal, setShowDirectionsModal] = useState(false);
-
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -95,11 +93,11 @@ const ContactForm = () => {
           <span className="button-shine"></span>
         </a>
 
-        <button
-          type="button"
+        <a
+          href="https://www.google.com/maps/place/S+V+Banquet+Halls/@17.3471833,78.564397,897m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bcb9f533bc585b9:0xf467520e448c3d96!8m2!3d17.3471833!4d78.5669719!16s%2Fg%2F11hckfqtr5?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
+          target="_blank"
+          rel="noopener noreferrer"
           className="cta-button get-directions mobile-view"
-          style={{ cursor: 'pointer', opacity: 1 }}
-          onClick={() => setShowDirectionsModal(true)}
         >
           <span className="button-icon">
             <FaMapMarkerAlt />
@@ -108,7 +106,7 @@ const ContactForm = () => {
             <span className="button-title">Get Directions</span>
           </span>
           <span className="button-shine"></span>
-        </button>
+        </a>
       </div>
 
       {/* Temporary Notice */}
@@ -139,85 +137,6 @@ const ContactForm = () => {
           ></iframe>
         </div>
       </div>
-
-      {/* Directions Modal */}
-      {showDirectionsModal && (
-        <div
-          style={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundColor: 'rgba(0, 0, 0, 0.5)',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            zIndex: 1000,
-          }}
-          onClick={() => setShowDirectionsModal(false)}
-        >
-          <div
-            style={{
-              backgroundColor: 'white',
-              borderRadius: '15px',
-              padding: '30px',
-              maxWidth: '450px',
-              textAlign: 'center',
-              boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
-            }}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div style={{ marginBottom: '20px' }}>
-              <FaMapMarkerAlt style={{ fontSize: '48px', color: '#b85c00' }} />
-            </div>
-            <h3 style={{ color: '#333', marginBottom: '15px' }}>Get Directions</h3>
-            <p style={{ color: '#666', marginBottom: '20px', lineHeight: '1.6' }}>
-              Our Google Business listing is temporarily unavailable. 
-              <br /><br />
-              <strong>Tap the link below to open directions to our venue:</strong>
-            </p>
-            <a
-              href="https://maps.app.goo.gl/sy8FM3SuQBRGd6vr7"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-block',
-                backgroundColor: '#b85c00',
-                color: 'white',
-                padding: '12px 30px',
-                borderRadius: '25px',
-                textDecoration: 'none',
-                fontWeight: 'bold',
-                marginBottom: '15px',
-                transition: 'background-color 0.3s',
-              }}
-              onMouseEnter={(e) => (e.target.style.backgroundColor = '#a04d00')}
-              onMouseLeave={(e) => (e.target.style.backgroundColor = '#b85c00')}
-            >
-              📍 Open in Google Maps
-            </a>
-            <p style={{ color: '#856404', fontSize: '14px', marginBottom: '10px' }}>
-              Or call us at <a href="tel:+916305333751" style={{ color: '#b85c00', textDecoration: 'underline' }}>+91 6305333751</a> for help
-            </p>
-            <button
-              onClick={() => setShowDirectionsModal(false)}
-              style={{
-                marginTop: '15px',
-                padding: '10px 20px',
-                backgroundColor: '#f0f0f0',
-                border: 'none',
-                borderRadius: '20px',
-                cursor: 'pointer',
-                color: '#333',
-                fontWeight: 'bold',
-              }}
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      )}
     </section>
   );
 };
