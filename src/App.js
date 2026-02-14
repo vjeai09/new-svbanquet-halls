@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import HeroVideo from "./components/HeroVideo";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
+import Vendors from "./components/Vendors";
 import ContactForm from "./components/ContactForm";
 import BottomBar from "./components/BottomBar";
 import StickyCTA from "./components/StickyCTA";
@@ -95,6 +96,9 @@ function App() {
           </section>
           <section id="testimonials">
             <Testimonials />
+          </section>
+          <section id="vendors">
+            <Vendors />
           </section>
           <section id="contact">
             <ContactForm />

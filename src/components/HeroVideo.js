@@ -40,15 +40,6 @@ const HeroVideo = () => {
       <div className="floating-element element-4">🪔</div>
       <div className="floating-element element-5">✨</div>
       
-      <video
-        className="hero-video"
-        src="/video03.mp4"
-        autoPlay
-        muted
-        loop
-        playsInline
-      />
-      
       <div className="video-overlay">
         <div className="hero-content" data-aos="fade-up" data-aos-delay="200">
           {/* Decorative Border */}

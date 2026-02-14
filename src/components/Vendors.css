@@ -1,0 +1,720 @@
+/* Premium Vendors Section with Cultural Elements */
+.vendors {
+  padding: 80px 20px;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #fff9e6 50%,
+    #ffffff 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.vendors::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #8B0000, #DAA520, #8B0000);
+}
+
+/* Section Divider */
+.section-divider {
+  height: 4px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto 60px;
+  background: linear-gradient(90deg, transparent, #DAA520, transparent);
+  position: relative;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: '✦';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #DAA520;
+  font-size: 1.5rem;
+}
+
+.section-divider::before {
+  left: -30px;
+}
+
+.section-divider::after {
+  right: -30px;
+}
+
+/* Decorative Elements */
+.vendor-deco {
+  position: fixed;
+  font-size: 4rem;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 1;
+  filter: drop-shadow(0 0 20px rgba(218, 165, 32, 0.3));
+}
+
+.deco-1 {
+  top: 10%;
+  left: 5%;
+  animation: float 10s ease-in-out infinite;
+}
+
+.deco-2 {
+  top: 40%;
+  right: 5%;
+  animation: float 12s ease-in-out infinite 2s;
+  animation-direction: reverse;
+}
+
+.deco-3 {
+  bottom: 10%;
+  left: 8%;
+  animation: float 11s ease-in-out infinite 4s;
+}
+
+/* Vendors Header */
+.vendors-header {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.decorative-element {
+  font-size: 3rem;
+  animation: pulse 2s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px rgba(218, 165, 32, 0.6));
+}
+
+.left-element {
+  animation-delay: 0s;
+}
+
+.right-element {
+  animation-delay: 1s;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+.header-content {
+  flex: 1;
+  max-width: 800px;
+}
+
+.vendors-title {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.telugu-title {
+  background: linear-gradient(135deg, #8B0000 0%, #DAA520 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: 'Noto Sans Telugu', sans-serif;
+  font-size: 3rem;
+}
+
+.english-title {
+  color: #8B0000;
+  font-size: 2.8rem;
+}
+
+.vendors-subtitle {
+  font-family: 'Noto Sans Telugu', 'Arial', sans-serif;
+  font-size: 1.3rem;
+  color: #666;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+/* Category Filter */
+.category-filter {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.filter-btn {
+  padding: 12px 28px;
+  border: 2px solid #DAA520;
+  background: white;
+  color: #8B0000;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.filter-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #8B0000, #DAA520);
+  transition: left 0.4s ease;
+  z-index: -1;
+}
+
+.filter-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(218, 165, 32, 0.3);
+}
+
+.filter-btn:hover::before {
+  left: 0;
+}
+
+.filter-btn.active {
+  background: linear-gradient(90deg, #8B0000, #DAA520);
+  color: white;
+  border-color: #8B0000;
+  box-shadow: 0 12px 30px rgba(139, 0, 0, 0.4);
+}
+
+.filter-btn .english-text {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.filter-btn .telugu-text {
+  font-size: 0.85rem;
+  font-family: 'Noto Sans Telugu', sans-serif;
+  opacity: 0.8;
+}
+
+/* Vendors Grid */
+.vendors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Vendor Card */
+.vendor-card {
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(218, 165, 32, 0.2);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  position: relative;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.vendor-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 
+    0 20px 50px rgba(218, 165, 32, 0.3),
+    0 0 0 2px rgba(218, 165, 32, 0.5);
+  border-color: #DAA520;
+}
+
+/* Card Pattern */
+.card-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(218, 165, 32, 0.03) 10px,
+      rgba(218, 165, 32, 0.03) 20px
+    );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Icon Badge */
+.vendor-icon-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8B0000 0%, #DAA520 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  box-shadow: 0 8px 20px rgba(139, 0, 0, 0.3);
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Vendor Image */
+.vendor-image-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #8B0000 0%, #DAA520 100%);
+}
+
+.vendor-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.vendor-card:hover .vendor-image {
+  transform: scale(1.1);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(139, 0, 0, 0) 0%,
+    rgba(139, 0, 0, 0.3) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.vendor-card:hover .image-overlay {
+  opacity: 1;
+}
+
+/* Vendor Info */
+.vendor-info {
+  padding: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.vendor-names {
+  margin-bottom: 10px;
+}
+
+.vendor-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #8B0000;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Rating Section */
+.rating-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+}
+
+.stars svg {
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.stars .filled {
+  color: #DAA520;
+  filter: drop-shadow(0 2px 4px rgba(218, 165, 32, 0.5));
+}
+
+.stars .empty {
+  color: #ddd;
+}
+
+.rating-text {
+  font-size: 0.95rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Vendor Description */
+.vendor-description {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 10px 0;
+  flex: 1;
+}
+
+/* Category Tag */
+.category-tag {
+  display: inline-block;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, rgba(139, 0, 0, 0.1) 0%, rgba(218, 165, 32, 0.1) 100%);
+  border-radius: 20px;
+  border-left: 3px solid #DAA520;
+  font-size: 0.9rem;
+  color: #8B0000;
+  font-weight: 600;
+  font-family: 'Noto Sans Telugu', sans-serif;
+}
+
+/* Contact Section */
+.vendor-contact {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.contact-btn {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.contact-btn.phone {
+  background: linear-gradient(135deg, #8B0000 0%, #B22222 100%);
+  color: white;
+}
+
+.contact-btn.phone:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(139, 0, 0, 0.4);
+}
+
+.contact-btn.website {
+  background: linear-gradient(135deg, #DAA520 0%, #FF8C00 100%);
+  color: white;
+}
+
+.contact-btn.website:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(218, 165, 32, 0.4);
+}
+
+/* CTA Section */
+.vendor-cta {
+  margin-top: 80px;
+  padding: 60px 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #8B0000 0%, #DAA520 100%);
+  border-radius: 25px;
+  color: white;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 15px 40px rgba(139, 0, 0, 0.3);
+}
+
+/* Preview specific styles */
+.vendor-preview-card {
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(218, 165, 32, 0.06);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.vendor-preview-card .vendor-name {
+  display: inline-block;
+}
+
+.preview-badge {
+  display: inline-block;
+  margin-left: 12px;
+  background: rgba(139,0,0,0.08);
+  color: #8B0000;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+/* Ribbon for preview */
+.sample-ribbon {
+  position: absolute;
+  top: 18px;
+  left: -40px;
+  transform: rotate(-30deg);
+  background: linear-gradient(90deg, #8B0000, #DAA520);
+  color: white;
+  padding: 6px 80px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  z-index: 20;
+  font-size: 0.9rem;
+}
+
+.vendor-preview-card .vendor-description {
+  color: #444;
+}
+
+/* Ensure preview card buttons look like real contact buttons but route to application */
+.vendor-preview-card .contact-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Make the preview visually distinct from live cards */
+.vendor-preview-card .image-overlay {
+  background: linear-gradient(180deg, rgba(139,0,0,0.06) 0%, rgba(218,165,32,0.06) 100%);
+  opacity: 1;
+}
+
+.cta-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin: 0 0 15px;
+  font-weight: 800;
+}
+
+.cta-content p {
+  font-family: 'Noto Sans Telugu', sans-serif;
+  font-size: 1.1rem;
+  margin: 0 0 30px;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+/* Improve contrast/readability across the gradient background */
+.vendor-cta .cta-content h3,
+.vendor-cta .cta-content p,
+.vendor-cta .cta-content div {
+  color: #ffffff; /* force white for clarity */
+  text-shadow: 0 2px 8px rgba(0,0,0,0.55);
+  opacity: 1; /* ensure full opacity for body text */
+}
+
+.vendor-cta-button {
+  display: inline-block;
+  padding: 15px 40px;
+  background: white;
+  color: #8B0000;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.vendor-cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .vendors-title {
+    font-size: 2.8rem;
+  }
+
+  .english-title {
+    font-size: 2.2rem;
+  }
+
+  .vendors-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vendors {
+    padding: 60px 15px;
+  }
+
+  .vendors-title {
+    font-size: 2.2rem;
+  }
+
+  .telugu-title {
+    font-size: 2rem;
+  }
+
+  .english-title {
+    font-size: 1.8rem;
+  }
+
+  .vendors-subtitle {
+    font-size: 1rem;
+  }
+
+  .vendors-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .vendor-image-container {
+    height: 200px;
+  }
+
+  .vendor-info {
+    padding: 20px;
+  }
+
+  .vendor-name {
+    font-size: 1.5rem;
+  }
+
+  .vendor-contact {
+    flex-direction: column;
+  }
+
+  .contact-btn {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  .filter-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .category-filter {
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+
+  .vendor-cta {
+    padding: 40px 20px;
+    margin-top: 60px;
+  }
+
+  .cta-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .cta-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .vendors-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .decorative-element {
+    display: none;
+  }
+
+  .vendors-title {
+    font-size: 1.8rem;
+  }
+
+  .telugu-title {
+    font-size: 1.6rem;
+  }
+
+  .english-title {
+    font-size: 1.5rem;
+  }
+
+  .vendors-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .vendor-card {
+    border-radius: 15px;
+  }
+
+  .vendor-image-container {
+    height: 180px;
+  }
+
+  .icon-circle {
+    width: 60px;
+    height: 60px;
+    font-size: 1.6rem;
+  }
+
+  .filter-btn .english-text {
+    font-size: 0.85rem;
+  }
+
+  .filter-btn .telugu-text {
+    font-size: 0.75rem;
+  }
+}
