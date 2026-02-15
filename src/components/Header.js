@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll"; // Import Link from react-scroll
+import { Link as RouterLink, useLocation, useNavigate } from 'react-router-dom';
 import { FaFacebook, FaInstagram, FaLinkedin, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa"; // Import all icons
 import "./header1.css";
 
@@ -11,6 +11,29 @@ const Header = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // Navigate to home and scroll to section id. Works from any route.
+  const goToSection = (id) => {
+    const doScroll = () => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    };
+
+    if (location.pathname !== '/') {
+      navigate('/');
+      // wait for route change and render
+      setTimeout(doScroll, 350);
+    } else {
+      doScroll();
+    }
+    // close mobile menu if open
+    setIsMenuOpen(false);
   };
 
   useEffect(() => {
@@ -79,30 +102,23 @@ const Header = () => {
           <nav>
             <ul className={isMenuOpen ? "active" : ""}>
               <li>
-                <Link to="hero-video" smooth={true} duration={600}>
-                  Home
-                </Link>
+                <button className="nav-button" onClick={()=>goToSection('hero-video')}>Home</button>
               </li>
-              
+
               <li>
-                <Link to="services" smooth={true} duration={600}>
-                  Services
-                </Link>
+                <button className="nav-button" onClick={()=>goToSection('services')}>Services</button>
               </li>
               <li>
-                <Link to="testimonials" smooth={true} duration={600}>
-                  Testimonials
-                </Link>
+                <button className="nav-button" onClick={()=>goToSection('testimonials')}>Testimonials</button>
               </li>
               <li>
-                <Link to="vendors" smooth={true} duration={600}>
-                  Vendors
-                </Link>
+                <button className="nav-button" onClick={()=>goToSection('vendors')}>Vendors</button>
               </li>
               <li>
-                <Link to="contact" smooth={true} duration={600}>
-                  Contact
-                </Link>
+                <RouterLink to="/planning">Planning</RouterLink>
+              </li>
+              <li>
+                <button className="nav-button" onClick={()=>goToSection('contact')}>Contact</button>
               </li>
             </ul>
           </nav>

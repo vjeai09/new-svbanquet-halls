@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Planning from "./pages/Planning";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HeroVideo from "./components/HeroVideo";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
@@ -61,6 +63,7 @@ function App() {
 
   return (
     <ErrorBoundary>
+      <BrowserRouter>
       <div className="App">
         {/* Loading Screen */}
         {showLoading && (
@@ -86,30 +89,36 @@ function App() {
         {/* Header component */}
         <Header />
 
-        {/* Content sections with corresponding component IDs for scrolling */}
-        <main id="main-content">
-          <section id="hero-video">
-            <HeroVideo />
-          </section>
-          <section id="services">
-            <Services />
-          </section>
-          <section id="testimonials">
-            <Testimonials />
-          </section>
-          <section id="vendors">
-            <Vendors />
-          </section>
-          <section id="contact">
-            <ContactForm />
-          </section>
-        </main>
+        <Routes>
+          <Route path="/planning" element={<Planning />} />
+          <Route path="/planning/:slug" element={<Planning />} />
+          <Route path="/" element={(
+            <main id="main-content">
+              <section id="hero-video">
+                <HeroVideo />
+              </section>
+              <section id="services">
+                <Services />
+              </section>
+              <section id="testimonials">
+                <Testimonials />
+              </section>
+              <section id="vendors">
+                <Vendors />
+              </section>
+              <section id="contact">
+                <ContactForm />
+              </section>
+            </main>
+          )} />
+        </Routes>
 
         {/* Footer, BottomBar, and StickyCTA */}
         <Footer />
         <BottomBar />
         <StickyCTA />
       </div>
+      </BrowserRouter>
     </ErrorBoundary>
   );
 }
