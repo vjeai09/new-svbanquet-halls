@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { Link, useParams, useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useParams, useNavigate, useLocation } from 'react-router-dom';
+import HowToChooseBanquetHallGuide from '../components/HowToChooseBanquetHallGuide';
 import './Planning.css';
 
 function simpleMarkdownToHtml(md) {
@@ -42,43 +43,33 @@ const posts = [
 const Planning = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
-  const [html, setHtml] = useState('<p>Loading...</p>');
-  const [loading, setLoading] = useState(false);
+  const location = useLocation();
 
-  useEffect(() => {
-    if (slug) {
-      const post = posts.find(p => p.slug === slug);
-      if (!post) { setHtml('<p>Post not found.</p>'); return; }
-      setLoading(true);
-      fetch(post.path)
-        .then((r) => r.text())
-        .then((md) => setHtml(simpleMarkdownToHtml(md)))
-        .catch(() => setHtml('<p>Could not load article.</p>'))
-        .finally(() => setLoading(false));
-    } else {
-      // show list view
-      setHtml('');
-    }
-  }, [slug]);
+  // Scroll to top when location changes
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   if (slug) {
-    return (
-      <main className="planning-page book">
-        <div className="planning-content">
-          <div className="article-header">
-            <nav className="breadcrumb">
-              <button onClick={(e)=>{navigate('/planning');}} className="back-button">← All Guides</button>
-              <span className="crumb-sep">/</span>
-              <span className="crumb-current">{posts.find(p=>p.slug===slug)?.title || 'Article'}</span>
-            </nav>
+    if (slug === 'how-to-choose-a-banquet-hall-hyderabad') {
+      return (
+        <main className="planning-page book">
+          <HowToChooseBanquetHallGuide />
+        </main>
+      );
+    }
+    
+    // Fallback for future articles
+    const post = posts.find(p => p.slug === slug);
+    if (!post) {
+      return (
+        <main className="planning-page book">
+          <div className="planning-content">
+            <p>Post not found.</p>
           </div>
-          <article className="article-body">
-            {loading ? <p>Loading article…</p> : <div dangerouslySetInnerHTML={{ __html: html }} />}
-          </article>
-        </div>
-        <a className="floating-all-guides" href="#" onClick={(e)=>{e.preventDefault(); navigate('/planning');}}>All Guides</a>
-      </main>
-    );
+        </main>
+      );
+    }
   }
 
   return (
