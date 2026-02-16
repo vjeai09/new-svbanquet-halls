@@ -93,9 +93,26 @@ html {
       color: white;
       font-size: 16px;
       font-weight: bold;
-      padding: 5px 10px;
+      padding: 8px 10px;
       border-radius: 4px;
       transition: color 0.3s ease, transform 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      line-height: 1;
+      vertical-align: middle;
+    }
+    /* Buttons used for navigation when not using react-scroll */
+    nav ul li .nav-button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: color 0.3s ease, transform 0.3s ease;
+      font-family: inherit;
     }
     nav ul li a:hover {
       color: #FFD700;
@@ -140,6 +157,7 @@ html {
       display: flex;
       align-items: center;
       justify-content: center;
+      gap: 8px;
       padding: 10px 20px;
       background-color: #FFD700;
       color: black;
@@ -209,8 +227,25 @@ html {
       text-align: left
     }
     nav ul li a {
-      color: black;
+      color: white;
       font-size: 18px;
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 10px;
+      line-height: 1;
+    }
+    nav ul li .nav-button {
+      color: white;
+      font-size: 18px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px 10px;
+      text-align: left;
+      display: inline-flex;
+      align-items: center;
+      line-height: 1;
+      vertical-align: middle;
     }
     nav ul li a:hover {
       color: #FFD700;
