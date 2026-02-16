@@ -5,11 +5,7 @@ export default function VendorApplicationModal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   const email = 'svfunctionhalls@gmail.com';
-  const phone = '+916305333751';
   const messageBody = 'Please include Business name, Phone number and any other details:';
-  const mailto = `mailto:${email}?subject=${encodeURIComponent('Vendor Application')}&body=${encodeURIComponent(
-    messageBody
-  )}`;
   const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(
     'Vendor Application'
   )}&body=${encodeURIComponent(messageBody)}`;

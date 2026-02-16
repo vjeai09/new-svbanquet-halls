@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FaStar, FaCamera, FaUtensils, FaPalette, FaPhone, FaGlobe } from "react-icons/fa";
+import { FaCamera } from "react-icons/fa";
 import "./Vendors.css";
 import VendorApplicationModal from './VendorApplicationModal';
 
@@ -32,19 +32,6 @@ const Vendors = () => {
     activeCategory === "all"
       ? vendors
       : vendors.filter((vendor) => vendor.category === activeCategory);
-
-  const renderStars = (rating) => {
-    return (
-      <div className="stars">
-        {[...Array(5)].map((_, i) => (
-          <FaStar
-            key={i}
-            className={i < Math.floor(rating) ? "filled" : "empty"}
-          />
-        ))}
-      </div>
-    );
-  };
 
   return (
     <section className="vendors">

@@ -1,35 +1,7 @@
-import React, { useState } from 'react';
-import { Link, useParams, useNavigate, useLocation } from 'react-router-dom';
+import React from 'react';
+import { Link, useParams, useLocation } from 'react-router-dom';
 import HowToChooseBanquetHallGuide from '../components/HowToChooseBanquetHallGuide';
 import './Planning.css';
-
-function simpleMarkdownToHtml(md) {
-  // very small, safe markdown -> HTML converter for headings, lists, hr and paragraphs
-  const lines = md.split('\n');
-  let html = '';
-  let inList = false;
-  lines.forEach((raw) => {
-    const line = raw.trim();
-    if (!line) {
-      if (inList) { html += '</ul>'; inList = false; }
-      return;
-    }
-    if (line.startsWith('### ')) html += `<h3>${line.slice(4)}</h3>`;
-    else if (line.startsWith('## ')) html += `<h2>${line.slice(3)}</h2>`;
-    else if (line.startsWith('# ')) html += `<h1>${line.slice(2)}</h1>`;
-    else if (line.startsWith('- ')) {
-      if (!inList) { html += '<ul>'; inList = true; }
-      html += `<li>${line.slice(2)}</li>`;
-    } else if (line === '---') {
-      if (inList) { html += '</ul>'; inList = false; }
-      html += '<hr/>';
-    } else {
-      html += `<p>${line}</p>`;
-    }
-  });
-  if (inList) html += '</ul>';
-  return html;
-}
 
 const posts = [
   {
@@ -42,7 +14,6 @@ const posts = [
 
 const Planning = () => {
   const { slug } = useParams();
-  const navigate = useNavigate();
   const location = useLocation();
 
   // Scroll to top when location changes
