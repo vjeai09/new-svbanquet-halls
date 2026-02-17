@@ -353,7 +353,7 @@ const HowToChooseBanquetHallGuide = () => {
       <section className="guide-quick-info">
         <div className="quick-info-container">
           <h3>S V Banquet Halls</h3>
-          <p><strong>Location:</strong> Sahara Estates, Mansoorabad, Hyderabad</p>
+          <p><strong>Location:</strong> Sahara Main Road, Mansoorabad, LB Nagar, Hyderabad</p>
           <p className="quick-info-note">Flexible, vendor-friendly venue for weddings, engagements, birthdays & celebrations.</p>
         </div>
       </section>
