@@ -333,10 +333,10 @@ const HowToChooseBanquetHallGuide = () => {
           <p>You now know the questions to ask. You understand what freedom actually looks like. You can spot the venues that will support your vision.</p>
           
           <div className="final-cta-buttons">
-            <a href="tel:+919876543210" className="cta-button cta-primary">
+            <a href="tel:+916305333751" className="cta-button cta-primary">
               𝗖𝗮𝗹𝗹 & L𝗲𝗮𝗿𝗻 𝗠𝗼𝗿𝗲
             </a>
-            <a href="https://wa.me/919876543210" className="cta-button cta-secondary">
+            <a href="https://wa.me/916305333751" className="cta-button cta-secondary">
               💬 WhatsApp
             </a>
           </div>
@@ -346,6 +346,18 @@ const HowToChooseBanquetHallGuide = () => {
           </p>
           
          
+        </div>
+      </section>
+
+      {/* PHONE RIBBON */}
+      <section className="guide-phone-ribbon">
+        <div className="phone-ribbon-content">
+          <div className="phone-icon-pulse">📞</div>
+          <div className="phone-details">
+            <p className="phone-label">Call Us Now</p>
+            <a href="tel:+916305333751" className="phone-number">+91 63053 33751</a>
+            <p className="phone-sublabel">Tap to call • Available 24/7</p>
+          </div>
         </div>
       </section>
 
