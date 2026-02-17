@@ -75,7 +75,9 @@ const Header = () => {
         {showTopBar && (
           <div className="top-bar">
             <div className="contact-info">
-              <span>📞 +91 6305 333 751</span>
+              <a href="tel:+916305333751" className="top-bar-phone">
+                📞 <strong>+91 6305 333 751</strong>
+              </a>
             </div>
             <div className="social-icons">
               <a href="https://www.facebook.com/svbanquethalls" target="_blank" rel="noopener noreferrer">
