@@ -37,7 +37,7 @@ html {
       align-items: center;
       height: 50px;
       background: linear-gradient(90deg, #DAA520 0%, #FFD700 50%, #DAA520 100%);
-      color: #5a0000;
+      color: #000000; /* Improved contrast on gold gradient */
       padding: 0 20px;
       gap: 40px;
       opacity: 1;
@@ -61,7 +61,7 @@ html {
     }
     .top-bar-phone {
       text-decoration: none;
-      color: #5a0000;
+      color: #000000; /* Ensure high contrast on gold background */
       font-size: 1.05rem;
       font-weight: 700;
       letter-spacing: 0.5px;
@@ -72,11 +72,12 @@ html {
     }
     .top-bar-phone:hover {
       transform: scale(1.04);
-      color: #3a0000;
+      color: #111111; /* Slightly darker on hover */
     }
     .top-bar-phone strong {
       font-size: 1.1rem;
       letter-spacing: 0.8px;
+      color: inherit;
     }
     .header-container.scrolled .top-bar {
       opacity: 0;

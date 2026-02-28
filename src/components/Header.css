@@ -13,14 +13,13 @@
   /* Black background for header when scrolled */
 }
 
-/* Top Bar */
 .top-bar {
   display: flex;
   justify-content: center; /* Center align the content horizontally */
   align-items: center; /* Align items vertically */
   height: 50px; /* Keeps the bar height consistent */
   background-color: #FFD700; /* Gold background */
-  color: white; /* White text for readability */
+  color: #000000; /* Use black text for better contrast */
   padding: 0 20px; /* Adds space on left and right */
   gap: 40px; /* Adds equal space between sections */
   opacity: 1; /* Keeps it fully visible */
