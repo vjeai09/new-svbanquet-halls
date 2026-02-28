@@ -367,3 +367,86 @@ img {
     transform: rotate(360deg);
   }
 }
+
+/* ======================================================
+   MOBILE EXPERIENCE ENHANCEMENTS
+   ====================================================== */
+
+/* Remove tap highlight for a native app feel */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Touch-friendly interactive elements */
+a, button, .cta-button, .service-card, .contact-card {
+  touch-action: manipulation;
+}
+
+/* iOS momentum scrolling */
+main, section {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Smooth active/press states for all tappable elements */
+@media (max-width: 768px) {
+  a:active,
+  button:active {
+    opacity: 0.75;
+    transform: scale(0.97);
+    transition: opacity 0.1s ease, transform 0.1s ease;
+  }
+
+  /* Better section spacing on mobile */
+  section {
+    padding: 50px 16px;
+  }
+
+  /* Reduce heavy animations on mobile for performance */
+  .floating-element {
+    animation-duration: 8s;
+  }
+
+  /* Prevent text size adjustment on orientation change */
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 40px 14px;
+  }
+}
+
+/* iPhone safe area support (notch / home indicator) */
+@supports (padding: env(safe-area-inset-bottom)) {
+  @media (max-width: 768px) {
+    body {
+      /* Account for home indicator + sticky footer + bottom bar */
+      padding-bottom: calc(108px + env(safe-area-inset-bottom));
+    }
+  }
+}
+
+/* Swipe-friendly card active states */
+@media (max-width: 768px) {
+  .service-card:active,
+  .contact-card:active,
+  .testimonial:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+
+  /* Better focus outlines on mobile (accessibility) */
+  :focus-visible {
+    outline: 3px solid #DAA520;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+/* Mobile scroll progress visibility enhancement */
+.scroll-progress {
+  height: 3px;
+}

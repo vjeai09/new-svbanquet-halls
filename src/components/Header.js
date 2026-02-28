@@ -10,7 +10,10 @@ const Header = () => {
   const [showTopBar, setShowTopBar] = useState(true); // Track visibility of top bar
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    const next = !isMenuOpen;
+    setIsMenuOpen(next);
+    // Lock body scroll when overlay is open
+    document.body.style.overflow = next ? 'hidden' : '';
   };
 
   const location = useLocation();
@@ -34,6 +37,7 @@ const Header = () => {
     }
     // close mobile menu if open
     setIsMenuOpen(false);
+    document.body.style.overflow = '';
   };
 
   useEffect(() => {
@@ -67,6 +71,33 @@ const Header = () => {
     };
   }, [lastScrollY]); // Re-run effect when lastScrollY changes
 
+  // Close menu on Escape key & clean up overflow on unmount
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape' && isMenuOpen) {
+        setIsMenuOpen(false);
+        document.body.style.overflow = '';
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      // Safety: restore scroll on unmount
+      document.body.style.overflow = '';
+    };
+  }, [isMenuOpen]);
+
+  const trackEvent = (action) => {
+    try {
+      if (window.dataLayer) {
+        window.dataLayer.push({ event: 'cta_click', category: 'header', action });
+      }
+    } catch (e) {
+      // ignore
+    }
+    console.log('Header CTA:', action);
+  };
+
   return (
     <>
       {/* Header Container */}
@@ -75,10 +106,10 @@ const Header = () => {
         {showTopBar && (
           <div className="top-bar">
             <div className="contact-info">
-              <a href="tel:+916305333751" className="top-bar-phone">
-                📞 <strong>+91 6305 333 751</strong>
-              </a>
-            </div>
+                <a href="tel:+916305333751" className="top-bar-phone" onClick={() => trackEvent('topbar_call_click')} aria-label="Call +91 6305 333 751">
+                  📞 <strong>+91 6305 333 751</strong>
+                </a>
+              </div>
             <div className="social-icons">
               <a href="https://www.facebook.com/svbanquethalls" target="_blank" rel="noopener noreferrer">
                 <FaFacebook />
@@ -98,8 +129,15 @@ const Header = () => {
           <a href="/svbanquethalls" className="logo">
             <img src={`${process.env.PUBLIC_URL}/newlogo07.png`} alt="S V Banquet Halls" />
           </a>
-          <button className="hamburger" onClick={toggleMenu}>
-            ☰
+
+          {/* Phone number — mobile only, sits between logo and hamburger */}
+          <a href="tel:+916305333751" className="mobile-header-phone" onClick={() => trackEvent('header_call_click')} aria-label="Call +91 6305 333 751">
+            <FaPhoneAlt />
+            <span>+91 6305 333 751</span>
+          </a>
+
+          <button className={`hamburger ${isMenuOpen ? 'is-open' : ''}`} onClick={toggleMenu} aria-label={isMenuOpen ? 'Close menu' : 'Open menu'} aria-expanded={isMenuOpen}>
+            {isMenuOpen ? '✕' : '☰'}
           </button>
           <nav>
             <ul className={isMenuOpen ? "active" : ""}>

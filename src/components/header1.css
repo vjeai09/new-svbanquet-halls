@@ -37,7 +37,7 @@ html {
       align-items: center;
       height: 50px;
       background: linear-gradient(90deg, #DAA520 0%, #FFD700 50%, #DAA520 100%);
-      color: #5a0000;
+      color: #000000; /* Improved contrast on gold gradient */
       padding: 0 20px;
       gap: 40px;
       opacity: 1;
@@ -61,7 +61,7 @@ html {
     }
     .top-bar-phone {
       text-decoration: none;
-      color: #5a0000;
+      color: #000000; /* Ensure high contrast on gold background */
       font-size: 1.05rem;
       font-weight: 700;
       letter-spacing: 0.5px;
@@ -72,11 +72,12 @@ html {
     }
     .top-bar-phone:hover {
       transform: scale(1.04);
-      color: #3a0000;
+      color: #111111; /* Slightly darker on hover */
     }
     .top-bar-phone strong {
       font-size: 1.1rem;
       letter-spacing: 0.8px;
+      color: inherit;
     }
     .header-container.scrolled .top-bar {
       opacity: 0;
@@ -212,10 +213,21 @@ html {
     .hamburger {
       display: none;
     }
+
+    /* Hide mobile-only phone strip on desktop */
+    .mobile-header-phone {
+      display: none;
+    }
   }
 
   /* Mobile Styles */
 @media (max-width: 768px) {
+    /* Elevate header above BottomBar & all content when menu opens */
+    .header-container {
+      z-index: 9997;
+      overflow: visible; /* Allow nav overlay to paint outside header bounds */
+    }
+
     /* Top Bar */
     .top-bar {
       display: none;
@@ -227,65 +239,133 @@ html {
       justify-content: space-between;
       align-items: center;
       height: 60px;
-      padding: 0 20px;
+      padding: 0 14px;
       background-color: #000000;
+      gap: 10px;
     }
     .logo img {
-      height: 60px;
+      height: 54px;
       width: auto;
+      flex-shrink: 0;
+    }
+
+    /* Mobile phone number strip */
+    .mobile-header-phone {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      flex: 1;                        /* takes up the middle space */
+      justify-content: center;
+      color: #FFD700;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+      letter-spacing: 0.3px;
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+      transition: opacity 0.2s ease;
+    }
+    .mobile-header-phone svg {
+      font-size: 12px;
+      flex-shrink: 0;
+      animation: callPulse 2s ease-in-out infinite;
+    }
+    @keyframes callPulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.55; }
+    }
+    .mobile-header-phone:active {
+      opacity: 0.65;
     }
   
-    /* Navigation */
+    /* Navigation - Full Screen Overlay */
     nav ul {
       display: flex;
       flex-direction: column;
-      position: absolute;
-      top: 60px;
-      right: 20px;
-      background-color: #FFD700;
-      padding: 15px;
-      border-radius: 8px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      /* Rich dark overlay with brand gradient */
+      background: linear-gradient(
+        160deg,
+        rgba(8, 8, 8, 0.98) 0%,
+        rgba(90, 0, 0, 0.97) 100%
+      );
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      padding: 90px 35px 80px;
+      border-radius: 0;
       z-index: 1000;
       opacity: 0;
       visibility: hidden;
-      transform: translateY(-10px);
-      transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+      transform: translateX(100%);
+      transition:
+        opacity 0.35s ease,
+        visibility 0.35s ease,
+        transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       list-style: none;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 0;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
     }
     nav ul.active {
       opacity: 1;
       visibility: visible;
-      transform: translateY(0);
+      transform: translateX(0);
     }
     nav ul li {
-      margin: 10px 0;
-      text-align: left
+      width: 100%;
+      margin: 0;
+      border-bottom: 1px solid rgba(218, 165, 32, 0.15);
+    }
+    nav ul li:last-child {
+      border-bottom: none;
     }
     nav ul li a {
-      color: white;
-      font-size: 18px;
-      display: inline-flex;
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: 600;
+      display: flex;
       align-items: center;
-      padding: 8px 10px;
-      line-height: 1;
+      padding: 18px 0;
+      width: 100%;
+      line-height: 1.2;
+      letter-spacing: 0.4px;
+      transition: color 0.2s ease, padding-left 0.2s ease;
     }
     nav ul li .nav-button {
-      color: white;
-      font-size: 18px;
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: 600;
       background: none;
       border: none;
       cursor: pointer;
-      padding: 8px 10px;
+      padding: 18px 0;
+      width: 100%;
       text-align: left;
-      display: inline-flex;
+      display: flex;
       align-items: center;
-      line-height: 1;
-      vertical-align: middle;
+      line-height: 1.2;
+      letter-spacing: 0.4px;
+      transition: color 0.2s ease, padding-left 0.2s ease;
     }
-    nav ul li a:hover {
+    nav ul li a:hover,
+    nav ul li a:active {
       color: #FFD700;
-      background-color: rgba(255, 255, 255, 0.2);
-
+      padding-left: 12px;
+      background: transparent;
+    }
+    nav ul li .nav-button:hover,
+    nav ul li .nav-button:active {
+      color: #FFD700;
+      padding-left: 12px;
     }
   
     /* Social Icons */
@@ -311,7 +391,7 @@ html {
       fill: white;
     }
   
-    /* Hamburger */
+    /* Hamburger - must sit above full-screen overlay */
     .hamburger {
       display: block;
       font-size: 28px;
@@ -321,15 +401,44 @@ html {
       border: none;
       padding: 8px;
       border-radius: 5px;
-      z-index: 1100;
+      z-index: 2000;
+      position: relative;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+      transition: background-color 0.2s ease, transform 0.2s ease;
     }
-    .hamburger:hover {
-      background-color: #FFB200;
+    .hamburger:hover,
+    .hamburger:active {
+      background-color: #8B0000;
+      transform: scale(0.93);
+    }
+
+    /* Active/open state - softer red to signal "close" */
+    .hamburger.is-open {
+      background-color: #8B0000;
+      color: #FFD700;
+      font-size: 24px;
+      letter-spacing: -1px;
     }
   
+    /* Hamburger stays fixed size, never shrinks */
+    .hamburger {
+      flex-shrink: 0;
+    }
+
     /* Hide CTA Buttons */
     .cta-buttons {
       display: none;
     }
   }
-  
+
+/* Very small phones — shrink phone number font */
+@media (max-width: 380px) {
+  .mobile-header-phone {
+    font-size: 11px;
+    gap: 5px;
+  }
+  .mobile-header-phone span {
+    letter-spacing: 0;
+  }
+}

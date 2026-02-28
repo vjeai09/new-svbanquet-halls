@@ -13,14 +13,13 @@
   /* Black background for header when scrolled */
 }
 
-/* Top Bar */
 .top-bar {
   display: flex;
   justify-content: center; /* Center align the content horizontally */
   align-items: center; /* Align items vertically */
   height: 50px; /* Keeps the bar height consistent */
   background-color: #FFD700; /* Gold background */
-  color: white; /* White text for readability */
+  color: #000000; /* Use black text for better contrast */
   padding: 0 20px; /* Adds space on left and right */
   gap: 40px; /* Adds equal space between sections */
   opacity: 1; /* Keeps it fully visible */
@@ -201,6 +200,15 @@ nav ul li a:focus {
   display: flex;
   align-items: center; /* Align vertically */
   gap: 10px; /* Spacing between phone and email */
+}
+
+/* Force header phone/link colors to ensure high contrast on black header
+   This overrides any conflicting global rules (e.g., repeated .cta-button styles) */
+.header-container .main-header .mobile-header-phone,
+.header-container .top-bar .top-bar-phone,
+.header-container .main-header .cta-buttons .cta-button,
+.header-container .main-header .call-now-btn {
+  color: #FFD700 !important; /* Gold for visibility on black */
 }
 .contact-info span,
 .contact-info a {

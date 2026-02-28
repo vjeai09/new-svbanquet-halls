@@ -556,3 +556,50 @@
     height: 200px;
   }
 }
+
+/* ======================================================
+   MOBILE TOUCH INTERACTION ENHANCEMENTS
+   ====================================================== */
+@media (max-width: 768px) {
+  /* Native press feel for cards */
+  .service-card {
+    transition:
+      transform 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      box-shadow 0.15s ease;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  .service-card:active {
+    transform: scale(0.97);
+    box-shadow:
+      0 4px 15px rgba(218, 165, 32, 0.2),
+      0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Touch-friendly learn more button */
+  .learn-more-button {
+    min-height: 48px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .learn-more-button:active {
+    transform: scale(0.95);
+    opacity: 0.85;
+  }
+
+  /* Better spacing on service detail items */
+  .service-details li {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Ensure images don't overflow on small screens */
+  .service-image-container img {
+    -webkit-user-drag: none;
+    user-select: none;
+  }
+}
