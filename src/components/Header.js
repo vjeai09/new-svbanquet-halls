@@ -10,7 +10,10 @@ const Header = () => {
   const [showTopBar, setShowTopBar] = useState(true); // Track visibility of top bar
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    const next = !isMenuOpen;
+    setIsMenuOpen(next);
+    // Lock body scroll when overlay is open
+    document.body.style.overflow = next ? 'hidden' : '';
   };
 
   const location = useLocation();
@@ -34,6 +37,7 @@ const Header = () => {
     }
     // close mobile menu if open
     setIsMenuOpen(false);
+    document.body.style.overflow = '';
   };
 
   useEffect(() => {
@@ -67,6 +71,22 @@ const Header = () => {
     };
   }, [lastScrollY]); // Re-run effect when lastScrollY changes
 
+  // Close menu on Escape key & clean up overflow on unmount
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape' && isMenuOpen) {
+        setIsMenuOpen(false);
+        document.body.style.overflow = '';
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      // Safety: restore scroll on unmount
+      document.body.style.overflow = '';
+    };
+  }, [isMenuOpen]);
+
   return (
     <>
       {/* Header Container */}
@@ -98,8 +118,8 @@ const Header = () => {
           <a href="/svbanquethalls" className="logo">
             <img src={`${process.env.PUBLIC_URL}/newlogo07.png`} alt="S V Banquet Halls" />
           </a>
-          <button className="hamburger" onClick={toggleMenu}>
-            ☰
+          <button className={`hamburger ${isMenuOpen ? 'is-open' : ''}`} onClick={toggleMenu} aria-label={isMenuOpen ? 'Close menu' : 'Open menu'} aria-expanded={isMenuOpen}>
+            {isMenuOpen ? '✕' : '☰'}
           </button>
           <nav>
             <ul className={isMenuOpen ? "active" : ""}>

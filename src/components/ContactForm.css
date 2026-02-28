@@ -572,3 +572,38 @@
     height: 300px;
   }
 }
+
+/* ======================================================
+   MOBILE TOUCH ENHANCEMENTS - CONTACT
+   ====================================================== */
+@media (max-width: 768px) {
+  /* Contact card tap feedback */
+  .contact-card {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  .contact-card:active {
+    transform: scale(0.97);
+    box-shadow:
+      0 8px 25px rgba(218, 165, 32, 0.2),
+      0 0 0 2px rgba(218, 165, 32, 0.3);
+  }
+
+  /* CTA buttons touch states */
+  .contact-actions .cta-button {
+    min-height: 56px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .contact-actions .cta-button:active {
+    transform: scale(0.95);
+    opacity: 0.88;
+  }
+
+  /* Prevent double-tap zoom on map */
+  .map-container {
+    touch-action: pan-x pan-y;
+  }
+}
