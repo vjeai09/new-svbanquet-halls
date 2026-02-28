@@ -50,7 +50,7 @@
 }
 
 /* ====== Button Base ====== */
-.bottom-bar .cta-button {
+.bb-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,20 +76,20 @@
 }
 
 /* Press feedback */
-.bottom-bar .cta-button:active {
+.bb-btn:active {
   transform: scale(0.93);
   opacity: 0.9;
 }
 
 /* Icon */
-.bottom-bar .cta-button svg {
+.bb-btn svg {
   flex-shrink: 0;
   width: 20px;
   height: 20px;
 }
 
-/* ====== Call / Phone Button ====== */
-.bottom-bar .phone-button {
+/* ====== Call Button ====== */
+.bb-call {
   background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%);
   color: white !important;
   box-shadow:
@@ -115,7 +115,7 @@
 }
 
 /* ====== WhatsApp Button ====== */
-.bottom-bar .whatsapp-button {
+.bb-whatsapp {
   background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
   color: white !important;
   box-shadow:
@@ -125,7 +125,7 @@
 }
 
 /* Shine sweep on tap */
-.bottom-bar .cta-button::after {
+.bb-btn::after {
   content: '';
   position: absolute;
   top: 0;
@@ -140,7 +140,7 @@
   );
   transition: left 0.45s ease;
 }
-.bottom-bar .cta-button:active::after {
+.bb-btn:active::after {
   left: 150%;
 }
 
@@ -152,7 +152,7 @@
     height: 64px;
   }
 
-  .bottom-bar .cta-button {
+  .bb-btn {
     font-size: 14px;
     height: 50px;
     border-radius: 12px;
