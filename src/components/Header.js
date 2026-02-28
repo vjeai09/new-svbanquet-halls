@@ -106,10 +106,10 @@ const Header = () => {
         {showTopBar && (
           <div className="top-bar">
             <div className="contact-info">
-              <a href="tel:+916305333751" className="top-bar-phone">
-                📞 <strong>+91 6305 333 751</strong>
-              </a>
-            </div>
+                <a href="tel:+916305333751" className="top-bar-phone" onClick={() => trackEvent('topbar_call_click')} aria-label="Call +91 6305 333 751">
+                  📞 <strong>+91 6305 333 751</strong>
+                </a>
+              </div>
             <div className="social-icons">
               <a href="https://www.facebook.com/svbanquethalls" target="_blank" rel="noopener noreferrer">
                 <FaFacebook />
