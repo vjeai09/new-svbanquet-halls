@@ -118,6 +118,13 @@ const Header = () => {
           <a href="/svbanquethalls" className="logo">
             <img src={`${process.env.PUBLIC_URL}/newlogo07.png`} alt="S V Banquet Halls" />
           </a>
+
+          {/* Phone number — mobile only, sits between logo and hamburger */}
+          <a href="tel:+916305333751" className="mobile-header-phone">
+            <FaPhoneAlt />
+            <span>+91 6305 333 751</span>
+          </a>
+
           <button className={`hamburger ${isMenuOpen ? 'is-open' : ''}`} onClick={toggleMenu} aria-label={isMenuOpen ? 'Close menu' : 'Open menu'} aria-expanded={isMenuOpen}>
             {isMenuOpen ? '✕' : '☰'}
           </button>

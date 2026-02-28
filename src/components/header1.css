@@ -212,6 +212,11 @@ html {
     .hamburger {
       display: none;
     }
+
+    /* Hide mobile-only phone strip on desktop */
+    .mobile-header-phone {
+      display: none;
+    }
   }
 
   /* Mobile Styles */
@@ -233,12 +238,44 @@ html {
       justify-content: space-between;
       align-items: center;
       height: 60px;
-      padding: 0 20px;
+      padding: 0 14px;
       background-color: #000000;
+      gap: 10px;
     }
     .logo img {
-      height: 60px;
+      height: 54px;
       width: auto;
+      flex-shrink: 0;
+    }
+
+    /* Mobile phone number strip */
+    .mobile-header-phone {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      flex: 1;                        /* takes up the middle space */
+      justify-content: center;
+      color: #FFD700;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+      letter-spacing: 0.3px;
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+      transition: opacity 0.2s ease;
+    }
+    .mobile-header-phone svg {
+      font-size: 12px;
+      flex-shrink: 0;
+      animation: callPulse 2s ease-in-out infinite;
+    }
+    @keyframes callPulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.55; }
+    }
+    .mobile-header-phone:active {
+      opacity: 0.65;
     }
   
     /* Navigation - Full Screen Overlay */
@@ -383,9 +420,24 @@ html {
       letter-spacing: -1px;
     }
   
+    /* Hamburger stays fixed size, never shrinks */
+    .hamburger {
+      flex-shrink: 0;
+    }
+
     /* Hide CTA Buttons */
     .cta-buttons {
       display: none;
     }
   }
-  
+
+/* Very small phones — shrink phone number font */
+@media (max-width: 380px) {
+  .mobile-header-phone {
+    font-size: 11px;
+    gap: 5px;
+  }
+  .mobile-header-phone span {
+    letter-spacing: 0;
+  }
+}
