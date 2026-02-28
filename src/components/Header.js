@@ -87,6 +87,17 @@ const Header = () => {
     };
   }, [isMenuOpen]);
 
+  const trackEvent = (action) => {
+    try {
+      if (window.dataLayer) {
+        window.dataLayer.push({ event: 'cta_click', category: 'header', action });
+      }
+    } catch (e) {
+      // ignore
+    }
+    console.log('Header CTA:', action);
+  };
+
   return (
     <>
       {/* Header Container */}
@@ -120,7 +131,7 @@ const Header = () => {
           </a>
 
           {/* Phone number — mobile only, sits between logo and hamburger */}
-          <a href="tel:+916305333751" className="mobile-header-phone">
+          <a href="tel:+916305333751" className="mobile-header-phone" onClick={() => trackEvent('header_call_click')} aria-label="Call +91 6305 333 751">
             <FaPhoneAlt />
             <span>+91 6305 333 751</span>
           </a>
