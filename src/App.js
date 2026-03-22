@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import SEO from "./components/SEO";
 import Planning from "./pages/Planning";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HeroVideo from "./components/HeroVideo";
@@ -93,6 +94,12 @@ function App() {
           <Route path="/planning" element={<Planning />} />
           <Route path="/planning/:slug" element={<Planning />} />
           <Route path="/" element={(
+            <>
+            <SEO
+              title="SV Banquet Halls | Premier Banquet Hall in Hyderabad for Weddings & Events"
+              description="SV Banquet Halls in Mansoorabad, Hyderabad — elegant venues for weddings, receptions, birthday parties & corporate events. Call +91 6305 333 751."
+              canonical="https://new-svbanquet-halls.vercel.app/"
+            />
             <main id="main-content">
               <section id="hero-video">
                 <HeroVideo />
@@ -110,7 +117,7 @@ function App() {
                 <ContactForm />
               </section>
             </main>
-          )} />
+            </>)} />
         </Routes>
 
         {/* Footer, BottomBar, and StickyCTA */}

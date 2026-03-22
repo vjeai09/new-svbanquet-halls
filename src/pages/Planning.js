@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useParams, useLocation } from 'react-router-dom';
 import HowToChooseBanquetHallGuide from '../components/HowToChooseBanquetHallGuide';
+import SEO from '../components/SEO';
 import './Planning.css';
 
 const posts = [
@@ -25,6 +26,12 @@ const Planning = () => {
     if (slug === 'how-to-choose-a-banquet-hall-hyderabad') {
       return (
         <main className="planning-page book">
+          <SEO
+            title="How to Choose a Banquet Hall in Hyderabad (Without Losing Flexibility)"
+            description="Practical advice on choosing a banquet hall in Hyderabad while keeping control over your vendors, budget, and flexibility. Expert tips from SV Banquet Halls."
+            canonical="https://new-svbanquet-halls.vercel.app/planning/how-to-choose-a-banquet-hall-hyderabad"
+            type="article"
+          />
           <HowToChooseBanquetHallGuide />
         </main>
       );
@@ -45,6 +52,11 @@ const Planning = () => {
 
   return (
     <main className="planning-page">
+      <SEO
+        title="Event Planning Guides & Tips | SV Banquet Halls Hyderabad"
+        description="Practical guides for planning weddings, receptions, birthday parties & corporate events in Hyderabad. Tips from SV Banquet Halls to help you celebrate with confidence."
+        canonical="https://new-svbanquet-halls.vercel.app/planning"
+      />
       {/* Hero Section */}
       <div className="planning-hero">
         <div className="hero-content">

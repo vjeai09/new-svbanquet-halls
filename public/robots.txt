@@ -1,3 +1,10 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /static/
+
+# IndexNow key
+User-agent: bingbot
+Allow: /svbanquethalls2026indexnow.txt
+
+Sitemap: https://new-svbanquet-halls.vercel.app/sitemap.xml
