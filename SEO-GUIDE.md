@@ -38,7 +38,7 @@
 | Geo / ICBM meta tags | `public/index.html` | ✅ Done |
 | Per-page SEO component (`react-helmet-async`) | `src/components/SEO.js` | ✅ Done |
 | IndexNow key file + meta tag | `public/svbanquethalls2026indexnow.txt` | ✅ Done |
-| Google Search Console verification placeholder | `public/index.html` | ⏳ Needs code |
+| Google Search Console verification placeholder | `public/index.html` | ✅ Done |
 | Bing Webmaster Tools verification placeholder | `public/index.html` | ⏳ Needs code |
 | OG image (`og-image.jpg`) | `public/og-image.jpg` | ❌ Not created |
 
