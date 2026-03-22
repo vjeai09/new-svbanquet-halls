@@ -126,7 +126,7 @@ const Header = () => {
 
         {/* Main Header */}
         <div className={`main-header ${showTopBar ? "" : "main-replace"}`}>
-          <a href="/svbanquethalls" className="logo">
+          <a href="/" className="logo">
             <img src={`${process.env.PUBLIC_URL}/newlogo07.png`} alt="S V Banquet Halls" />
           </a>
 
