@@ -139,6 +139,7 @@ const Header = () => {
           <button className={`hamburger ${isMenuOpen ? 'is-open' : ''}`} onClick={toggleMenu} aria-label={isMenuOpen ? 'Close menu' : 'Open menu'} aria-expanded={isMenuOpen}>
             {isMenuOpen ? '✕' : '☰'}
           </button>
+          {isMenuOpen && <div className="nav-backdrop" onClick={toggleMenu} aria-hidden="true" />}
           <nav>
             <ul className={isMenuOpen ? "active" : ""}>
               <li>
@@ -155,7 +156,10 @@ const Header = () => {
                 <button className="nav-button" onClick={()=>goToSection('vendors')}>Vendors</button>
               </li>
               <li>
-                <RouterLink to="/planning">Planning</RouterLink>
+                <RouterLink
+                  to="/planning"
+                  onClick={() => { setIsMenuOpen(false); document.body.style.overflow = ''; }}
+                >Planning</RouterLink>
               </li>
               <li>
                 <button className="nav-button" onClick={()=>goToSection('contact')}>Contact</button>
