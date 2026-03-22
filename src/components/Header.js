@@ -153,9 +153,6 @@ const Header = () => {
                 <button className="nav-button" onClick={()=>goToSection('testimonials')}>Testimonials</button>
               </li>
               <li>
-                <button className="nav-button" onClick={()=>goToSection('vendors')}>Vendors</button>
-              </li>
-              <li>
                 <RouterLink
                   to="/planning"
                   onClick={() => { setIsMenuOpen(false); document.body.style.overflow = ''; }}

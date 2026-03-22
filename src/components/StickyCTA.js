@@ -32,7 +32,7 @@ const StickyCTA = () => {
     >
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/916305333751"
+        href="https://wa.me/916305333751?text=నమస్కారం, హాల్ బుకింగ్ గురించి అడగాలనుకుంటున్నాను"
         style={{
           ...ctaButtonStyle,
           backgroundColor: "#25D366", // WhatsApp color

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FaUtensils, FaCalendarAlt, FaBuilding, FaParking, FaWheelchair, FaWifi } from "react-icons/fa";
+import { FaUtensils, FaCalendarAlt, FaBuilding, FaParking, FaWheelchair, FaWifi, FaStar } from "react-icons/fa";
 import "./Services.css";
 
 const Services = () => {
@@ -48,14 +48,15 @@ const Services = () => {
       id: "halls",
       title: "Our Venues",
       teluguTitle: "మా వేదికలు",
-      description: "Spaces to celebrate all events.",
-      teluguDesc: "అన్ని వేడుకలకు అనువైన",
+      description: "250 to 450+ guests — we scale to your celebration.",
+      teluguDesc: "చిన్న కుటుంబం నుండి పెద్ద వేడుక వరకు",
       image: "/venues.jpg",
       icon: <FaBuilding />,
       details: [
+        "3 Floors: Book one floor for an intimate gathering or all three for a grand celebration — your choice.",
         "2 A/C Halls: Elegant and comfortable, featuring cozy curtains and premium sound systems.",
-        "1 Non-A/C Hall: Spacious and versatile with charming decor.",
-        "Terrace Space: Perfect for evening gatherings with ambient lighting.",
+        "1 Non-A/C Hall + Terrace: Spacious and versatile — ideal for evening functions and overflow seating.",
+        "250 fixed seats across floors. With flexible floating arrangements, we've comfortably hosted 450+ guests — call us to plan your exact guest count.",
       ],
     },
     {
@@ -84,6 +85,20 @@ const Services = () => {
         "Elevator Access: Convenient elevators to ensure ease of movement for all guests.",
         "Wheelchair-Friendly: Fully accessible spaces designed to accommodate wheelchairs seamlessly.",
         "Thoughtful Steps Design: Easy navigation for everyone.",
+      ],
+    },
+    {
+      id: "ceremonies",
+      title: "Traditional Ceremonies",
+      teluguTitle: "సాంప్రదాయ కార్యక్రమాలు",
+      description: "బారసాల, లంగా ఓణీ & more — we honor every milestone.",
+      teluguDesc: "ప్రతి శుభ కార్యక్రమానికి మా హాల్ సిద్ధం",
+      image: "/events.jpg",
+      icon: <FaStar />,
+      details: [
+        "Cradle Ceremony (బారసాల): A sacred naming ritual welcoming your newborn — we set the perfect traditional ambiance with space for puja, family seating, and catering.",
+        "Half-Saree Ceremony (లంగా ఓణీ పండుగ): Celebrate your daughter's coming-of-age with the grandeur it deserves — elegant décor, stage setup, and room for the whole family.",
+        "Also host: Namakaran (నామకరణం), Upanayanam, Engagement (నిశ్చితార్థం), and all traditional Hindu functions.",
       ],
     },
     {

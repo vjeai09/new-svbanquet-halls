@@ -336,7 +336,7 @@ const HowToChooseBanquetHallGuide = () => {
             <a href="tel:+916305333751" className="cta-button cta-primary">
               𝗖𝗮𝗹𝗹 & L𝗲𝗮𝗿𝗻 𝗠𝗼𝗿𝗲
             </a>
-            <a href="https://wa.me/916305333751" className="cta-button cta-secondary">
+            <a href="https://wa.me/916305333751?text=నమస్కారం, హాల్ బుకింగ్ గురించి అడగాలనుకుంటున్నాను" className="cta-button cta-secondary">
               💬 WhatsApp
             </a>
           </div>

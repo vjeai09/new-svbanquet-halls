@@ -55,12 +55,16 @@ const HeroVideo = () => {
               options={{
                 strings: isMobile ? [
                   'Wedding Celebrations',
-                  'Birthday Parties', 
+                  'Birthday Parties',
+                  'Cradle Ceremonies',
+                  'Half-Saree Ceremonies',
                   'Corporate Events',
                   'Traditional Functions'
                 ] : [
                   'వివాహ వేడుకలు | Wedding Celebrations',
-                  'పుట్టినరోజు వేడుకలు | Birthday Parties', 
+                  'పుట్టినరోజు వేడుకలు | Birthday Parties',
+                  'బారసాల వేడుకలు | Cradle Ceremonies',
+                  'లంగా ఓణీ వేడుకలు | Half-Saree Ceremonies',
                   'కార్పొరేట్ సభలు | Corporate Events',
                   'సాంప్రదాయ కార్యక్రమాలు | Traditional Functions'
                 ],
@@ -74,7 +78,7 @@ const HeroVideo = () => {
           
           <p className="hero-description" data-aos="fade-up" data-aos-delay="800">
             హైదరాబాద్ లో అత్యంత ఆధునిక మరియు సాంప్రదాయ వేదిక<br />
-            <span className="english-text">Hyderabad's Most Premium & Traditional Venue</span>
+            <span className="english-text">Hyderabad's Most Premium &amp; Traditional Venue</span>
           </p>
           
           <div className="hero-buttons" data-aos="fade-up" data-aos-delay="1000">
@@ -89,17 +93,31 @@ const HeroVideo = () => {
               <span className="button-shine"></span>
             </a>
           </div>
+
+          {/* Google Rating Badge */}
+          <a
+            href="https://www.google.com/maps/place/S+V+Banquet+Halls/@17.3471833,78.564397,897m"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="google-rating-badge"
+            data-aos="fade-up"
+            data-aos-delay="1100"
+            aria-label="4.0 stars on Google – 457 reviews"
+          >
+            <img
+              src="https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png"
+              alt="Google"
+              className="google-rating-logo"
+            />
+            <div className="google-rating-stars">
+              <span className="google-rating-score">4.0</span>
+              <span className="google-rating-stars-icons">★★★★★</span>
+            </div>
+            <span className="google-rating-count">457 reviews</span>
+          </a>
           
           {/* Decorative Border */}
           <div className="decorative-border bottom-border"></div>
-        </div>
-        
-        {/* Scroll Indicator */}
-        <div className="scroll-indicator" data-aos="fade-up" data-aos-delay="1200">
-          <div className="mouse">
-            <div className="wheel"></div>
-          </div>
-          <p>Scroll to Explore</p>
         </div>
       </div>
     </div>
