@@ -43,6 +43,7 @@ const ContactForm = () => {
         <div className="verified-badge">Verified Venue Details</div>
         <p><strong>Address:</strong> Mansoorabad, Hyderabad - 500072</p>
         <p><strong>Phone:</strong> <a href="tel:+916305333751">+91 6305 333 751</a></p>
+        <p><strong>Hours:</strong> Open daily, 9 AM – 9 PM &nbsp;|&nbsp; <span style={{fontFamily:"'Noto Sans Telugu',sans-serif"}}>ప్రతిరోజూ 9 AM – 9 PM</span></p>
         <p>
           <strong>Google Maps:</strong>{" "}
           <a
@@ -65,7 +66,7 @@ const ContactForm = () => {
           </div>
           <h3 className="card-title">Call Us</h3>
           <p className="card-info">+91 6305 333 751</p>
-          <p className="card-desc">Call or WhatsApp for availability</p>
+          <p className="card-desc">Open daily 9 AM – 9 PM</p>
         </div>
 
         {/* WhatsApp Card */}
@@ -102,7 +103,7 @@ const ContactForm = () => {
         </a>
 
         <a
-          href="https://wa.me/916305333751"
+          href="https://wa.me/916305333751?text=నమస్కారం, హాల్ బుకింగ్ గురించి అడగాలనుకుంటున్నాను"
           target="_blank"
           rel="noopener noreferrer"
           className="cta-button whatsapp"

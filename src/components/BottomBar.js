@@ -42,7 +42,7 @@ const BottomBar = () => {
           <FaPhoneAlt size={18} />
           <span>Call Now</span>
         </a>
-        <a href="https://wa.me/916305333751" className="bb-btn bb-whatsapp" onClick={() => trackEvent('whatsapp_click')} aria-label="WhatsApp +91 6305 333 751">
+        <a href="https://wa.me/916305333751?text=నమస్కారం, హాల్ బుకింగ్ గురించి అడగాలనుకుంటున్నాను" className="bb-btn bb-whatsapp" onClick={() => trackEvent('whatsapp_click')} aria-label="WhatsApp +91 6305 333 751">
           <FaWhatsapp size={18} />
           <span>WhatsApp Now</span>
         </a>

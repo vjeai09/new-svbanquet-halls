@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HeroVideo from "./components/HeroVideo";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
-import Vendors from "./components/Vendors";
 import ContactForm from "./components/ContactForm";
 import BottomBar from "./components/BottomBar";
 import StickyCTA from "./components/StickyCTA";
@@ -97,7 +96,7 @@ function App() {
             <>
             <SEO
               title="SV Banquet Halls | Premier Banquet Hall in Hyderabad for Weddings & Events"
-              description="SV Banquet Halls in Mansoorabad, Hyderabad — elegant venues for weddings, receptions, birthday parties & corporate events. Call +91 6305 333 751."
+              description="SV Banquet Halls in Mansoorabad, Hyderabad — venues for weddings, receptions, birthday parties, cradle ceremonies (బారసాల), half-saree ceremonies (లంగా ఓణీ) & corporate events. Call +91 6305 333 751."
               canonical="https://www.svbanquethalls.com/"
             />
             <main id="main-content">
@@ -109,9 +108,6 @@ function App() {
               </section>
               <section id="testimonials">
                 <Testimonials />
-              </section>
-              <section id="vendors">
-                <Vendors />
               </section>
               <section id="contact">
                 <ContactForm />

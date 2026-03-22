@@ -287,6 +287,57 @@
   flex-wrap: wrap;
 }
 
+/* Google Rating Badge */
+.google-rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 40px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.google-rating-badge:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+.google-rating-logo {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+.google-rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.google-rating-score {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+.google-rating-stars-icons {
+  font-size: 0.95rem;
+  color: #FFD700;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+.google-rating-count {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.82);
+  font-weight: 500;
+  border-left: 1px solid rgba(255,255,255,0.3);
+  padding-left: 10px;
+  line-height: 1;
+}
+
 .cta-button {
   position: relative;
   display: inline-flex;
