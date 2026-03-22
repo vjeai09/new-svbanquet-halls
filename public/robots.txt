@@ -7,4 +7,4 @@ Disallow: /static/
 User-agent: bingbot
 Allow: /svbanquethalls2026indexnow.txt
 
-Sitemap: https://new-svbanquet-halls.vercel.app/sitemap.xml
+Sitemap: https://www.svbanquethalls.com/sitemap.xml

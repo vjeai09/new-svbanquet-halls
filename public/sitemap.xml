@@ -6,7 +6,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://new-svbanquet-halls.vercel.app/</loc>
+    <loc>https://www.svbanquethalls.com/</loc>
     <lastmod>2026-03-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,7 +14,7 @@
 
   <!-- Planning & Guides index -->
   <url>
-    <loc>https://new-svbanquet-halls.vercel.app/planning</loc>
+    <loc>https://www.svbanquethalls.com/planning</loc>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -22,7 +22,7 @@
 
   <!-- Blog: How to Choose a Banquet Hall in Hyderabad -->
   <url>
-    <loc>https://new-svbanquet-halls.vercel.app/planning/how-to-choose-a-banquet-hall-hyderabad</loc>
+    <loc>https://www.svbanquethalls.com/planning/how-to-choose-a-banquet-hall-hyderabad</loc>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

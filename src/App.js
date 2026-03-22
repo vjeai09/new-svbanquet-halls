@@ -98,7 +98,7 @@ function App() {
             <SEO
               title="SV Banquet Halls | Premier Banquet Hall in Hyderabad for Weddings & Events"
               description="SV Banquet Halls in Mansoorabad, Hyderabad — elegant venues for weddings, receptions, birthday parties & corporate events. Call +91 6305 333 751."
-              canonical="https://new-svbanquet-halls.vercel.app/"
+              canonical="https://www.svbanquethalls.com/"
             />
             <main id="main-content">
               <section id="hero-video">

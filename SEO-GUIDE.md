@@ -1,6 +1,6 @@
 # SEO Guide — SV Banquet Halls
 
-> **Site:** https://new-svbanquet-halls.vercel.app  
+> **Site:** https://www.svbanquethalls.com  
 > **Business:** SV Banquet Halls, Mansoorabad, Hyderabad, Telangana  
 > **Phone:** +91 6305 333 751  
 > **Last updated:** 22 March 2026
@@ -62,7 +62,7 @@
 
 ### 2b. Google Search Console
 1. Go to https://search.google.com/search-console
-2. Add property → choose **URL prefix** → enter `https://new-svbanquet-halls.vercel.app`
+2. Add property → choose **URL prefix** → enter `https://www.svbanquethalls.com`
 3. Choose **HTML tag** verification method
 4. Copy the `content` value from the tag shown
 5. Open `public/index.html` and replace:
@@ -72,12 +72,12 @@
    with the copied value
 6. Redeploy to Vercel
 7. Click **Verify** in Search Console
-8. Go to **Sitemaps** → submit: `https://new-svbanquet-halls.vercel.app/sitemap.xml`
+8. Go to **Sitemaps** → submit: `https://www.svbanquethalls.com/sitemap.xml`
 9. Go to **URL Inspection** → enter `/` → click **Request Indexing**
 
 ### 2c. Bing Webmaster Tools
 1. Go to https://www.bing.com/webmasters
-2. Add site → enter `https://new-svbanquet-halls.vercel.app`
+2. Add site → enter `https://www.svbanquethalls.com`
 3. Choose **HTML Meta Tag** verification
 4. Copy the `content` value
 5. Open `public/index.html` and replace:
@@ -91,7 +91,7 @@
 ### 2d. Submit via IndexNow (instant Bing/Yandex ping)
 After deploying, open this URL in a browser once:
 ```
-https://api.indexnow.org/indexnow?url=https://new-svbanquet-halls.vercel.app/&key=svbanquethalls2026indexnow
+https://api.indexnow.org/indexnow?url=https://www.svbanquethalls.com/&key=svbanquethalls2026indexnow
 ```
 Also submit from inside Bing Webmaster Tools → **URL Submission → IndexNow**.
 
@@ -111,7 +111,7 @@ This is the **single highest-impact SEO action** for a local business. "Banquet 
 - [ ] Category: `Banquet hall` (primary) + `Event venue`, `Wedding venue` (secondary)
 - [ ] Address: exact address in Mansoorabad, Hyderabad
 - [ ] Phone: `+91 6305 333 751`
-- [ ] Website: `https://new-svbanquet-halls.vercel.app`
+- [ ] Website: `https://www.svbanquethalls.com`
 - [ ] Hours: Mon–Sun 9 AM – 10 PM (or actual hours)
 - [ ] Description: 750-char description mentioning weddings, receptions, birthday parties, corporate events, Hyderabad
 - [ ] Photos: minimum 10 photos — hall interior, exterior, decorated setups, food, events
@@ -171,7 +171,7 @@ Backlinks from trusted sites signal authority to Google. Focus on local/event di
 - Exact business name: `SV Banquet Halls`
 - Address exactly as on Google Business Profile (NAP consistency matters)
 - Phone: `+91 6305 333 751`
-- Website: `https://new-svbanquet-halls.vercel.app`
+- Website: `https://www.svbanquethalls.com`
 - 5–10 photos
 - Category: Banquet hall / Event venue
 
