@@ -151,6 +151,18 @@
   margin-top: 15px;
 }
 
+.vendors-trust-note {
+  margin: 12px auto 0;
+  max-width: 860px;
+  font-size: 0.98rem;
+  color: #4d4d4d;
+  line-height: 1.6;
+  background: #fff;
+  border: 1px solid rgba(139, 0, 0, 0.12);
+  border-radius: 12px;
+  padding: 10px 14px;
+}
+
 /* Category Filter */
 .category-filter {
   display: flex;

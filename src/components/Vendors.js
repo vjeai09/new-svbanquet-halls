@@ -47,11 +47,14 @@ const Vendors = () => {
         <div className="decorative-element left-element">🪔</div>
         <div className="header-content">
           <h2 className="vendors-title">
-            <span className="telugu-title">మా సహకారిలు</span>
+            <span className="telugu-title">మా సహకారులు</span>
             <span className="english-title">Our Partner Vendors</span>
           </h2>
           <p className="vendors-subtitle">
-            Premium Partners for Your Perfect Celebration | మీ ఆయుష్మంతమైన ఆనందానికి
+            Trusted Vendor Onboarding for SV Banquet Halls Events | విశ్వసనీయ భాగస్వామి నమోదు
+          </p>
+          <p className="vendors-trust-note">
+            This section is for vendor applications only. Family event bookings are handled directly by SV Banquet Halls via Call/WhatsApp.
           </p>
         </div>
         <div className="decorative-element right-element">🌺</div>
@@ -87,11 +90,11 @@ const Vendors = () => {
 
             <div className="service-content">
               <h3 className="service-title">
-                Example Card — Preview Only
-                <span className="service-title-telugu">ఉదాహరణ కార్డు — ప్రివ్యూకి మాత్రమే</span>
+                Vendor Listing Format (For Partner Onboarding)
+                <span className="service-title-telugu">భాగస్వామి నమోదు కోసం విక్రేత ప్రొఫైల్ నమూనా</span>
               </h3>
               <p className="service-description">
-                Sample listing to show how an approved partner's profile will appear to guests. Photos, ratings and contact links will be visible only after verification and onboarding.
+                This is a format demo for businesses that want to partner with us. Only verified partners will be published after review and approval.
               </p>
             </div>
 
@@ -112,11 +115,11 @@ const Vendors = () => {
               </div>
               <ul>
                 <li><span className="detail-icon">🔸</span> Category: Photography / ఫోటోగ్రఫీ</li>
-                <li><span className="detail-icon">🔸</span> Rating: 4.9 (sample)</li>
-                <li><span className="detail-icon">🔸</span> Contact actions will link to vendor application form</li>
+                <li><span className="detail-icon">🔸</span> Verification: Documents and profile review required</li>
+                <li><span className="detail-icon">🔸</span> Public listing appears only after approval</li>
               </ul>
             </div>
-            <div className="sample-ribbon">PREVIEW</div>
+            <div className="sample-ribbon">VENDOR DEMO</div>
           </div>
         )}
       </div>

@@ -355,8 +355,8 @@ const HowToChooseBanquetHallGuide = () => {
           <div className="phone-icon-pulse">📞</div>
           <div className="phone-details">
             <p className="phone-label">Call Us Now</p>
-            <a href="tel:+916305333751" className="phone-number">+91 63053 33751</a>
-            <p className="phone-sublabel">Tap to call • Available 24/7</p>
+            <a href="tel:+916305333751" className="phone-number">+91 6305 333 751</a>
+            <p className="phone-sublabel">Tap to call • Call/WhatsApp for availability</p>
           </div>
         </div>
       </section>

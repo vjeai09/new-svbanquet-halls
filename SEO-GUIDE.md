@@ -167,7 +167,7 @@ Each `/planning` article targets a real search query. More articles = more Googl
 
 ### What to include in each listing (NAP must be identical)
 - **Name:** `SV Banquet Halls`
-- **Address:** `Ragala Enclave, Sri Ram Hills Colony, Mansoorabad, Hyderabad, Telangana 500068`
+- **Address:** `Ragala Enclave, Sri Ram Hills Colony, Mansoorabad, Hyderabad, Telangana 500072`
 - **Phone:** `+91 6305 333 751`
 - **Website:** `https://www.svbanquethalls.com`
 - **Photos:** 5–10 images
@@ -293,4 +293,3 @@ Do this on the 1st of each month:
 | `/` | SV Banquet Halls \| Premier Banquet Hall in Hyderabad... | Mansoorabad venue, weddings, events... | `/` |
 | `/planning` | Event Planning Guides & Tips \| SV Banquet Halls | Practical guides for planning events... | `/planning` |
 | `/planning/how-to-choose-a-banquet-hall-hyderabad` | How to Choose a Banquet Hall in Hyderabad... | Practical advice on choosing... | `/planning/how-to-choose-...` |
-

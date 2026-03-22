@@ -5,6 +5,12 @@ import { FaPhone, FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
 import "./ContactForm.css";
 
 const ContactForm = () => {
+  const lastUpdatedDate = new Date().toLocaleDateString("en-IN", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -33,6 +39,23 @@ const ContactForm = () => {
         </p>
       </div>
 
+      <div className="verified-details" data-aos="fade-up" data-aos-delay="80">
+        <div className="verified-badge">Verified Venue Details</div>
+        <p><strong>Address:</strong> Mansoorabad, Hyderabad - 500072</p>
+        <p><strong>Phone:</strong> <a href="tel:+916305333751">+91 6305 333 751</a></p>
+        <p>
+          <strong>Google Maps:</strong>{" "}
+          <a
+            href="https://maps.app.goo.gl/u6fK3G8XXTpNi4zA9"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open Location
+          </a>
+        </p>
+        <p className="verified-updated">Last updated: {lastUpdatedDate}</p>
+      </div>
+
       {/* Contact Cards */}
       <div className="contact-cards-container" data-aos="zoom-in">
         {/* Phone Card */}
@@ -42,7 +65,7 @@ const ContactForm = () => {
           </div>
           <h3 className="card-title">Call Us</h3>
           <p className="card-info">+91 6305 333 751</p>
-          <p className="card-desc">Available 24/7</p>
+          <p className="card-desc">Call or WhatsApp for availability</p>
         </div>
 
         {/* WhatsApp Card */}

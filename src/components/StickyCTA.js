@@ -32,7 +32,7 @@ const StickyCTA = () => {
     >
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/1234567890" // Replace with WhatsApp number
+        href="https://wa.me/916305333751"
         style={{
           ...ctaButtonStyle,
           backgroundColor: "#25D366", // WhatsApp color
@@ -44,7 +44,7 @@ const StickyCTA = () => {
 
       {/* Phone Button */}
       <a
-        href="tel:+1234567890" // Replace with actual phone number
+        href="tel:+916305333751"
         style={{
           ...ctaButtonStyle,
           backgroundColor: "#34b7f1", // Phone color
