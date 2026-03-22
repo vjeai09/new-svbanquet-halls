@@ -34,10 +34,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  height: 52px;
   background: #0d0d0d;
   color: #DAA520;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 500;
   letter-spacing: 0.4px;
   position: fixed;
@@ -47,6 +47,20 @@
   padding: 0 16px;
   box-sizing: border-box;
   border-top: 1px solid rgba(218, 165, 32, 0.3);
+}
+
+.sticky-footer-content {
+  text-align: center;
+  line-height: 1.2;
+}
+
+.sticky-footer-content p {
+  margin: 0;
+}
+
+.footer-updated {
+  color: rgba(218, 165, 32, 0.82);
+  font-size: 9px;
 }
 
 /* ====== Button Base ====== */
@@ -175,17 +189,17 @@
 @supports (padding-bottom: env(safe-area-inset-bottom)) {
   .sticky-footer {
     padding-bottom: env(safe-area-inset-bottom);
-    height: calc(40px + env(safe-area-inset-bottom));
+    height: calc(52px + env(safe-area-inset-bottom));
   }
 
   .bottom-bar {
-    bottom: calc(40px + env(safe-area-inset-bottom));
+    bottom: calc(52px + env(safe-area-inset-bottom));
   }
 }
 
 /* ====== Body padding for bottom bars ====== */
 body {
-  padding-bottom: 108px;
+  padding-bottom: 120px;
 }
 
 @media (min-width: 769px) {

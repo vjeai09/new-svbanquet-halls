@@ -166,15 +166,26 @@ const Testimonials = () => {
       {/* CTA Section */}
       <div className="testimonials-cta" data-aos="fade-up" data-aos-delay="200">
         <p className="cta-text">మీ అభిప్రాయం కూడా పంచుకోండి | Share Your Experience</p>
-        <a
-          href="https://g.page/r/CZY9jEQOUmf0EBM/review"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="cta-button review-button"
-        >
-          <FaGoogle />
-          <span>Write a Review</span>
-        </a>
+        <div className="cta-buttons">
+          <a
+            href="https://maps.app.goo.gl/u6fK3G8XXTpNi4zA9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-button review-button"
+          >
+            <FaGoogle />
+            <span>View Google Reviews</span>
+          </a>
+          <a
+            href="https://g.page/r/CZY9jEQOUmf0EBM/review"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-button review-button secondary"
+          >
+            <FaGoogle />
+            <span>Write a Review</span>
+          </a>
+        </div>
       </div>
     </div>
   );

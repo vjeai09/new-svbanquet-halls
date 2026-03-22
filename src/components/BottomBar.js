@@ -4,6 +4,12 @@ import "./BottomBar.css";
 
 const BottomBar = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const currentYear = new Date().getFullYear();
+  const lastUpdatedDate = new Date().toLocaleDateString("en-IN", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
 
   useEffect(() => {
     const handleResize = () => {
@@ -43,7 +49,10 @@ const BottomBar = () => {
       </div>
       {/* Sticky Footer */}
       <div className="sticky-footer">
-        <p>© 2025 SV Banquet Halls |  Mansoorabad, LB Nagar, Hyderabad - 500072</p>
+        <div className="sticky-footer-content">
+          <p>© {currentYear} SV Banquet Halls | Mansoorabad, LB Nagar, Hyderabad - 500072</p>
+          <p className="footer-updated">Last updated: {lastUpdatedDate}</p>
+        </div>
       </div>
     </>
   );
