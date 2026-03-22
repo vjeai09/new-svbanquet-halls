@@ -66,7 +66,7 @@ const ContactForm = () => {
           </div>
           <h3 className="card-title">Call Us</h3>
           <p className="card-info">+91 6305 333 751</p>
-          <p className="card-desc">Open daily 9 AM – 9 PM</p>
+          <p className="card-desc">Open daily 9:30 AM – 9:30 PM</p>
         </div>
 
         {/* WhatsApp Card */}

@@ -36,7 +36,7 @@ const Footer = () => (
           </li>
           <li>
             <FaClock className="footer-icon" />
-            <span>Open daily, 9 AM – 9 PM</span>
+            <span>Open daily, 9:30 AM – 9:30 PM</span>
           </li>
           <li>
             <FaMapMarkerAlt className="footer-icon" />
@@ -45,7 +45,7 @@ const Footer = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              Mansoorabad, LB Nagar,<br/>Hyderabad – 500072
+              Mansoorabad, LB Nagar,<br/>Hyderabad – 500068
             </a>
           </li>
         </ul>
