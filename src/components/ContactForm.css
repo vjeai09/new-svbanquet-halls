@@ -153,6 +153,22 @@
   font-size: 0.9rem !important;
 }
 
+.verified-review-nudge {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.verified-review-nudge a {
+  color: #DAA520;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.verified-review-nudge a:hover {
+  color: #b8860b;
+}
+
 /* Contact Cards Container */
 .contact-cards-container {
   display: grid;

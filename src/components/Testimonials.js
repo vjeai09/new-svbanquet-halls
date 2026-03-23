@@ -177,13 +177,13 @@ const Testimonials = () => {
             <span>View Google Reviews</span>
           </a>
           <a
-            href="https://g.page/r/CZY9jEQOUmf0EBM/review"
+            href="https://g.page/r/CZY9jEQOUmf0EAE/review"
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button review-button secondary"
           >
             <FaGoogle />
-            <span>Write a Review</span>
+            <span>Write a Review ⭐</span>
           </a>
         </div>
       </div>

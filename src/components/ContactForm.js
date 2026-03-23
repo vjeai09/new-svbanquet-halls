@@ -55,6 +55,17 @@ const ContactForm = () => {
           </a>
         </p>
         <p className="verified-updated">Last updated: {lastUpdatedDate}</p>
+        <p className="verified-review-nudge">
+          🌟 Had a great event with us?&nbsp;
+          <a
+            href="https://g.page/r/CZY9jEQOUmf0EAE/review"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Write a Google Review
+          </a>
+          &nbsp;— it helps families like yours find us.
+        </p>
       </div>
 
       {/* Contact Cards */}
