@@ -58,7 +58,7 @@ const ContactForm = () => {
         <p className="verified-review-nudge">
           🌟 Had a great event with us?&nbsp;
           <a
-            href="https://maps.google.com/?cid=17611135089088675222&hl=en#action=write-review"
+            href="https://g.page/r/CZY9jEQOUmf0EAE/review"
             target="_blank"
             rel="noopener noreferrer"
           >

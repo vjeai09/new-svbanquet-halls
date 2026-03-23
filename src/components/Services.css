@@ -144,6 +144,8 @@
   cursor: pointer;
   position: relative;
   border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-card:hover {
@@ -269,6 +271,7 @@
     white 0%,
     #fffcf5 100%
   );
+  flex: 1;
 }
 
 .service-title {
@@ -308,6 +311,7 @@
 
 /* Learn More Button */
 .learn-more-button {
+  margin-top: auto;
   width: 100%;
   padding: 15px 30px;
   background: linear-gradient(135deg, #8B0000 0%, #DAA520 100%);
