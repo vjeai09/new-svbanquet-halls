@@ -177,7 +177,7 @@ const Testimonials = () => {
             <span>View Google Reviews</span>
           </a>
           <a
-            href="https://maps.app.goo.gl/u6fK3G8XXTpNi4zA9"
+            href="https://maps.google.com/?cid=17611135089088675222&hl=en#action=write-review"
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button review-button secondary"
