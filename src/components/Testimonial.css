@@ -8,7 +8,7 @@
     #ffffff 100%
   );
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* Floating Decorative Elements */
@@ -401,49 +401,105 @@
   margin-top: 60px;
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-.cta-buttons {
+/* Trust Badges Row */
+.trust-badges {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 14px;
+  gap: 0;
+  background: linear-gradient(135deg, #fff9e6, #ffffff);
+  border: 2px solid #DAA520;
+  border-radius: 16px;
+  padding: 20px 30px;
+  box-shadow: 0 6px 20px rgba(218, 165, 32, 0.15);
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 520px;
 }
 
-.cta-text {
-  font-family: 'Noto Sans Telugu', 'Arial', sans-serif;
-  font-size: 1.3rem;
+.trust-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.badge-number {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #8B0000;
+  line-height: 1.1;
+}
+
+.badge-label {
+  font-size: 0.78rem;
   color: #666;
-  margin-bottom: 25px;
   font-weight: 600;
+  margin-top: 4px;
+  white-space: nowrap;
 }
 
-.review-button {
+.trust-badge-divider {
+  width: 1px;
+  height: 40px;
+  background: #DAA520;
+  opacity: 0.5;
+  margin: 0 10px;
+  flex-shrink: 0;
+}
+
+/* Write Review Button */
+.write-review-btn {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  padding: 18px 40px;
-  background: linear-gradient(135deg, #4285F4 0%, #34A853 100%);
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 40px;
+  background: linear-gradient(135deg, #34A853 0%, #1a7d3a 100%);
   color: white;
-  border: none;
   border-radius: 50px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
   text-decoration: none;
-  box-shadow: 0 10px 30px rgba(66, 133, 244, 0.3);
-  transition: all 0.3s ease;
-  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(52, 168, 83, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  width: 100%;
+  max-width: 340px;
 }
 
-.review-button.secondary {
-  background: linear-gradient(135deg, #34A853 0%, #4285F4 100%);
+.write-review-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(52, 168, 83, 0.45);
 }
 
-.review-button:hover {
-  transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 15px 40px rgba(66, 133, 244, 0.5);
-  background: linear-gradient(135deg, #34A853 0%, #4285F4 100%);
+/* WhatsApp CTA link */
+.whatsapp-cta-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 32px;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: white;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  width: 100%;
+  max-width: 280px;
+}
+
+.whatsapp-cta-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(37, 211, 102, 0.45);
 }
 
 /* Responsive Design */
@@ -510,18 +566,23 @@
     font-size: 1.2rem;
   }
 
-  .cta-text {
-    font-size: 1.1rem;
+  .trust-badges {
+    padding: 16px 20px;
+    max-width: 100%;
   }
 
-  .review-button {
-    padding: 15px 35px;
-    font-size: 1.1rem;
+  .badge-number {
+    font-size: 1.3rem;
   }
 
-  .cta-buttons {
-    flex-direction: column;
-    gap: 12px;
+  .badge-label {
+    font-size: 0.7rem;
+  }
+
+  .write-review-btn,
+  .whatsapp-cta-link {
+    max-width: 100%;
+    width: 90%;
   }
 
   .testimonial-deco {
@@ -572,8 +633,7 @@
     height: 30px;
   }
 
-  .review-button {
-    width: 90%;
-    justify-content: center;
+  .trust-badge-divider {
+    margin: 0 6px;
   }
 }
