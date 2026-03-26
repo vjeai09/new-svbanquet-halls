@@ -165,6 +165,15 @@ const Testimonials = () => {
 
       {/* Trust & Review CTA */}
       <div className="testimonials-cta" data-aos="fade-up" data-aos-delay="200">
+
+        {/* Section Header */}
+        <div className="cta-section-header">
+          <span className="cta-section-ornament">✦</span>
+          <h3 className="cta-section-title">మా విశ్వసనీయత <span>| Our Track Record</span></h3>
+          <span className="cta-section-ornament">✦</span>
+        </div>
+        <div className="cta-section-divider"></div>
+
         {/* Trust Stats */}
         <div className="trust-badges">
           <div className="trust-badge">
@@ -173,7 +182,8 @@ const Testimonials = () => {
           </div>
           <div className="trust-badge-divider"></div>
           <div className="trust-badge">
-            <span className="badge-number">4.0 ⭐</span>
+            <span className="badge-number">4.0</span>
+            <span className="badge-stars">⭐⭐⭐⭐⭐</span>
             <span className="badge-label">Google Rating</span>
           </div>
           <div className="trust-badge-divider"></div>
@@ -191,7 +201,7 @@ const Testimonials = () => {
           className="write-review-btn"
         >
           <FaGoogle />
-          <span>Write a Review on Google ⭐</span>
+          <span>Write a Review on Google ⭐⭐⭐⭐⭐</span>
         </a>
 
         {/* WhatsApp quick booking */}

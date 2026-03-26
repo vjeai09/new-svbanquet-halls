@@ -407,6 +407,57 @@
   gap: 20px;
 }
 
+/* CTA Section Header */
+.cta-section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.cta-section-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #8B0000;
+  letter-spacing: 0.02em;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.cta-section-title span {
+  color: #c0922a;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.cta-section-ornament {
+  font-size: 1.1rem;
+  color: #DAA520;
+  opacity: 0.8;
+}
+
+.cta-section-divider {
+  width: 260px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #DAA520, transparent);
+  border-radius: 2px;
+  margin-bottom: 4px;
+}
+
+/* Connect label */
+.cta-connect-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #888;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 4px 0 0;
+  border-top: 1px dashed #DAA520;
+  padding-top: 14px;
+  width: 100%;
+  max-width: 340px;
+}
+
 /* Trust Badges Row */
 .trust-badges {
   display: flex;
@@ -443,6 +494,12 @@
   font-weight: 600;
   margin-top: 4px;
   white-space: nowrap;
+}
+
+.badge-stars {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  margin-top: 2px;
 }
 
 .trust-badge-divider {
