@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
-import { FaQuoteLeft, FaStar, FaGoogle } from 'react-icons/fa';
+import { FaQuoteLeft, FaStar, FaGoogle, FaWhatsapp } from 'react-icons/fa';
 import './Testimonial.css';
 
 const Testimonials = () => {
@@ -163,29 +163,47 @@ const Testimonials = () => {
         </Swiper>
       </div>
 
-      {/* CTA Section */}
+      {/* Trust & Review CTA */}
       <div className="testimonials-cta" data-aos="fade-up" data-aos-delay="200">
-        <p className="cta-text">మీ అభిప్రాయం కూడా పంచుకోండి | Share Your Experience</p>
-        <div className="cta-buttons">
-          <a
-            href="https://maps.app.goo.gl/u6fK3G8XXTpNi4zA9"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cta-button review-button"
-          >
-            <FaGoogle />
-            <span>View Google Reviews</span>
-          </a>
-          <a
-            href="https://g.page/r/CZY9jEQOUmf0EAE/review"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cta-button review-button secondary"
-          >
-            <FaGoogle />
-            <span>Write a Review ⭐</span>
-          </a>
+        {/* Trust Stats */}
+        <div className="trust-badges">
+          <div className="trust-badge">
+            <span className="badge-number">10,000+</span>
+            <span className="badge-label">Guests Welcomed</span>
+          </div>
+          <div className="trust-badge-divider"></div>
+          <div className="trust-badge">
+            <span className="badge-number">4.0 ⭐</span>
+            <span className="badge-label">Google Rating</span>
+          </div>
+          <div className="trust-badge-divider"></div>
+          <div className="trust-badge">
+            <span className="badge-number">8+</span>
+            <span className="badge-label">Years of Joy</span>
+          </div>
         </div>
+
+        {/* Single prominent review button */}
+        <a
+          href="https://g.page/r/CZY9jEQOUmf0EAE/review"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="write-review-btn"
+        >
+          <FaGoogle />
+          <span>Write a Review on Google ⭐</span>
+        </a>
+
+        {/* WhatsApp quick booking */}
+        <a
+          href="https://wa.me/916305333751?text=నమస్కారం%2C%20హాల్%20బుకింగ్%20గురించి%20అడగాలనుకుంటున్నాను"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="whatsapp-cta-link"
+        >
+          <FaWhatsapp />
+          <span>Quick Booking via WhatsApp</span>
+        </a>
       </div>
     </div>
   );
