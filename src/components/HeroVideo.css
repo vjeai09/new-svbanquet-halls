@@ -512,7 +512,8 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .video-overlay {
-    padding: 76px 16px 28px;
+    justify-content: flex-start;
+    padding: 58px 16px 16px;
   }
 
   .hero-content {
@@ -584,6 +585,10 @@
 }
 
 @media (max-width: 480px) {
+  .video-overlay {
+    padding: 52px 12px 12px;
+  }
+
   .hero-title {
     font-size: 2rem;
   }

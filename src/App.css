@@ -450,3 +450,9 @@ main, section {
 .scroll-progress {
   height: 3px;
 }
+
+/* Hero section should not inherit global section padding */
+#hero-video {
+  padding: 0 !important;
+  margin: 0;
+}
