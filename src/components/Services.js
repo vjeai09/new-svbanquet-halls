@@ -120,7 +120,7 @@ const Services = () => {
 
   return (
     <section className="services">
-      <div className="section-divider"></div>
+      <div className="section-divider"><span className="section-divider-lotus">🪷</span></div>
       
       {/* Cultural Header */}
       <div className="services-header" data-aos="fade-up">
@@ -130,7 +130,7 @@ const Services = () => {
             <span className="telugu-title">మా సేవలు</span>
             <span className="english-title">Our Services</span>
           </h2>
-          <p className="services-subtitle">Excellence in Every Detail | ప్రతి వివరంలో శ్రేష్ఠత</p>
+          <p className="services-subtitle">మీ శుభకార్యానికి కావలసిన సమస్తం ఇక్కడే | Everything your celebration needs, under one roof</p>
         </div>
         <div className="decorative-element right-element">🌺</div>
       </div>

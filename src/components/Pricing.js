@@ -27,7 +27,7 @@ const Pricing = () => {
 
   return (
     <section className="pricing-section" id="pricing">
-      <div className="section-divider"></div>
+      <div className="section-divider"><span className="section-divider-lotus">🪷</span></div>
 
       <div className="pricing-header" data-aos="fade-up">
         <h2 className="pricing-title">
@@ -35,7 +35,8 @@ const Pricing = () => {
           <span className="english-title">Hall Booking</span>
         </h2>
         <p className="pricing-subtitle">
-          మీకు కావలసిన స్థలం, మీకు నచ్చిన విధంగా — We charge only for the space. Everything else is your choice.
+          మీ వేడుక మీ చేతుల్లో ఉంది — We give you the space and the comforts.
+          Your caterer, your decorator, your photographer. Your celebration, your way.
         </p>
       </div>
 

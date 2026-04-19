@@ -17,11 +17,11 @@ export default function GalleryCTA() {
       <div className="gallery-cta-inner" data-aos="fade-up">
         <div className="gallery-cta-text">
           <h2 className="gallery-cta-title">
-            <span className="gallery-telugu">మా హాల్స్ చూడండి</span>
-            <span className="gallery-english">See Our Halls</span>
+            <span className="gallery-telugu">మా వేడుకలు చూడండి</span>
+            <span className="gallery-english">Real Celebrations, Real Families</span>
           </h2>
           <p className="gallery-cta-subtitle">
-            Real photos from real celebrations — browse Google Maps, Facebook, or Instagram
+            మీలాంటి కుటుంబాల అసలైన వేడుకలు — Google Maps, Facebook, లేదా Instagram లో చూడండి
           </p>
         </div>
 

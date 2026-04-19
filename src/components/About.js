@@ -13,16 +13,16 @@ const About = ({ id }) => {
       <div className="about-inner">
         <div className="about-text" data-aos="fade-right">
           <p className="about-telugu-label">మా గురించి</p>
-          <h2 className="about-heading">Mansoorabad's Trusted<br />Celebration Venue</h2>
+          <h2 className="about-heading">Where Mansoorabad<br />Families Celebrate Life</h2>
           <p className="about-body">
-            SV Banquet Halls has been the heart of family celebrations in Mansoorabad,
-            Hyderabad for over 8 years. From intimate బారసాల ceremonies to grand
-            wedding receptions hosting 450+ guests, we bring every occasion to life
-            with warmth, tradition, and modern comforts.
+            For over 8 years, SV Banquet Halls has stood at the heart of Mansoorabad —
+            where brides have arrived, babies have been named, daughters have worn their
+            first half-sarees, and families have gathered with joy in their eyes.
+            Every event that happens here is a chapter in someone's story.
           </p>
           <p className="about-body">
-            Three flexible floors, fully equipped kitchens, A/C halls, elevator access,
-            and a team that treats your event as their own — that is the SV promise.
+            మేము స్థలం ఇస్తాం, వంటశాల ఇస్తాం, సౌకర్యం ఇస్తాం —
+            మీరు మీ ప్రియమైన వారిని తీసుకురండి. మిగతాది మేము చూసుకుంటాం.
           </p>
           <div className="about-stats">
             <div className="about-stat">
