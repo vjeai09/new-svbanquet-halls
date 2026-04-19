@@ -114,14 +114,14 @@ function App() {
                   <VenueHighlightsBar />
                 </div>
                 <Suspense fallback={null}>
+                  <section id="gallery">
+                    <GalleryCTA />
+                  </section>
                   <section id="about">
                     <About id="about" />
                   </section>
                   <section id="services">
                     <Services />
-                  </section>
-                  <section id="gallery">
-                    <GalleryCTA />
                   </section>
                   <section id="testimonials">
                     <Testimonials />
