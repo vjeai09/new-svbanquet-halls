@@ -27,7 +27,7 @@ const HeroVideo = () => {
         preload="auto"
         aria-hidden="true"
       >
-        <source src="/hero.mp4" type="video/mp4" />
+        <source src="/hero-fixed.mp4" type="video/mp4" />
       </video>
 
       {/* Main video — full vertical reel visible */}
@@ -40,7 +40,7 @@ const HeroVideo = () => {
         preload="auto"
         poster="/venues.jpg"
       >
-        <source src="/hero.mp4" type="video/mp4" />
+        <source src="/hero-fixed.mp4" type="video/mp4" />
       </video>
 
       {/* Corner gold brackets */}
