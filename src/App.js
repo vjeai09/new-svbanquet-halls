@@ -76,11 +76,11 @@ function App() {
           <div className="loading-screen">
             <div className="loading-content">
               <div className="loading-spinner"></div>
-              <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "2rem" }}>
+              <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "2rem", color: "#8B0000" }}>
                 SV Banquet Halls
               </h2>
-              <p style={{ fontFamily: "'Noto Sans Telugu', sans-serif", marginTop: "10px" }}>
-                మీ ప్రత్యేక క్షణాలకు | Your Special Moments
+              <p style={{ fontFamily: "'Noto Sans Telugu', sans-serif", marginTop: "10px", color: "#DAA520", fontSize: "1rem" }}>
+                మీ కుటుంబం యొక్క శుభ క్షణాలకు స్వాగతం
               </p>
             </div>
           </div>

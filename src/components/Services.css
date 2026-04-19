@@ -1,12 +1,7 @@
 /* Premium Services Section with Cultural Elements */
 .services {
   padding: 80px 20px;
-  background: linear-gradient(
-    180deg,
-    #fff9e6 0%,
-    #ffffff 50%,
-    #fff9e6 100%
-  );
+  background: var(--ivory, #fdf6e3);
   position: relative;
   overflow: hidden;
 }
@@ -21,32 +16,37 @@
   background: linear-gradient(90deg, #8B0000, #DAA520, #8B0000);
 }
 
-/* Section Divider */
+/* Section Divider — classical lotus ornament */
 .section-divider {
-  height: 4px;
-  width: 80%;
-  max-width: 600px;
-  margin: 0 auto 60px;
-  background: linear-gradient(90deg, transparent, #DAA520, transparent);
   position: relative;
+  height: 24px;
+  width: 70%;
+  max-width: 500px;
+  margin: 0 auto 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-divider::before,
 .section-divider::after {
-  content: '✦';
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #DAA520;
-  font-size: 1.5rem;
-}
-
-.section-divider::before {
-  left: -30px;
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #DAA520 60%);
+  opacity: 0.55;
 }
 
 .section-divider::after {
-  right: -30px;
+  background: linear-gradient(90deg, #DAA520 40%, transparent);
+}
+
+.section-divider-lotus {
+  font-size: 1.1rem;
+  color: #DAA520;
+  margin: 0 10px;
+  line-height: 1;
+  flex-shrink: 0;
 }
 
 /* Services Header */

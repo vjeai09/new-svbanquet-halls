@@ -1,6 +1,6 @@
 .pricing-section {
   padding: 60px 20px 50px;
-  background: #fff;
+  background: var(--ivory-warm, #fef9ee);
   text-align: center;
 }
 
