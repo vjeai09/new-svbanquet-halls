@@ -100,6 +100,14 @@ const HeroVideo = () => {
 
           {/* Rating */}
           <div className="hero-bottom-row" data-aos="fade-up" data-aos-delay="1050">
+            {isMobile && (
+              <div className="usp-pills">
+                <span className="usp-pill">🏛 A/C &amp; Non A/C Halls</span>
+                <span className="usp-pill">🍳 Kitchen &amp; Utensils Included</span>
+                <span className="usp-pill">🧑‍🍳 Bring Your Own Caterer</span>
+              </div>
+            )}
+
             <a
               href="https://maps.app.goo.gl/ThwXdnYJ7bueRzst9"
               target="_blank"
