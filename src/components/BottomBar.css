@@ -18,7 +18,7 @@
   -webkit-backdrop-filter: blur(20px);
   border-top: 1px solid rgba(218, 165, 32, 0.45);
   position: fixed;
-  bottom: 40px;
+  bottom: 48px;
   width: 100%;
   z-index: 1000;
   gap: 12px;
@@ -34,12 +34,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 52px;
+  height: 48px;
   background: #0d0d0d;
   color: #DAA520;
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.4px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -51,16 +51,11 @@
 
 .sticky-footer-content {
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 .sticky-footer-content p {
   margin: 0;
-}
-
-.footer-updated {
-  color: rgba(218, 165, 32, 0.82);
-  font-size: 9px;
 }
 
 /* ====== Button Base ====== */
@@ -189,17 +184,17 @@
 @supports (padding-bottom: env(safe-area-inset-bottom)) {
   .sticky-footer {
     padding-bottom: env(safe-area-inset-bottom);
-    height: calc(52px + env(safe-area-inset-bottom));
+    height: calc(48px + env(safe-area-inset-bottom));
   }
 
   .bottom-bar {
-    bottom: calc(52px + env(safe-area-inset-bottom));
+    bottom: calc(48px + env(safe-area-inset-bottom));
   }
 }
 
 /* ====== Body padding for bottom bars ====== */
 body {
-  padding-bottom: 120px;
+  padding-bottom: 116px; /* 68px bottom bar + 48px footer */
 }
 
 @media (min-width: 769px) {

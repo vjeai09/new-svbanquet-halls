@@ -171,12 +171,15 @@ nav ul li a:focus {
   nav ul {
     display: none;
     flex-direction: column;
-    background-color: #FFD700; /* Gold background */
+    background-color: rgba(0, 0, 0, 0.95); /* Dark translucent background */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     position: absolute;
     top: 60px;
     right: 20px;
     padding: 15px;
     border-radius: 8px;
+    border: 1px solid rgba(218, 165, 32, 0.3);
   }
   nav ul.active {
     display: flex;
@@ -185,7 +188,7 @@ nav ul li a:focus {
     margin: 10px 0;
   }
   nav ul li a {
-    color: black; /* Black text for mobile */
+    color: #FFD700; /* Gold text on dark background */
     font-size: 18px;
   }
 

@@ -12,7 +12,7 @@
 @media (max-width: 768px) {
   .sticky-cta {
     position: absolute;
-    bottom: 60px; /* Adjust this depending on your bottom bar height */
+    bottom: 124px; /* Bottom bar (68px) + footer (48px) + 8px gap */
     right: 10px; /* Adjust position slightly from the right edge */
     gap: 10px; /* Smaller gap */
     z-index: 9999;

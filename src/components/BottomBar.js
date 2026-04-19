@@ -49,8 +49,7 @@ const BottomBar = () => {
       {/* Sticky Footer */}
       <div className="sticky-footer">
         <div className="sticky-footer-content">
-          <p>© {currentYear} SV Banquet Halls | Mansoorabad, LB Nagar, Hyderabad - 500068</p>
-          <p className="footer-updated">Last updated: {lastUpdatedDate}</p>
+          <p>© {currentYear} SV Banquet Halls | Hyderabad</p>
         </div>
       </div>
     </>
