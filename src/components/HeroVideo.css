@@ -342,6 +342,17 @@
     align-items: center;
     gap: 10px;
   }
+
+  .usp-pills {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .usp-pill {
+    white-space: normal;
+    text-align: center;
+    line-height: 1.35;
+  }
 }
 
 /* USP Strip */
