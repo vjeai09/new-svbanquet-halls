@@ -10,9 +10,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import "./App.css";
 
 const Planning = lazy(() => import("./pages/Planning"));
+const About = lazy(() => import("./components/About"));
 const Services = lazy(() => import("./components/Services"));
 const GalleryCTA = lazy(() => import("./components/GalleryCTA"));
 const Testimonials = lazy(() => import("./components/Testimonials"));
+const Pricing = lazy(() => import("./components/Pricing"));
+const FAQ = lazy(() => import("./components/FAQ"));
 const ContactForm = lazy(() => import("./components/ContactForm"));
 
 class ErrorBoundary extends React.Component {
@@ -111,6 +114,9 @@ function App() {
                   <VenueHighlightsBar />
                 </div>
                 <Suspense fallback={null}>
+                  <section id="about">
+                    <About id="about" />
+                  </section>
                   <section id="services">
                     <Services />
                   </section>
@@ -119,6 +125,12 @@ function App() {
                   </section>
                   <section id="testimonials">
                     <Testimonials />
+                  </section>
+                  <section id="pricing">
+                    <Pricing />
+                  </section>
+                  <section id="faq">
+                    <FAQ />
                   </section>
                   <section id="contact">
                     <ContactForm />

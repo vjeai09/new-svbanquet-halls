@@ -8,32 +8,21 @@ const HeroVideo = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    AOS.init({
-      duration: 1200,
-      once: true,
-      mirror: true,
-    });
-
-    // Check if mobile
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-    
+    AOS.init({ duration: 1200, once: true, mirror: true, disable: 'mobile' });
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
     checkMobile();
     window.addEventListener('resize', checkMobile);
-    
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
+
   return (
     <div className="hero-video-container">
-      {/* Decorative Cultural Elements */}
       <div className="cultural-motif motif-top-left"></div>
       <div className="cultural-motif motif-top-right"></div>
       <div className="cultural-motif motif-bottom-left"></div>
       <div className="cultural-motif motif-bottom-right"></div>
-      
-      {/* Floating Decorative Elements — desktop only */}
+
       {!isMobile && <>
         <div className="floating-element element-1">🪔</div>
         <div className="floating-element element-2">✨</div>
@@ -41,17 +30,17 @@ const HeroVideo = () => {
         <div className="floating-element element-4">🪔</div>
         <div className="floating-element element-5">✨</div>
       </>}
-      
+
       <div className="video-overlay">
         <div className="hero-content" data-aos="fade-up" data-aos-delay="200">
-          {/* Decorative Border — desktop only */}
+
           {!isMobile && <div className="decorative-border top-border"></div>}
-          
+
           <h1 className="hero-title" data-aos="zoom-in" data-aos-delay="400">
             <span className="title-main">Celebrate Life's</span>
             <span className="title-highlight">Sacred Moments</span>
           </h1>
-          
+
           <div className="hero-subtitle" data-aos="fade-up" data-aos-delay="600">
             <Typewriter
               options={{
@@ -77,37 +66,14 @@ const HeroVideo = () => {
               }}
             />
           </div>
-          
-          <p className="hero-description hero-description--desktop" data-aos="fade-up" data-aos-delay="800">
-            హైదరాబాద్ లో అత్యంత ఆధునిక మరియు సాంప్రదాయ వేదిక<br />
-            <span className="english-text">Hyderabad's Most Premium &amp; Traditional Venue</span>
-          </p>
-          
+
           <div className="hero-buttons" data-aos="fade-up" data-aos-delay="1000">
             <a href="tel:+916305333751" className="cta-button primary-cta">
-              <span className="button-icon">📞</span>
-              <span className="button-text">Book Now</span>
-              <span className="button-shine"></span>
+              Book Now
             </a>
-            {!isMobile && (
-              <a href="#services" className="cta-button secondary-cta">
-                <span className="button-icon">✨</span>
-                <span className="button-text">Explore Services</span>
-                <span className="button-shine"></span>
-              </a>
-            )}
           </div>
 
-          {/* Rating */}
           <div className="hero-bottom-row" data-aos="fade-up" data-aos-delay="1050">
-            {isMobile && (
-              <div className="usp-pills">
-                <span className="usp-pill">🏛 A/C &amp; Non A/C Halls</span>
-                <span className="usp-pill">🍳 Kitchen &amp; Utensils Included</span>
-                <span className="usp-pill">🧑‍🍳 Bring Your Own Caterer</span>
-              </div>
-            )}
-
             <a
               href="https://maps.app.goo.gl/ThwXdnYJ7bueRzst9"
               target="_blank"
@@ -127,9 +93,8 @@ const HeroVideo = () => {
               <span className="google-rating-count">457 reviews</span>
             </a>
           </div>
-          
-          {/* Decorative Border */}
-          <div className="decorative-border bottom-border"></div>
+
+          {!isMobile && <div className="decorative-border bottom-border"></div>}
         </div>
       </div>
     </div>

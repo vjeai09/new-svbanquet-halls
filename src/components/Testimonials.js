@@ -14,7 +14,7 @@ const Testimonials = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true, mirror: true });
+    AOS.init({ duration: 1000, once: true, mirror: true, disable: 'mobile' });
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
