@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+Dummy change for restore → main PR — 2026-04-19
+
 Dummy change for PR test — 2026-04-19
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
