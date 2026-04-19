@@ -8,7 +8,7 @@ const INSTAGRAM_URL = "https://www.instagram.com/svbanquethalls";
 
 export default function GalleryCTA() {
   useEffect(() => {
-    AOS.init({ once: true, duration: 700 });
+    AOS.init({ once: true, duration: 700, disable: 'mobile' });
   }, []);
 
   return (

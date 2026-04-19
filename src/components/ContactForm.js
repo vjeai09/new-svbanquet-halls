@@ -16,6 +16,7 @@ const ContactForm = () => {
       duration: 1000,
       once: true,
       mirror: true,
+      disable: 'mobile',
     });
   }, []);
 

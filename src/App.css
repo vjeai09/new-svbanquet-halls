@@ -456,3 +456,15 @@ main, section {
   padding: 0 !important;
   margin: 0;
 }
+
+/* AOS override for mobile — disable: 'mobile' in JS config is not
+   retroactive once AOS has already applied opacity:0/transform to elements.
+   This CSS override forces all animated elements fully visible on mobile. */
+@media (max-width: 768px) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    pointer-events: auto !important;
+  }
+}
