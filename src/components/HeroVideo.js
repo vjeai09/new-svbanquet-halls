@@ -78,6 +78,11 @@ const HeroVideo = () => {
             />
           </div>
           
+          <p className="hero-description hero-description--desktop" data-aos="fade-up" data-aos-delay="800">
+            హైదరాబాద్ లో అత్యంత ఆధునిక మరియు సాంప్రదాయ వేదిక<br />
+            <span className="english-text">Hyderabad's Most Premium &amp; Traditional Venue</span>
+          </p>
+          
           <div className="hero-buttons" data-aos="fade-up" data-aos-delay="1000">
             <a href="tel:+916305333751" className="cta-button primary-cta">
               <span className="button-icon">📞</span>
@@ -93,32 +98,8 @@ const HeroVideo = () => {
             )}
           </div>
 
-          {/* USP + Rating */}
+          {/* Rating */}
           <div className="hero-bottom-row" data-aos="fade-up" data-aos-delay="1050">
-            {isMobile ? (
-              <div className="usp-pills">
-                <span className="usp-pill">🏛 A/C &amp; Non A/C</span>
-                <span className="usp-pill">👥 250–400+ Guests</span>
-                <span className="usp-pill">🍳 Kitchen Included</span>
-                <span className="usp-pill">🧑‍🍳 Your Caterer</span>
-              </div>
-            ) : (
-              <a
-                href="https://wa.me/916305333751?text=Hi%2C%20I%27d%20like%20to%20know%20hall%20availability%20and%20pricing%20for%20my%20event"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="usp-strip"
-              >
-                <span>🏛 A/C &amp; Non A/C Halls</span>
-                <span className="usp-dot">·</span>
-                <span>👥 250–400+ Guests</span>
-                <span className="usp-dot">·</span>
-                <span>🍳 Kitchen &amp; Utensils Included</span>
-                <span className="usp-dot">·</span>
-                <span>🧑‍🍳 Bring Your Own Caterer</span>
-              </a>
-            )}
-
             <a
               href="https://maps.app.goo.gl/ThwXdnYJ7bueRzst9"
               target="_blank"
@@ -139,8 +120,8 @@ const HeroVideo = () => {
             </a>
           </div>
           
-          {/* Decorative Border — desktop only */}
-          {!isMobile && <div className="decorative-border bottom-border"></div>}
+          {/* Decorative Border */}
+          <div className="decorative-border bottom-border"></div>
         </div>
       </div>
     </div>

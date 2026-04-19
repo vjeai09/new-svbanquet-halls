@@ -15,6 +15,7 @@
   height: 100%;
   object-fit: cover;
   filter: brightness(0.7);
+  z-index: 0;
 }
 
 /* Cultural Motifs - Corner Decorations */
@@ -88,7 +89,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 148px 40px 60px;
+  padding: 84px 24px 42px;
   box-sizing: border-box;
   background: linear-gradient(
     to bottom,
@@ -103,21 +104,20 @@
 .hero-content {
   text-align: center;
   color: white;
-  max-width: 1000px;
-  width: 100%;
-  padding: 45px 60px;
+  width: min(100%, 900px);
+  max-width: 900px;
+  padding: 40px;
   background: linear-gradient(
     135deg,
-    rgba(139, 0, 0, 0.45) 0%,
-    rgba(218, 165, 32, 0.25) 100%
+    rgba(139, 0, 0, 0.4) 0%,
+    rgba(218, 165, 32, 0.3) 100%
   );
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(10px);
   border-radius: 30px;
-  border: 2px solid rgba(218, 165, 32, 0.6);
-  box-shadow:
-    0 25px 70px rgba(0, 0, 0, 0.55),
-    inset 0 0 40px rgba(218, 165, 32, 0.08);
+  border: 2px solid rgba(218, 165, 32, 0.5);
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.5),
+    inset 0 0 30px rgba(218, 165, 32, 0.1);
   position: relative;
   z-index: 3;
 }
@@ -302,14 +302,12 @@
   display: block;
 }
 
-/* Hero bottom row — USP + Google badge side by side on desktop */
+/* Hero bottom row — USP + Google badge stacked on desktop, side-by-side on mobile */
 .hero-bottom-row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 14px;
+  gap: 12px;
   width: 100%;
   margin-top: 5px;
 }
@@ -335,6 +333,10 @@
 }
 
 @media (max-width: 768px) {
+  .hero-description--desktop {
+    display: none;
+  }
+
   .hero-bottom-row {
     flex-direction: column;
     align-items: center;
@@ -510,13 +512,12 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .video-overlay {
-    padding: 80px 16px 40px;
-    justify-content: center;
+    padding: 76px 16px 28px;
   }
 
   .hero-content {
-    padding: 28px 20px;
-    max-width: 92%;
+    padding: 30px 20px;
+    max-width: 90%;
   }
 
   .hero-title {
