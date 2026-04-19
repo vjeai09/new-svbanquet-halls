@@ -1,0 +1,190 @@
+.gallery-cta {
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #8B0000 0%, #6b0000 50%, #DAA520 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 20px,
+    rgba(255, 255, 255, 0.03) 20px,
+    rgba(255, 255, 255, 0.03) 40px
+  );
+  pointer-events: none;
+}
+
+.gallery-cta-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.gallery-cta-text {
+  text-align: center;
+}
+
+.gallery-cta-title {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.gallery-telugu {
+  font-family: 'Noto Sans Telugu', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: rgba(255, 215, 0, 0.85);
+}
+
+.gallery-english {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.gallery-cta-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.gallery-cta-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 28px;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  min-width: 220px;
+}
+
+.gallery-btn:hover {
+  transform: translateY(-4px);
+}
+
+.google-btn {
+  background: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.google-btn:hover {
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.3);
+}
+
+.instagram-btn {
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  box-shadow: 0 8px 25px rgba(220, 39, 67, 0.35);
+}
+
+.instagram-btn:hover {
+  box-shadow: 0 14px 35px rgba(220, 39, 67, 0.5);
+}
+
+.btn-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.btn-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+}
+
+.google-btn .btn-label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.google-btn .btn-sub {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.instagram-btn .btn-label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.instagram-btn .btn-sub {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 600px) {
+  .gallery-cta {
+    padding: 50px 16px;
+  }
+
+  .gallery-english {
+    font-size: 2.2rem;
+  }
+
+  .gallery-btn {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .gallery-cta-buttons {
+    width: 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  .gallery-cta {
+    padding: 40px 14px;
+  }
+
+  .gallery-telugu {
+    font-size: 1.2rem;
+  }
+
+  .gallery-english {
+    font-size: 1.8rem;
+  }
+
+  .gallery-cta-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .btn-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .gallery-btn {
+    padding: 14px 20px;
+    gap: 10px;
+  }
+
+  .btn-label {
+    font-size: 0.9rem;
+  }
+}

@@ -47,7 +47,7 @@ const StickyCTA = () => {
         href="tel:+916305333751"
         style={{
           ...ctaButtonStyle,
-          backgroundColor: "#34b7f1", // Phone color
+          backgroundColor: "#8B0000",
         }}
         aria-label="Call us"
       >

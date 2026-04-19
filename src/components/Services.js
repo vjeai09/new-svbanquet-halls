@@ -10,7 +10,7 @@ const Services = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: false,
+      once: true,
       mirror: true,
     });
   }, []);
@@ -162,6 +162,7 @@ const Services = () => {
                 src={service.image}
                 alt={service.title}
                 className="service-image"
+                loading="lazy"
               />
               <div className="image-overlay"></div>
             </div>

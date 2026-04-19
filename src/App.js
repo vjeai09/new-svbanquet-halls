@@ -1,16 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SEO from "./components/SEO";
-import Planning from "./pages/Planning";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HeroVideo from "./components/HeroVideo";
-import Services from "./components/Services";
-import Testimonials from "./components/Testimonials";
-import ContactForm from "./components/ContactForm";
+import VenueHighlightsBar from "./components/VenueHighlightsBar";
 import BottomBar from "./components/BottomBar";
 import StickyCTA from "./components/StickyCTA";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import "./App.css";
+
+const Planning = lazy(() => import("./pages/Planning"));
+const Services = lazy(() => import("./components/Services"));
+const GalleryCTA = lazy(() => import("./components/GalleryCTA"));
+const Testimonials = lazy(() => import("./components/Testimonials"));
+const ContactForm = lazy(() => import("./components/ContactForm"));
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -56,7 +59,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLoading(false);
-    }, 2000);
+    }, 600);
 
     return () => clearTimeout(timer);
   }, []);
@@ -89,32 +92,42 @@ function App() {
         {/* Header component */}
         <Header />
 
-        <Routes>
-          <Route path="/planning" element={<Planning />} />
-          <Route path="/planning/:slug" element={<Planning />} />
-          <Route path="/" element={(
-            <>
-            <SEO
-              title="SV Banquet Halls | Premier Banquet Hall in Hyderabad for Weddings & Events"
-              description="SV Banquet Halls in Mansoorabad, Hyderabad — venues for weddings, receptions, birthday parties, cradle ceremonies (బారసాల), half-saree ceremonies (లంగా ఓణీ) & corporate events. Call +91 6305 333 751."
-              canonical="https://www.svbanquethalls.com/"
-            />
-            <main id="main-content">
-              <section id="hero-video">
-                <HeroVideo />
-              </section>
-              <section id="services">
-                <Services />
-              </section>
-              <section id="testimonials">
-                <Testimonials />
-              </section>
-              <section id="contact">
-                <ContactForm />
-              </section>
-            </main>
-            </>)} />
-        </Routes>
+        <Suspense fallback={null}>
+          <Routes>
+            <Route path="/planning" element={<Planning />} />
+            <Route path="/planning/:slug" element={<Planning />} />
+            <Route path="/" element={(
+              <>
+              <SEO
+                title="SV Banquet Halls | Premier Banquet Hall in Hyderabad for Weddings & Events"
+                description="SV Banquet Halls in Mansoorabad, Hyderabad — venues for weddings, receptions, birthday parties, cradle ceremonies (బారసాల), half-saree ceremonies (లంగా ఓణీ) & corporate events. Call +91 6305 333 751."
+                canonical="https://www.svbanquethalls.com/"
+              />
+              <main id="main-content">
+                <section id="hero-video">
+                  <HeroVideo />
+                </section>
+                <div id="venue-highlights">
+                  <VenueHighlightsBar />
+                </div>
+                <Suspense fallback={null}>
+                  <section id="services">
+                    <Services />
+                  </section>
+                  <section id="gallery">
+                    <GalleryCTA />
+                  </section>
+                  <section id="testimonials">
+                    <Testimonials />
+                  </section>
+                  <section id="contact">
+                    <ContactForm />
+                  </section>
+                </Suspense>
+              </main>
+              </>)} />
+          </Routes>
+        </Suspense>
 
         {/* Footer, BottomBar, and StickyCTA */}
         <Footer />

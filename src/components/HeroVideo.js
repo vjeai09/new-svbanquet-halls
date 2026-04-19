@@ -10,7 +10,7 @@ const HeroVideo = () => {
   useEffect(() => {
     AOS.init({
       duration: 1200,
-      once: false,
+      once: true,
       mirror: true,
     });
 
@@ -33,17 +33,19 @@ const HeroVideo = () => {
       <div className="cultural-motif motif-bottom-left"></div>
       <div className="cultural-motif motif-bottom-right"></div>
       
-      {/* Floating Decorative Elements */}
-      <div className="floating-element element-1">🪔</div>
-      <div className="floating-element element-2">✨</div>
-      <div className="floating-element element-3">🌺</div>
-      <div className="floating-element element-4">🪔</div>
-      <div className="floating-element element-5">✨</div>
+      {/* Floating Decorative Elements — desktop only */}
+      {!isMobile && <>
+        <div className="floating-element element-1">🪔</div>
+        <div className="floating-element element-2">✨</div>
+        <div className="floating-element element-3">🌺</div>
+        <div className="floating-element element-4">🪔</div>
+        <div className="floating-element element-5">✨</div>
+      </>}
       
       <div className="video-overlay">
         <div className="hero-content" data-aos="fade-up" data-aos-delay="200">
-          {/* Decorative Border */}
-          <div className="decorative-border top-border"></div>
+          {/* Decorative Border — desktop only */}
+          {!isMobile && <div className="decorative-border top-border"></div>}
           
           <h1 className="hero-title" data-aos="zoom-in" data-aos-delay="400">
             <span className="title-main">Celebrate Life's</span>
@@ -54,12 +56,12 @@ const HeroVideo = () => {
             <Typewriter
               options={{
                 strings: isMobile ? [
-                  'Wedding Celebrations',
-                  'Birthday Parties',
-                  'Cradle Ceremonies',
-                  'Half-Saree Ceremonies',
-                  'Corporate Events',
-                  'Traditional Functions'
+                  'Pelliki Perfect Venue!',
+                  'Barasala ki Best Choice!',
+                  'Langa Oni Grand ga Celebrate!',
+                  'Puttina Roju Parties Ikkade!',
+                  'Mee Celebrations Ikkade Special!',
+                  'Mansoorabad ki Favourite Hall!'
                 ] : [
                   'వివాహ వేడుకలు | Wedding Celebrations',
                   'పుట్టినరోజు వేడుకలు | Birthday Parties',
@@ -76,7 +78,7 @@ const HeroVideo = () => {
             />
           </div>
           
-          <p className="hero-description" data-aos="fade-up" data-aos-delay="800">
+          <p className="hero-description hero-description--desktop" data-aos="fade-up" data-aos-delay="800">
             హైదరాబాద్ లో అత్యంత ఆధునిక మరియు సాంప్రదాయ వేదిక<br />
             <span className="english-text">Hyderabad's Most Premium &amp; Traditional Venue</span>
           </p>
@@ -87,34 +89,36 @@ const HeroVideo = () => {
               <span className="button-text">Book Now</span>
               <span className="button-shine"></span>
             </a>
-            <a href="#services" className="cta-button secondary-cta">
-              <span className="button-icon">✨</span>
-              <span className="button-text">Explore Services</span>
-              <span className="button-shine"></span>
-            </a>
+            {!isMobile && (
+              <a href="#services" className="cta-button secondary-cta">
+                <span className="button-icon">✨</span>
+                <span className="button-text">Explore Services</span>
+                <span className="button-shine"></span>
+              </a>
+            )}
           </div>
 
-          {/* Google Rating Badge */}
-          <a
-            href="https://www.google.com/maps/place/S+V+Banquet+Halls/@17.3471833,78.564397,897m"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="google-rating-badge"
-            data-aos="fade-up"
-            data-aos-delay="1100"
-            aria-label="4.0 stars on Google – 457 reviews"
-          >
-            <img
-              src="https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png"
-              alt="Google"
-              className="google-rating-logo"
-            />
-            <div className="google-rating-stars">
-              <span className="google-rating-score">4.0</span>
-              <span className="google-rating-stars-icons">★★★★★</span>
-            </div>
-            <span className="google-rating-count">457 reviews</span>
-          </a>
+          {/* Rating */}
+          <div className="hero-bottom-row" data-aos="fade-up" data-aos-delay="1050">
+            <a
+              href="https://maps.app.goo.gl/ThwXdnYJ7bueRzst9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="google-rating-badge"
+              aria-label="4.0 stars on Google – 457 reviews"
+            >
+              <img
+                src="https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png"
+                alt="Google"
+                className="google-rating-logo"
+              />
+              <div className="google-rating-stars">
+                <span className="google-rating-score">4.0</span>
+                <span className="google-rating-stars-icons">★★★★★</span>
+              </div>
+              <span className="google-rating-count">457 reviews</span>
+            </a>
+          </div>
           
           {/* Decorative Border */}
           <div className="decorative-border bottom-border"></div>
