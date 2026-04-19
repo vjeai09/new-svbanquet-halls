@@ -5,11 +5,6 @@ import "./BottomBar.css";
 const BottomBar = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const currentYear = new Date().getFullYear();
-  const lastUpdatedDate = new Date().toLocaleDateString("en-IN", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
 
   useEffect(() => {
     const handleResize = () => {
