@@ -59,7 +59,7 @@ const HeroVideo = () => {
                   'Langa Oni Grand ga Celebrate!',
                   'Puttina Roju Parties Ikkade!',
                   'Mee Sangethalu Unforgettable!',
-                  'Hyderabad lo No.1 Banquet Hall!'
+                  'Mansoorabad ki Favourite Hall!'
                 ] : [
                   'వివాహ వేడుకలు | Wedding Celebrations',
                   'పుట్టినరోజు వేడుకలు | Birthday Parties',
