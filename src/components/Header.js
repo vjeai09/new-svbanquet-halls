@@ -141,6 +141,15 @@ const Header = () => {
           {isMenuOpen && <div className="nav-backdrop" onClick={toggleMenu} aria-hidden="true" />}
           <nav>
             <ul className={isMenuOpen ? "active" : ""}>
+              {isMenuOpen && (
+                <button
+                  className="menu-close-btn"
+                  onClick={toggleMenu}
+                  aria-label="Close menu"
+                >
+                  ✕
+                </button>
+              )}
               <li>
                 <button className="nav-button" onClick={()=>goToSection('hero-video')}>Home</button>
               </li>

@@ -3,7 +3,7 @@ import "./VenueHighlightsBar.css";
 
 const highlights = [
   { icon: "🏛️", text: "A/C & Non-A/C Halls" },
-  { icon: "👥", text: "250–450+ Guests" },
+  { icon: "👥", text: "220–660 Guests" },
   { icon: "🍳", text: "Kitchen & Utensils Included" },
   { icon: "🧑‍🍳", text: "Bring Your Own Caterer" },
   { icon: "🚗", text: "Valet & Street Parking" },
