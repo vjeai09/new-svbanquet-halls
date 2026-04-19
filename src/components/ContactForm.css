@@ -15,29 +15,14 @@
 .contact-deco {
   position: absolute;
   font-size: 3rem;
-  opacity: 0.25;
-  animation: float 8s ease-in-out infinite;
+  opacity: 0.15;
   z-index: 1;
   filter: drop-shadow(0 0 10px rgba(218, 165, 32, 0.5));
 }
 
-.contact-form .deco-1 {
-  top: 10%;
-  left: 8%;
-  animation-delay: 0s;
-}
-
-.contact-form .deco-2 {
-  top: 30%;
-  right: 10%;
-  animation-delay: 2s;
-}
-
-.contact-form .deco-3 {
-  bottom: 20%;
-  left: 12%;
-  animation-delay: 4s;
-}
+.contact-form .deco-1 { top: 10%; left: 8%; }
+.contact-form .deco-2 { top: 30%; right: 10%; }
+.contact-form .deco-3 { bottom: 20%; left: 12%; }
 
 /* Section Divider */
 .contact-form .section-divider {
@@ -636,7 +621,7 @@
   }
 
   .map-container iframe {
-    height: 300px;
+    height: 380px;
   }
 }
 

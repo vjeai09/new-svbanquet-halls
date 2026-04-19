@@ -10,7 +10,7 @@ const HeroVideo = () => {
   useEffect(() => {
     AOS.init({
       duration: 1200,
-      once: false,
+      once: true,
       mirror: true,
     });
 
@@ -54,12 +54,12 @@ const HeroVideo = () => {
             <Typewriter
               options={{
                 strings: isMobile ? [
-                  'Wedding Celebrations',
-                  'Birthday Parties',
-                  'Cradle Ceremonies',
-                  'Half-Saree Ceremonies',
-                  'Corporate Events',
-                  'Traditional Functions'
+                  'Pelliki Perfect Venue!',
+                  'Barasala ki Best Choice!',
+                  'Langa Oni Grand ga Celebrate!',
+                  'Puttina Roju Parties Ikkade!',
+                  'Mee Sangethalu Unforgettable!',
+                  'Hyderabad lo No.1 Banquet Hall!'
                 ] : [
                   'వివాహ వేడుకలు | Wedding Celebrations',
                   'పుట్టినరోజు వేడుకలు | Birthday Parties',
@@ -96,7 +96,7 @@ const HeroVideo = () => {
 
           {/* Google Rating Badge */}
           <a
-            href="https://www.google.com/maps/place/S+V+Banquet+Halls/@17.3471833,78.564397,897m"
+            href="https://maps.app.goo.gl/ThwXdnYJ7bueRzst9"
             target="_blank"
             rel="noopener noreferrer"
             className="google-rating-badge"

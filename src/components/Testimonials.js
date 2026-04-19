@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -11,12 +11,13 @@ import { FaQuoteLeft, FaStar, FaGoogle, FaWhatsapp } from 'react-icons/fa';
 import './Testimonial.css';
 
 const Testimonials = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: false,
-      mirror: true,
-    });
+    AOS.init({ duration: 1000, once: true, mirror: true });
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   const reviews = [
@@ -87,11 +88,11 @@ const Testimonials = () => {
       <div className="testimonial-container" data-aos="zoom-in">
         <Swiper
           modules={[Autoplay, Pagination, Navigation, EffectCoverflow]}
-          effect="coverflow"
+          effect={isMobile ? "slide" : "coverflow"}
           grabCursor={true}
           centeredSlides={true}
           slidesPerView="auto"
-          coverflowEffect={{
+          coverflowEffect={isMobile ? undefined : {
             rotate: 15,
             stretch: 0,
             depth: 200,

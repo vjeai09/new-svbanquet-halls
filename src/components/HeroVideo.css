@@ -35,7 +35,6 @@
   border-top: 3px solid rgba(218, 165, 32, 0.7);
   border-left: 3px solid rgba(218, 165, 32, 0.7);
   border-radius: 10px 0 0 0;
-  animation: motifPulse 3s ease-in-out infinite;
 }
 
 .motif-top-right {
@@ -44,7 +43,6 @@
   border-top: 3px solid rgba(218, 165, 32, 0.7);
   border-right: 3px solid rgba(218, 165, 32, 0.7);
   border-radius: 0 10px 0 0;
-  animation: motifPulse 3s ease-in-out infinite 0.5s;
 }
 
 .motif-bottom-left {
@@ -53,7 +51,6 @@
   border-bottom: 3px solid rgba(218, 165, 32, 0.7);
   border-left: 3px solid rgba(218, 165, 32, 0.7);
   border-radius: 0 0 0 10px;
-  animation: motifPulse 3s ease-in-out infinite 1s;
 }
 
 .motif-bottom-right {
@@ -62,59 +59,22 @@
   border-bottom: 3px solid rgba(218, 165, 32, 0.7);
   border-right: 3px solid rgba(218, 165, 32, 0.7);
   border-radius: 0 0 10px 0;
-  animation: motifPulse 3s ease-in-out infinite 1.5s;
-}
-
-@keyframes motifPulse {
-  0%, 100% { opacity: 0.6; transform: scale(1); }
-  50% { opacity: 0.9; transform: scale(1.05); }
 }
 
 /* Floating Elements */
 .floating-element {
   position: absolute;
   font-size: 2rem;
-  animation: float 6s ease-in-out infinite;
   z-index: 2;
-  opacity: 0.7;
-  filter: drop-shadow(0 0 10px rgba(218, 165, 32, 0.8));
+  opacity: 0.5;
+  filter: drop-shadow(0 0 8px rgba(218, 165, 32, 0.6));
 }
 
-.element-1 {
-  top: 15%;
-  left: 10%;
-  animation-delay: 0s;
-}
-
-.element-2 {
-  top: 25%;
-  right: 15%;
-  animation-delay: 1s;
-}
-
-.element-3 {
-  bottom: 20%;
-  left: 15%;
-  animation-delay: 2s;
-}
-
-.element-4 {
-  top: 60%;
-  right: 10%;
-  animation-delay: 3s;
-}
-
-.element-5 {
-  bottom: 30%;
-  right: 25%;
-  animation-delay: 4s;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  33% { transform: translateY(-20px) rotate(5deg); }
-  66% { transform: translateY(10px) rotate(-5deg); }
-}
+.element-1 { top: 15%; left: 10%; }
+.element-2 { top: 25%; right: 15%; }
+.element-3 { bottom: 20%; left: 15%; }
+.element-4 { top: 60%; right: 10%; }
+.element-5 { bottom: 30%; right: 25%; }
 
 /* Video Overlay */
 .video-overlay {
@@ -218,12 +178,6 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-size: 5rem;
-  animation: shimmer 3s ease-in-out infinite;
-}
-
-@keyframes shimmer {
-  0%, 100% { filter: brightness(1) hue-rotate(0deg); }
-  50% { filter: brightness(1.3) hue-rotate(10deg); }
 }
 
 /* Hero Subtitle with Typewriter */
@@ -380,12 +334,6 @@
 
 .button-icon {
   font-size: 1.4rem;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
 }
 
 .button-shine {
@@ -623,6 +571,7 @@
   .cta-button {
     padding: 13px 20px;
     font-size: 1rem;
+    min-height: 44px;
   }
 
   /* Hide scroll indicator on very small screens */

@@ -32,7 +32,6 @@ const BottomBar = () => {
     } catch (e) {
       // ignore
     }
-    console.log('CTA click:', action);
   };
 
   return (

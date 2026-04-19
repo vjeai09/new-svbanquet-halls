@@ -95,7 +95,6 @@ const Header = () => {
     } catch (e) {
       // ignore
     }
-    console.log('Header CTA:', action);
   };
 
   return (

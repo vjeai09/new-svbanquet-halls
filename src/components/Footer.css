@@ -70,6 +70,10 @@
   color: #ccc;
   text-decoration: none;
   transition: color 0.2s;
+  display: inline-block;
+  min-height: 44px;
+  line-height: 44px;
+  padding: 0 4px;
 }
 
 .footer-contact-list a:hover {
