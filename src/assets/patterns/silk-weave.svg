@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <pattern id="silk-weave" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <!-- Warp threads (vertical) -->
+      <line x1="5" y1="0" x2="5" y2="20" stroke="#DAA520" stroke-width="1.5" opacity="0.08"/>
+      <line x1="10" y1="0" x2="10" y2="20" stroke="#8B0000" stroke-width="1.5" opacity="0.06"/>
+      <line x1="15" y1="0" x2="15" y2="20" stroke="#DAA520" stroke-width="1.5" opacity="0.08"/>
+
+      <!-- Weft threads (horizontal) -->
+      <line x1="0" y1="5" x2="20" y2="5" stroke="#8B0000" stroke-width="1.5" opacity="0.06"/>
+      <line x1="0" y1="10" x2="20" y2="10" stroke="#DAA520" stroke-width="1.5" opacity="0.08"/>
+      <line x1="0" y1="15" x2="20" y2="15" stroke="#8B0000" stroke-width="1.5" opacity="0.06"/>
+
+      <!-- Shimmer effect -->
+      <circle cx="10" cy="10" r="1" fill="#DAA520" opacity="0.12"/>
+    </pattern>
+
+    <!-- Silk sheen gradient -->
+    <linearGradient id="silk-sheen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DAA520;stop-opacity:0.03"/>
+      <stop offset="50%" style="stop-color:#FFF;stop-opacity:0.05"/>
+      <stop offset="100%" style="stop-color:#8B0000;stop-opacity:0.03"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Weave pattern -->
+  <rect width="200" height="200" fill="url(#silk-weave)"/>
+
+  <!-- Sheen overlay -->
+  <rect width="200" height="200" fill="url(#silk-sheen)"/>
+</svg>

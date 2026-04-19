@@ -1,0 +1,485 @@
+/* =====================================================
+   BAPU-RAMANA AESTHETIC SYSTEM
+   Traditional Telugu artistic styling with hand-crafted warmth
+   ===================================================== */
+
+/* ----- BASE TEXTURE LAYER ----- */
+/* Apply parchment texture to entire site */
+body {
+  position: relative;
+  background-color: #fdf6e3;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/patterns/parchment-texture.svg');
+  background-size: 400px 400px;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ----- KOLAM PATTERN BACKGROUNDS ----- */
+/* Different sections get different kolam patterns */
+
+/* Hero Section - NO muggulu patterns for readability */
+.hero-video-container,
+.hero-section {
+  position: relative;
+  isolation: isolate;
+}
+
+/* Hero muggulu removed - video should be clear and text readable */
+
+/* About Section - Lotus Kolam */
+.about-section,
+#about {
+  position: relative;
+  isolation: isolate;
+}
+
+.about-section::before,
+#about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/patterns/telugu-muggulu-floral.svg');
+  background-size: 70px 70px;
+  opacity: 0.5; /* Reduced for text readability */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Services Section - Swastik Kolam */
+.services-section,
+#services {
+  position: relative;
+  isolation: isolate;
+}
+
+.services-section::before,
+#services::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/patterns/muggulu-chakra.svg');
+  background-size: 90px 90px;
+  opacity: 0.5; /* Reduced for text readability */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Gallery Section - Dot Kolam */
+.gallery-section,
+#gallery {
+  position: relative;
+  isolation: isolate;
+}
+
+.gallery-section::before,
+#gallery::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/patterns/muggulu-simple.svg');
+  background-size: 60px 60px;
+  opacity: 0.4; /* Reduced for text readability */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Testimonials - Peacock Kolam */
+.testimonials-section,
+#testimonials {
+  position: relative;
+  isolation: isolate;
+}
+
+.testimonials-section::before,
+#testimonials::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/patterns/muggulu-kamalam.svg');
+  background-size: 100px 100px;
+  opacity: 0.4; /* Reduced for text readability */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* FAQ Section - Lotus Kolam */
+.faq-section,
+#faq {
+  position: relative;
+  isolation: isolate;
+}
+
+.faq-section::before,
+#faq::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/patterns/telugu-muggulu-floral.svg');
+  background-size: 70px 70px;
+  opacity: 0.5; /* Reduced for text readability */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Contact Form - Dot Kolam */
+.contact-section,
+#contact {
+  position: relative;
+  isolation: isolate;
+}
+
+.contact-section::before,
+#contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/patterns/muggulu-simple.svg');
+  background-size: 60px 60px;
+  opacity: 0.4; /* Reduced for text readability */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ----- MANGO LEAF TORAN DIVIDERS ----- */
+/* Replace generic dividers with traditional torans */
+
+.section-divider,
+.toran-divider {
+  width: 100%;
+  height: 80px;
+  background-image: url('../assets/patterns/mango-leaf-toran.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 60px 0;
+  opacity: 0.9;
+  position: relative;
+  z-index: 2;
+}
+
+/* Smaller toran for subsections */
+.toran-divider-small {
+  width: 100%;
+  height: 50px;
+  background-image: url('../assets/patterns/mango-leaf-toran.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 30px 0;
+  opacity: 0.8;
+  transform: scale(0.7);
+}
+
+/* ----- CONTENT LAYERING ----- */
+/* Ensure content sits above patterns */
+
+.hero-content,
+.about-content,
+.services-content,
+.gallery-content,
+.testimonials-content,
+.faq-content,
+.contact-content,
+section > *:not(::before):not(::after) {
+  position: relative;
+  z-index: 2;
+}
+
+/* ----- TEXT READABILITY PANELS ----- */
+/* Semi-transparent backgrounds for text-heavy areas */
+
+/* Headers and titles get subtle backing */
+.services-header,
+.testimonials-header,
+.contact-header,
+.faq-header,
+.gallery-cta-inner,
+.about-content > div {
+  background: rgba(253, 246, 227, 0.85);
+  padding: 30px;
+  border-radius: 8px;
+  backdrop-filter: blur(2px);
+  box-shadow:
+    0 2px 10px rgba(139, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* Service cards, testimonial cards - solid backing */
+.service-card,
+.testimonial-card,
+.pricing-card,
+.faq-item,
+.contact-info-card {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(139, 0, 0, 0.1);
+}
+
+/* Gallery CTA - vibrant bright backgrounds */
+.gallery-cta-subtitle {
+  background: rgba(139, 69, 19, 0.75) !important;
+  backdrop-filter: blur(8px);
+  padding: 12px 24px !important;
+  border-radius: 8px !important;
+  border: 2px solid rgba(255, 215, 0, 0.4);
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.gallery-english {
+  background: rgba(0, 0, 0, 0.55) !important;
+  backdrop-filter: blur(10px);
+  padding: 15px 30px !important;
+  border-radius: 12px !important;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  margin: 8px 0;
+}
+
+.gallery-telugu {
+  background: rgba(184, 134, 11, 0.7) !important;
+  backdrop-filter: blur(8px);
+  padding: 10px 20px !important;
+  border-radius: 8px !important;
+  border: 2px solid rgba(255, 235, 59, 0.5);
+  display: inline-block;
+  margin: 5px 0;
+}
+
+/* All paragraph text - ensure minimum contrast */
+p, li, span:not([class*="icon"]) {
+  color: #2c1810;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+/* Headings - strong contrast */
+h1, h2, h3, h4, h5, h6 {
+  color: #8B0000;
+  text-shadow:
+    1px 1px 0px rgba(255, 255, 255, 0.5),
+    2px 2px 4px rgba(139, 0, 0, 0.2);
+}
+
+/* Content containers - subtle panel backing */
+.about-section > div,
+.services-section > div,
+.testimonials-section > div,
+.faq-section > div,
+.contact-section > div {
+  background: linear-gradient(
+    180deg,
+    rgba(253, 246, 227, 0.6) 0%,
+    rgba(255, 255, 255, 0.75) 50%,
+    rgba(253, 246, 227, 0.6) 100%
+  );
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 1400px;
+}
+
+/* ----- DEPTH & WARMTH ENHANCEMENTS ----- */
+
+/* Subtle shadow for depth */
+.card,
+.testimonial-card,
+.service-card,
+.pricing-card {
+  box-shadow:
+    0 2px 8px rgba(139, 0, 0, 0.08),
+    0 1px 3px rgba(218, 165, 32, 0.05);
+  position: relative;
+  z-index: 2;
+}
+
+/* Hand-drawn border feel for cards */
+.card::after,
+.testimonial-card::after,
+.service-card::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid rgba(139, 0, 0, 0.1);
+  border-radius: inherit;
+  pointer-events: none;
+  /* Subtle imperfection */
+  transform: rotate(0.2deg);
+}
+
+/* ----- BAPU-RAMANA TYPOGRAPHY ----- */
+/* Hand-drawn, organic text styling */
+
+/* Main headings - subtle shadows only */
+/* NOTE: .hero-title excluded - styled in HeroVideo.css */
+h1, h2, h3,
+.services-title,
+.testimonials-title,
+.contact-title,
+.faq-title,
+.about-title,
+.pricing-title,
+.gallery-cta-title {
+  text-shadow:
+    1px 1px 2px rgba(255, 255, 255, 0.5),
+    2px 2px 4px rgba(139, 0, 0, 0.15);
+  letter-spacing: 0.03em;
+  position: relative;
+}
+
+/* Telugu text - subtle enhancement */
+/* NOTE: .title-main and .hero-subtitle excluded - styled in HeroVideo.css */
+.telugu-title,
+[lang="te"]:not(.title-main):not(.hero-subtitle),
+span[class*="telugu"] {
+  text-shadow:
+    1px 1px 2px rgba(255, 255, 255, 0.3),
+    2px 2px 4px rgba(139, 0, 0, 0.2);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* Heading decorative underline - brush stroke feel */
+h2::after,
+.services-title::after,
+.testimonials-title::after,
+.contact-title::after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(139, 0, 0, 0.4) 20%,
+    rgba(218, 165, 32, 0.6) 50%,
+    rgba(139, 0, 0, 0.4) 80%,
+    transparent 100%
+  );
+  margin: 15px auto;
+  border-radius: 50%;
+  /* Hand-drawn imperfection */
+  transform: rotate(-0.5deg);
+  box-shadow: 0 1px 2px rgba(139, 0, 0, 0.2);
+}
+
+/* Paragraph text - minimal styling */
+p, li {
+  color: #2c1810;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+/* CTA buttons - subtle depth */
+.cta-button,
+.primary-cta,
+button[class*="cta"] {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow:
+    0 4px 8px rgba(139, 0, 0, 0.15),
+    0 1px 3px rgba(218, 165, 32, 0.1);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover,
+.primary-cta:hover,
+button[class*="cta"]:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 6px 12px rgba(139, 0, 0, 0.2),
+    0 2px 4px rgba(218, 165, 32, 0.15);
+}
+
+/* Service cards, testimonials - simple styling */
+.service-card h3,
+.testimonial-card h3,
+.pricing-card h3 {
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(139, 0, 0, 0.1);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+/* Decorative text elements - kolam-inspired dots */
+.decorative-element,
+.section-ornament {
+  text-shadow:
+    0 0 10px rgba(139, 0, 0, 0.3),
+    0 0 20px rgba(218, 165, 32, 0.2);
+  filter: drop-shadow(1px 1px 2px rgba(139, 0, 0, 0.3));
+}
+
+/* ----- RESPONSIVE ADJUSTMENTS ----- */
+
+@media (max-width: 768px) {
+  /* Reduce pattern opacity on mobile for readability */
+  .hero-video-container::before,
+  .hero-section::before,
+  .about-section::before,
+  .services-section::before,
+  .gallery-section::before,
+  .testimonials-section::before,
+  .faq-section::before,
+  .contact-section::before {
+    opacity: 0.5;
+  }
+
+  /* Smaller torans on mobile */
+  .section-divider,
+  .toran-divider {
+    height: 60px;
+    margin: 40px 0;
+  }
+
+  .toran-divider-small {
+    height: 40px;
+    margin: 20px 0;
+  }
+}
+
+/* ----- PRINT STYLES ----- */
+/* Remove textures when printing */
+
+@media print {
+  body::before,
+  .hero-video-container::before,
+  .hero-section::before,
+  .about-section::before,
+  .services-section::before,
+  .gallery-section::before,
+  .testimonials-section::before,
+  .faq-section::before,
+  .contact-section::before {
+    display: none;
+  }
+}

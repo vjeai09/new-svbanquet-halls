@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <pattern id="kolam-lotus" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <!-- Lotus-inspired kolam with soft curves -->
+      <g transform="translate(50, 50)">
+        <!-- Center dot -->
+        <circle cx="0" cy="0" r="3" fill="#8B0000" opacity="0.35"/>
+
+        <!-- Petals - organic, hand-drawn feel -->
+        <path d="M 0,-15 Q -5,-25 -10,-20 Q -8,-15 0,-15 Z"
+              fill="#DAA520"
+              opacity="0.3"
+              stroke="#8B0000"
+              stroke-width="1"/>
+        <path d="M 0,-15 Q 5,-25 10,-20 Q 8,-15 0,-15 Z"
+              fill="#DAA520"
+              opacity="0.3"
+              stroke="#8B0000"
+              stroke-width="1"/>
+        <path d="M 15,0 Q 25,-5 20,-10 Q 15,-8 15,0 Z"
+              fill="#DAA520"
+              opacity="0.3"
+              stroke="#8B0000"
+              stroke-width="1"/>
+        <path d="M 15,0 Q 25,5 20,10 Q 15,8 15,0 Z"
+              fill="#DAA520"
+              opacity="0.3"
+              stroke="#8B0000"
+              stroke-width="1"/>
+        <path d="M 0,15 Q -5,25 -10,20 Q -8,15 0,15 Z"
+              fill="#DAA520"
+              opacity="0.3"
+              stroke="#8B0000"
+              stroke-width="1"/>
+        <path d="M 0,15 Q 5,25 10,20 Q 8,15 0,15 Z"
+              fill="#DAA520"
+              opacity="0.3"
+              stroke="#8B0000"
+              stroke-width="1"/>
+        <path d="M -15,0 Q -25,-5 -20,-10 Q -15,-8 -15,0 Z"
+              fill="#DAA520"
+              opacity="0.3"
+              stroke="#8B0000"
+              stroke-width="1"/>
+        <path d="M -15,0 Q -25,5 -20,10 Q -15,8 -15,0 Z"
+              fill="#DAA520"
+              opacity="0.3"
+              stroke="#8B0000"
+              stroke-width="1"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="200" height="200" fill="url(#kolam-lotus)"/>
+</svg>

@@ -64,7 +64,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div id="testimonials" className="testimonials">
+    <div id="testimonials" className="testimonials-section">
       <div className="section-divider"></div>
       
       {/* Decorative Elements */}

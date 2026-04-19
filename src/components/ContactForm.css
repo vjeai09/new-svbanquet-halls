@@ -1,5 +1,5 @@
 /* Premium Contact Form Section */
-.contact-form {
+.contact-section {
   padding: 100px 20px;
   background: linear-gradient(
     180deg,
@@ -501,7 +501,7 @@
     display: block;
   }
 
-  .contact-form {
+  .contact-section {
     padding: 70px 15px;
   }
 

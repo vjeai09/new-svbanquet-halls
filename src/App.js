@@ -8,6 +8,7 @@ import BottomBar from "./components/BottomBar";
 import StickyCTA from "./components/StickyCTA";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import "./App.css";
+import "./styles/bapu-ramana.css";
 
 const Planning = lazy(() => import("./pages/Planning"));
 const About = lazy(() => import("./components/About"));

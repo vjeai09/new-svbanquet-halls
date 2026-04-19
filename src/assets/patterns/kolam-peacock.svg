@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <pattern id="kolam-peacock" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+      <!-- Peacock feather-inspired kolam -->
+      <g transform="translate(60, 60)">
+        <!-- Feather eye -->
+        <ellipse cx="0" cy="0" rx="12" ry="15" fill="#DAA520" opacity="0.28"/>
+        <ellipse cx="0" cy="0" rx="8" ry="10" fill="#8B0000" opacity="0.28"/>
+        <ellipse cx="0" cy="0" rx="4" ry="5" fill="#DAA520" opacity="0.35"/>
+
+        <!-- Feather strands - organic curves -->
+        <path d="M 0,15 Q -3,25 -5,35"
+              stroke="#8B0000"
+              stroke-width="2"
+              fill="none"
+              opacity="0.25"
+              stroke-linecap="round"/>
+        <path d="M 0,15 Q 0,28 0,40"
+              stroke="#8B0000"
+              stroke-width="1.5"
+              fill="none"
+              opacity="0.1"
+              stroke-linecap="round"/>
+        <path d="M 0,15 Q 3,25 5,35"
+              stroke="#8B0000"
+              stroke-width="2"
+              fill="none"
+              opacity="0.25"
+              stroke-linecap="round"/>
+
+        <!-- Decorative barbs -->
+        <path d="M -5,20 Q -10,20 -12,18"
+              stroke="#DAA520"
+              stroke-width="1.5"
+              fill="none"
+              opacity="0.22"/>
+        <path d="M 5,20 Q 10,20 12,18"
+              stroke="#DAA520"
+              stroke-width="1.5"
+              fill="none"
+              opacity="0.22"/>
+        <path d="M -4,28 Q -8,28 -10,26"
+              stroke="#DAA520"
+              stroke-width="1.5"
+              fill="none"
+              opacity="0.22"/>
+        <path d="M 4,28 Q 8,28 10,26"
+              stroke="#DAA520"
+              stroke-width="1.5"
+              fill="none"
+              opacity="0.22"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="200" height="200" fill="url(#kolam-peacock)"/>
+</svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <pattern id="muggulu-simple" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <!-- Traditional Telugu Muggulu - 3x3 dot pattern -->
+      <g transform="translate(30, 30)">
+        <!-- Dot grid (pulli) -->
+        <circle cx="-15" cy="-15" r="1.5" fill="#8B0000" opacity="0.5"/>
+        <circle cx="0" cy="-15" r="1.5" fill="#8B0000" opacity="0.5"/>
+        <circle cx="15" cy="-15" r="1.5" fill="#8B0000" opacity="0.5"/>
+
+        <circle cx="-15" cy="0" r="1.5" fill="#8B0000" opacity="0.5"/>
+        <circle cx="0" cy="0" r="2" fill="#8B0000" opacity="0.6"/>
+        <circle cx="15" cy="0" r="1.5" fill="#8B0000" opacity="0.5"/>
+
+        <circle cx="-15" cy="15" r="1.5" fill="#8B0000" opacity="0.5"/>
+        <circle cx="0" cy="15" r="1.5" fill="#8B0000" opacity="0.5"/>
+        <circle cx="15" cy="15" r="1.5" fill="#8B0000" opacity="0.5"/>
+
+        <!-- Continuous weaving line around dots -->
+        <!-- Top left to top right -->
+        <path d="M -20,-15 Q -15,-20 -10,-15 Q -5,-10 0,-15 Q 5,-20 10,-15 Q 15,-10 20,-15"
+              stroke="#DAA520"
+              stroke-width="1.8"
+              fill="none"
+              opacity="0.35"
+              stroke-linecap="round"/>
+
+        <!-- Right side curve -->
+        <path d="M 15,-20 Q 20,-15 20,-10 Q 20,-5 15,0 Q 20,5 20,10 Q 20,15 15,20"
+              stroke="#DAA520"
+              stroke-width="1.8"
+              fill="none"
+              opacity="0.35"
+              stroke-linecap="round"/>
+
+        <!-- Bottom right to bottom left -->
+        <path d="M 20,15 Q 15,20 10,15 Q 5,10 0,15 Q -5,20 -10,15 Q -15,10 -20,15"
+              stroke="#DAA520"
+              stroke-width="1.8"
+              fill="none"
+              opacity="0.35"
+              stroke-linecap="round"/>
+
+        <!-- Left side curve -->
+        <path d="M -15,20 Q -20,15 -20,10 Q -20,5 -15,0 Q -20,-5 -20,-10 Q -20,-15 -15,-20"
+              stroke="#DAA520"
+              stroke-width="1.8"
+              fill="none"
+              opacity="0.35"
+              stroke-linecap="round"/>
+
+        <!-- Inner loops -->
+        <path d="M -10,-10 Q -7,-7 -10,-4 Q -13,-7 -10,-10 Z"
+              stroke="#8B0000"
+              stroke-width="1.2"
+              fill="rgba(218, 165, 32, 0.15)"
+              opacity="0.4"/>
+        <path d="M 10,-10 Q 13,-7 10,-4 Q 7,-7 10,-10 Z"
+              stroke="#8B0000"
+              stroke-width="1.2"
+              fill="rgba(218, 165, 32, 0.15)"
+              opacity="0.4"/>
+        <path d="M -10,10 Q -7,13 -10,16 Q -13,13 -10,10 Z"
+              stroke="#8B0000"
+              stroke-width="1.2"
+              fill="rgba(218, 165, 32, 0.15)"
+              opacity="0.4"/>
+        <path d="M 10,10 Q 13,13 10,16 Q 7,13 10,10 Z"
+              stroke="#8B0000"
+              stroke-width="1.2"
+              fill="rgba(218, 165, 32, 0.15)"
+              opacity="0.4"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="200" height="200" fill="url(#muggulu-simple)"/>
+</svg>

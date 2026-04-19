@@ -21,7 +21,7 @@ const ContactForm = () => {
   }, []);
 
   return (
-    <section className="contact-form" id="contact">
+    <section className="contact-section" id="contact">
       <div className="section-divider"></div>
 
       {/* Floating Decorative Elements */}

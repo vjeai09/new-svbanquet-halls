@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="80" viewBox="0 0 800 80" preserveAspectRatio="none">
+  <!-- Traditional mango leaf garland (తోరణం) -->
+  <defs>
+    <!-- Single mango leaf -->
+    <g id="mango-leaf">
+      <path d="M 0,0 Q -4,-15 -2,-25 Q 0,-30 2,-25 Q 4,-15 0,0 Z"
+            fill="#2d5016"
+            opacity="0.95"
+            stroke="#1a3008"
+            stroke-width="0.8"/>
+      <!-- Leaf vein -->
+      <path d="M 0,0 L 0,-22"
+            stroke="#1a3008"
+            stroke-width="0.5"
+            opacity="0.8"/>
+    </g>
+
+    <!-- Kalasam (auspicious pot) -->
+    <g id="kalasam">
+      <ellipse cx="0" cy="0" rx="8" ry="6" fill="#DAA520" opacity="1"/>
+      <path d="M -5,-6 Q -6,-10 -4,-12 L 4,-12 Q 6,-10 5,-6 Z"
+            fill="#8B0000"
+            opacity="1"/>
+      <circle cx="0" cy="-12" r="1.5" fill="#DAA520" opacity="1"/>
+    </g>
+  </defs>
+
+  <!-- String/rope -->
+  <path d="M 0,15 Q 100,20 200,15 Q 300,10 400,15 Q 500,20 600,15 Q 700,10 800,15"
+        stroke="#8B4513"
+        stroke-width="2.5"
+        fill="none"
+        opacity="0.7"
+        stroke-linecap="round"/>
+
+  <!-- Repeating mango leaves hanging from string -->
+  <use href="#mango-leaf" transform="translate(50, 20) rotate(10)"/>
+  <use href="#mango-leaf" transform="translate(70, 18) rotate(-5)"/>
+  <use href="#mango-leaf" transform="translate(90, 22) rotate(8)"/>
+  <use href="#mango-leaf" transform="translate(110, 19) rotate(-8)"/>
+  <use href="#mango-leaf" transform="translate(130, 21) rotate(5)"/>
+
+  <use href="#mango-leaf" transform="translate(170, 18) rotate(-10)"/>
+  <use href="#mango-leaf" transform="translate(190, 22) rotate(7)"/>
+  <use href="#mango-leaf" transform="translate(210, 19) rotate(-4)"/>
+  <use href="#mango-leaf" transform="translate(230, 20) rotate(9)"/>
+  <use href="#mango-leaf" transform="translate(250, 18) rotate(-7)"/>
+
+  <use href="#mango-leaf" transform="translate(290, 21) rotate(6)"/>
+  <use href="#mango-leaf" transform="translate(310, 19) rotate(-9)"/>
+  <use href="#mango-leaf" transform="translate(330, 22) rotate(4)"/>
+  <use href="#mango-leaf" transform="translate(350, 18) rotate(-6)"/>
+  <use href="#mango-leaf" transform="translate(370, 20) rotate(10)"/>
+
+  <!-- Kalasam at center -->
+  <use href="#kalasam" transform="translate(400, 15)"/>
+
+  <use href="#mango-leaf" transform="translate(430, 20) rotate(-10)"/>
+  <use href="#mango-leaf" transform="translate(450, 18) rotate(6)"/>
+  <use href="#mango-leaf" transform="translate(470, 22) rotate(-4)"/>
+  <use href="#mango-leaf" transform="translate(490, 19) rotate(9)"/>
+  <use href="#mango-leaf" transform="translate(510, 21) rotate(-7)"/>
+
+  <use href="#mango-leaf" transform="translate(550, 18) rotate(8)"/>
+  <use href="#mango-leaf" transform="translate(570, 22) rotate(-5)"/>
+  <use href="#mango-leaf" transform="translate(590, 19) rotate(7)"/>
+  <use href="#mango-leaf" transform="translate(610, 20) rotate(-9)"/>
+  <use href="#mango-leaf" transform="translate(630, 18) rotate(5)"/>
+
+  <use href="#mango-leaf" transform="translate(670, 22) rotate(-8)"/>
+  <use href="#mango-leaf" transform="translate(690, 19) rotate(6)"/>
+  <use href="#mango-leaf" transform="translate(710, 21) rotate(-4)"/>
+  <use href="#mango-leaf" transform="translate(730, 18) rotate(10)"/>
+  <use href="#mango-leaf" transform="translate(750, 20) rotate(-6)"/>
+</svg>

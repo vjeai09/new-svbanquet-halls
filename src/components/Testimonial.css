@@ -1,5 +1,5 @@
 /* Premium Testimonials Section with Carousel */
-.testimonials {
+.testimonials-section {
   padding: 100px 20px;
   background: linear-gradient(
     180deg,
@@ -532,7 +532,7 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .testimonials {
+  .testimonials-section {
     padding: 70px 15px;
   }
 

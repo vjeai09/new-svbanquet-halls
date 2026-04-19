@@ -1,5 +1,5 @@
 /* Premium Services Section with Cultural Elements */
-.services {
+.services-section {
   padding: 80px 20px;
   background: var(--ivory, #fdf6e3);
   position: relative;
@@ -421,7 +421,7 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .services {
+  .services-section {
     padding: 60px 15px;
   }
 

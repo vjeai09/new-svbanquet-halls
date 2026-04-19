@@ -119,7 +119,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="services">
+    <section className="services-section" id="services">
       <div className="section-divider"><span className="section-divider-lotus">🪷</span></div>
       
       {/* Cultural Header */}

@@ -13,7 +13,7 @@ export default function GalleryCTA() {
   }, []);
 
   return (
-    <section className="gallery-cta">
+    <section className="gallery-section" id="gallery">
       <div className="gallery-cta-inner" data-aos="fade-up">
         <div className="gallery-cta-text">
           <h2 className="gallery-cta-title">
