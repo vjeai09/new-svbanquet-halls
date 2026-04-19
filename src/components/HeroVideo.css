@@ -2,12 +2,15 @@
 .hero-video-container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   background: linear-gradient(135deg, #8B0000 0%, #DAA520 100%);
 }
 
 .hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -78,15 +81,15 @@
 
 /* Video Overlay */
 .video-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 148px 40px 60px;
+  box-sizing: border-box;
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.3) 0%,
@@ -100,19 +103,21 @@
 .hero-content {
   text-align: center;
   color: white;
-  max-width: 900px;
-  padding: 40px;
+  max-width: 1000px;
+  width: 100%;
+  padding: 45px 60px;
   background: linear-gradient(
     135deg,
-    rgba(139, 0, 0, 0.4) 0%,
-    rgba(218, 165, 32, 0.3) 100%
+    rgba(139, 0, 0, 0.45) 0%,
+    rgba(218, 165, 32, 0.25) 100%
   );
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border-radius: 30px;
-  border: 2px solid rgba(218, 165, 32, 0.5);
-  box-shadow: 
-    0 20px 60px rgba(0, 0, 0, 0.5),
-    inset 0 0 30px rgba(218, 165, 32, 0.1);
+  border: 2px solid rgba(218, 165, 32, 0.6);
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.55),
+    inset 0 0 40px rgba(218, 165, 32, 0.08);
   position: relative;
   z-index: 3;
 }
@@ -297,12 +302,14 @@
   display: block;
 }
 
-/* Hero bottom row — USP + Google badge stacked on desktop, side-by-side on mobile */
+/* Hero bottom row — USP + Google badge side by side on desktop */
 .hero-bottom-row {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
   width: 100%;
   margin-top: 5px;
 }
@@ -328,10 +335,6 @@
 }
 
 @media (max-width: 768px) {
-  .hero-description--desktop {
-    display: none;
-  }
-
   .hero-bottom-row {
     flex-direction: column;
     align-items: center;
@@ -506,9 +509,14 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .video-overlay {
+    padding: 80px 16px 40px;
+    justify-content: center;
+  }
+
   .hero-content {
-    padding: 30px 20px;
-    max-width: 90%;
+    padding: 28px 20px;
+    max-width: 92%;
   }
 
   .hero-title {

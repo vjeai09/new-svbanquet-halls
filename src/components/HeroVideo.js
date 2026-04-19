@@ -78,11 +78,6 @@ const HeroVideo = () => {
             />
           </div>
           
-          <p className="hero-description hero-description--desktop" data-aos="fade-up" data-aos-delay="800">
-            హైదరాబాద్ లో అత్యంత ఆధునిక మరియు సాంప్రదాయ వేదిక<br />
-            <span className="english-text">Hyderabad's Most Premium &amp; Traditional Venue</span>
-          </p>
-          
           <div className="hero-buttons" data-aos="fade-up" data-aos-delay="1000">
             <a href="tel:+916305333751" className="cta-button primary-cta">
               <span className="button-icon">📞</span>
@@ -103,6 +98,7 @@ const HeroVideo = () => {
             {isMobile ? (
               <div className="usp-pills">
                 <span className="usp-pill">🏛 A/C &amp; Non A/C</span>
+                <span className="usp-pill">👥 250–400+ Guests</span>
                 <span className="usp-pill">🍳 Kitchen Included</span>
                 <span className="usp-pill">🧑‍🍳 Your Caterer</span>
               </div>
@@ -114,6 +110,8 @@ const HeroVideo = () => {
                 className="usp-strip"
               >
                 <span>🏛 A/C &amp; Non A/C Halls</span>
+                <span className="usp-dot">·</span>
+                <span>👥 250–400+ Guests</span>
                 <span className="usp-dot">·</span>
                 <span>🍳 Kitchen &amp; Utensils Included</span>
                 <span className="usp-dot">·</span>
@@ -141,8 +139,8 @@ const HeroVideo = () => {
             </a>
           </div>
           
-          {/* Decorative Border */}
-          <div className="decorative-border bottom-border"></div>
+          {/* Decorative Border — desktop only */}
+          {!isMobile && <div className="decorative-border bottom-border"></div>}
         </div>
       </div>
     </div>
