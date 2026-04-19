@@ -292,6 +292,103 @@
   line-height: 1;
 }
 
+/* Hide description on mobile — typewriter covers the same message */
+.hero-description--desktop {
+  display: block;
+}
+
+/* Hero bottom row — USP + Google badge stacked on desktop, side-by-side on mobile */
+.hero-bottom-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* USP Pills — mobile only */
+.usp-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.usp-pill {
+  background: rgba(218, 165, 32, 0.15);
+  border: 1px solid rgba(218, 165, 32, 0.4);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .hero-description--desktop {
+    display: none;
+  }
+
+  .hero-bottom-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* USP Strip */
+.usp-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 0;
+  padding: 12px 24px;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(218, 165, 32, 0.4);
+  border-radius: 50px;
+  backdrop-filter: blur(8px);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  transition: background 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.usp-strip:hover {
+  background: rgba(0, 0, 0, 0.6);
+  transform: translateY(-2px);
+}
+
+.usp-dot {
+  color: #DAA520;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  .usp-strip {
+    font-size: 0.78rem;
+    padding: 10px 16px;
+    gap: 7px;
+  }
+
+  .usp-dot {
+    display: none;
+  }
+
+  .usp-strip span:not(.usp-dot) {
+    background: rgba(218, 165, 32, 0.15);
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(218, 165, 32, 0.3);
+  }
+}
+
 .cta-button {
   position: relative;
   display: inline-flex;
