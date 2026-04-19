@@ -1,0 +1,47 @@
+.venue-highlights-bar {
+  position: relative;
+  z-index: 3;
+  margin: 0;
+  padding: 10px 16px 14px;
+  background: linear-gradient(180deg, #fff7e5 0%, #ffffff 100%);
+  border-top: 1px solid rgba(218, 165, 32, 0.28);
+  border-bottom: 1px solid rgba(218, 165, 32, 0.2);
+}
+
+.venue-highlights-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+}
+
+.venue-highlights-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(139, 0, 0, 0.06);
+  border: 1px solid rgba(139, 0, 0, 0.16);
+  color: #5b1a1a;
+  font-family: "Poppins", "Noto Sans Telugu", Arial, sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .venue-highlights-bar {
+    padding: 10px 10px 12px;
+  }
+
+  .venue-highlights-item {
+    font-size: 0.82rem;
+    padding: 7px 10px;
+    white-space: normal;
+  }
+}
