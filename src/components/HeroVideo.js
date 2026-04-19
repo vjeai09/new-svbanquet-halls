@@ -58,7 +58,7 @@ const HeroVideo = () => {
                   'Barasala ki Best Choice!',
                   'Langa Oni Grand ga Celebrate!',
                   'Puttina Roju Parties Ikkade!',
-                  'Mee Sangethalu Unforgettable!',
+                  'Mee Celebrations Ikkade Special!',
                   'Mansoorabad ki Favourite Hall!'
                 ] : [
                   'వివాహ వేడుకలు | Wedding Celebrations',
