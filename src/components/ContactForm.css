@@ -138,20 +138,23 @@
   font-size: 0.9rem !important;
 }
 
-.verified-review-nudge {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: #555;
+.review-btn {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #DAA520, #c8960c);
+  color: #3a1010;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.verified-review-nudge a {
-  color: #DAA520;
-  font-weight: 600;
-  text-decoration: underline;
-}
-
-.verified-review-nudge a:hover {
-  color: #b8860b;
+.review-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(218, 165, 32, 0.4);
 }
 
 /* Contact Cards Container */

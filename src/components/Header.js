@@ -149,7 +149,10 @@ const Header = () => {
                 <button className="nav-button" onClick={()=>goToSection('services')}>Services</button>
               </li>
               <li>
-                <button className="nav-button" onClick={()=>goToSection('testimonials')}>Testimonials</button>
+                <button className="nav-button" onClick={()=>goToSection('pricing')}>Pricing</button>
+              </li>
+              <li>
+                <button className="nav-button" onClick={()=>goToSection('faq')}>FAQ</button>
               </li>
               <li>
                 <RouterLink

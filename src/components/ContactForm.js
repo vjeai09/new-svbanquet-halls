@@ -33,10 +33,10 @@ const ContactForm = () => {
       <div className="contact-header" data-aos="fade-up">
         <h2 className="contact-title">
           <span className="telugu-title">మాతో సంప్రదించండి</span>
-          <span className="english-title">Get In Touch</span>
+          <span className="english-title">Call or WhatsApp to Book</span>
         </h2>
         <p className="contact-subtitle desktop-text">
-          మేము మీ కోసం ఎల్లప్పుడూ అందుబాటులో ఉన్నాము | We'd love to hear from you!
+          No forms, no hassle — just call or message us directly to check availability and confirm your date.
         </p>
       </div>
 
@@ -56,17 +56,14 @@ const ContactForm = () => {
           </a>
         </p>
         <p className="verified-updated">Last updated: {lastUpdatedDate}</p>
-        <p className="verified-review-nudge">
-          🌟 Had a great event with us?&nbsp;
-          <a
-            href="https://g.page/r/CZY9jEQOUmf0EAE/review"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Write a Google Review
-          </a>
-          &nbsp;— it helps families like yours find us.
-        </p>
+        <a
+          href="https://g.page/r/CZY9jEQOUmf0EAE/review"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="review-btn"
+        >
+          ⭐ Had a great event? Write a Google Review
+        </a>
       </div>
 
       {/* Contact Cards */}

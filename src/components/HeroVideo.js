@@ -69,7 +69,7 @@ const HeroVideo = () => {
 
           <div className="hero-buttons" data-aos="fade-up" data-aos-delay="1000">
             <a href="tel:+916305333751" className="cta-button primary-cta">
-              Book Now
+              Call to Book
             </a>
           </div>
 
