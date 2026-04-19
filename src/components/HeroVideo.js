@@ -53,56 +53,56 @@ const HeroVideo = () => {
       <div className="video-overlay">
         <div className="hero-content" data-aos="fade-up" data-aos-delay="300">
 
-          <h1 className="hero-title" data-aos="fade-up" data-aos-delay="200">
-            <span className="title-main">మీ శుభ వేళ</span>
-            <span className="title-highlight">Your Celebration Awaits</span>
-          </h1>
+          {!isMobile && (
+            <h1 className="hero-title" data-aos="fade-up" data-aos-delay="200">
+              <span className="title-main">మీ శుభ వేళ</span>
+              <span className="title-highlight">Your Celebration Awaits</span>
+            </h1>
+          )}
 
-          <div className="hero-subtitle" data-aos="fade-up" data-aos-delay="400">
-            <Typewriter
-              options={{
-                strings: isMobile ? [
-                  'Weddings · వివాహాలు',
-                  'Cradle Ceremonies · బారసాలలు',
-                  'Half-Saree · లంగా ఓణీ',
-                  'Birthdays · పుట్టినరోజులు',
-                  "Mansoorabad's Favourite Hall"
-                ] : [
-                  'వివాహ వేడుకలు | Weddings',
-                  'బారసాల · లంగా ఓణీ | Family Ceremonies',
-                  'పుట్టినరోజు వేడుకలు | Birthdays',
-                  "Mansoorabad's Favourite Celebration Hall"
-                ],
-                autoStart: true,
-                loop: true,
-                delay: 55,
-                deleteSpeed: 25,
-              }}
-            />
-          </div>
+          {!isMobile && (
+            <div className="hero-subtitle" data-aos="fade-up" data-aos-delay="400">
+              <Typewriter
+                options={{
+                  strings: [
+                    'వివాహ వేడుకలు | Weddings',
+                    'బారసాల · లంగా ఓణీ | Family Ceremonies',
+                    'పుట్టినరోజు వేడుకలు | Birthdays',
+                    "Mansoorabad's Favourite Celebration Hall"
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  delay: 55,
+                  deleteSpeed: 25,
+                }}
+              />
+            </div>
+          )}
 
           <div className="hero-bottom-row" data-aos="fade-up" data-aos-delay="600">
             <a href="tel:+916305333751" className="cta-button primary-cta">
-              Book Your Date
+              Book Now
             </a>
-            <a
-              href="https://maps.app.goo.gl/ThwXdnYJ7bueRzst9"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="google-rating-badge"
-              aria-label="4.0 stars on Google – 457 reviews"
-            >
-              <img
-                src="https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png"
-                alt="Google"
-                className="google-rating-logo"
-              />
-              <div className="google-rating-stars">
-                <span className="google-rating-score">4.0</span>
-                <span className="google-rating-stars-icons">★★★★★</span>
-              </div>
-              <span className="google-rating-count">457 reviews</span>
-            </a>
+            {!isMobile && (
+              <a
+                href="https://maps.app.goo.gl/ThwXdnYJ7bueRzst9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="google-rating-badge"
+                aria-label="4.0 stars on Google – 457 reviews"
+              >
+                <img
+                  src="https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png"
+                  alt="Google"
+                  className="google-rating-logo"
+                />
+                <div className="google-rating-stars">
+                  <span className="google-rating-score">4.0</span>
+                  <span className="google-rating-stars-icons">★★★★★</span>
+                </div>
+                <span className="google-rating-count">457 reviews</span>
+              </a>
+            )}
           </div>
 
         </div>
