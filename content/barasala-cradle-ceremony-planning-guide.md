@@ -609,6 +609,15 @@ Blessings of:
 - Morning or evening slots
 - No hidden fees
 
+**Why This Saves You Money:**
+> We own the building (100% — no rent overhead). This customer-first philosophy means:
+> - **30-50% savings** by using your trusted caterer (vs. forced in-house catering)
+> - **Better quality** — your family's favorite recipes, not generic hall food
+> - **Total flexibility** — spend saved money on what matters (better decoration, return gifts, baby's jewelry)
+> - **Enhance your event** — invest in quality, not hall markups
+>
+> We run this business for customer benefit, not just profit. Your satisfaction is our success.
+
 ### Complete Facilities
 
 **Everything Under One Roof:**

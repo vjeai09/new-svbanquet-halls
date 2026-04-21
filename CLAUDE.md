@@ -10,12 +10,17 @@
 
 Premier banquet hall website in Mansoorabad, Hyderabad. React SPA showcasing event venues for weddings, traditional Telugu ceremonies (బారసాల, లంగా ఓణీ), birthdays, and corporate events.
 
-**Business Model:** 
-- Venue rental only (customers bring own caterer)
-- Provide 2 kitchens + utensils
+**Business Model - Customer-First Philosophy:** 
+- **Venue rental only** (customers bring own caterer)
+- **Why:** Own the building (no rent overhead) → pass savings to customers
+- **Customer benefit:** Save 30-50% by using trusted caterer vs. forced in-house catering
+- **Total event enhancement:** Use trusted vendors → better quality, better prices
+- Provide 2 kitchens + utensils (free to use)
 - Pricing based on guest count and space usage
 - Call-for-quote model (prices NOT published online to encourage engagement)
 - WhatsApp/Call-first booking (no online booking system)
+
+**Core Message:** "We run this business for customer benefit, not just profit. Own the land, operate responsibly, pass savings to you."
 
 ---
 
