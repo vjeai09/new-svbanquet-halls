@@ -79,23 +79,23 @@ Avoid performing during:
 
 **Minimum Requirements:**
 ```
-Small Barasala (50 guests):
+Small Barasala (50-100 guests):
 - Puja area: 8×8 feet
-- Guest seating: 40-50 chairs
-- Dining space: Buffet setup for 50
-- Total hall size: 1,000-1,500 sq ft
+- Guest seating: 50-100 chairs (single floor)
+- Dining space: Buffet setup
+- Book: 1 floor at SV Banquet Halls
 
-Medium Barasala (100-150 guests):
+Medium Barasala (150-220 guests):
 - Puja area: 10×10 feet
-- Guest seating: 100-150 chairs
-- Dining space: 100-150 capacity
-- Total hall size: 2,500-3,000 sq ft
+- Guest seating: Up to 220 (single floor capacity)
+- Dining space: Full floor capacity
+- Book: 1 floor (seated) or 2 floors (floating)
 
-Large Barasala (200+ guests):
+Large Barasala (300-660 guests):
 - Puja area: 12×12 feet
-- Guest seating: 200+ chairs
-- Dining space: 200+ capacity
-- Total hall size: 4,000+ sq ft
+- Guest arrangement: Multi-floor floating
+- Dining space: Multiple floors for buffet flow
+- Book: All 3 floors + terrace for large gatherings
 ```
 
 ### Essential Facilities
@@ -130,12 +130,12 @@ Large Barasala (200+ guests):
 ### What SV Banquet Halls Provides
 
 **Our Barasala-Friendly Features:**
-- 3 hall options (small to large ceremonies)
+- 3 floors + terrace (220 per floor seated, 660+ floating capacity)
 - Full A/C in 2 halls
 - 2 fully equipped kitchens
-- Elevator access
+- Elevator access to all floors
 - Parking for 50+ vehicles
-- Clean washrooms and private dressing rooms
+- Clean washrooms and private dressing rooms on each floor
 - Flexible timing (morning or evening slots)
 
 ---

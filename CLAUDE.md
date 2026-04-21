@@ -169,8 +169,10 @@ public/
 **Established:** 8+ years (since ~2018)
 
 **Capacity:**
-- Comfortable: 250 guests
-- Maximum (floating): 450+ guests
+- Per floor (seated): 220 guests
+- Total floors: 3 floors + terrace
+- Single floor event: 220 seated
+- Multi-floor floating: 660+ guests (guests use all floors for food, movement, etc.)
 
 **Venue:**
 - 2 A/C Halls
@@ -300,7 +302,7 @@ Before marking work complete:
 
 ## Contact
 
-**Project Owner:** Tusshar  
+**Project Owner:** VijayaLakshmi  
 **Email:** vjeai.tech@gmail.com  
 **For Questions:** Check this file first, then Obsidian `/MapsOfConent/svbanquethalls-complete-features.md`
 
