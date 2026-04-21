@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./FAQ.css";
@@ -45,8 +46,29 @@ const FAQ = () => {
     AOS.init({ duration: 800, once: true, disable: 'mobile' });
   }, []);
 
+  // Generate FAQ Schema for SEO/AEO
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a
+      }
+    }))
+  };
+
   return (
     <section className="faq-section" id="faq">
+      {/* FAQ Schema for Google Rich Results & AI Discoverability */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+      </Helmet>
+
       <div className="section-divider"></div>
 
       <div className="faq-header" data-aos="fade-up">
