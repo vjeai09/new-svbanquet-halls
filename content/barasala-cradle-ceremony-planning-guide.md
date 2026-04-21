@@ -263,7 +263,7 @@ Sweets:
 - Mysore Pak or Laddu (1 piece)
 ```
 
-**Cost Estimate:** ₹80-120 per person
+**Cost Estimate:** Varies by caterer (₹80-150 per person typical in Hyderabad)
 
 ### Traditional Lunch Menu
 
@@ -290,7 +290,7 @@ Sweet:
 - Sweet pongal
 ```
 
-**Cost Estimate:** ₹250-400 per person
+**Cost Estimate:** Varies by caterer (₹250-500 per person typical in Hyderabad)
 
 ### Snacks Menu (Evening Ceremony)
 
@@ -304,7 +304,7 @@ Sweet:
 - Tea/coffee
 ```
 
-**Cost Estimate:** ₹100-150 per person
+**Cost Estimate:** Varies by caterer (₹100-200 per person typical)
 
 ### Dinner Menu (Evening Ceremony)
 
@@ -325,7 +325,7 @@ Sweets:
 - Ice cream
 ```
 
-**Cost Estimate:** ₹350-550 per person
+**Cost Estimate:** Varies by caterer (₹350-600 per person typical)
 
 ### Special Dietary Considerations
 
@@ -340,10 +340,12 @@ Sweets:
 - Avoid strong-smelling dishes
 - Ensure kitchen cleanliness
 
-> **SV Banquet Halls Catering:** 
-> - Bring your own caterer (we provide 2 kitchens)
-> - Use our in-house catering (starting ₹450/plate)
-> - Cook traditional recipes yourself (full kitchen access)
+> **SV Banquet Halls Catering Policy:** 
+> - Bring your own caterer (required - we don't provide food)
+> - We provide: 2 fully equipped kitchens + utensils
+> - Your caterer has full access
+> - OR cook traditional recipes yourself (family can use kitchens)
+> - No kitchen usage fees
 
 ---
 
@@ -438,8 +440,8 @@ Blessings of:
 
 | Item | Cost Range |
 |---|---|
-| Venue (included with catering at SV) | ₹0 |
-| Food (₹450/plate × 50) | ₹22,500 |
+| **Venue (SV Banquet Halls)** | **Call for quote: +91 6305 333 751** |
+| Food (your caterer, ~₹400-600/plate × 50) | ₹20,000-30,000 |
 | Decoration (basic) | ₹3,000-8,000 |
 | Cradle rental | ₹2,000-5,000 |
 | Priest dakshina | ₹2,000-5,000 |
@@ -447,7 +449,9 @@ Blessings of:
 | Invitation cards | ₹500-1,500 |
 | Return gifts | ₹2,500-5,000 |
 | Miscellaneous | ₹3,000-5,000 |
-| **TOTAL** | **₹40,500-62,000** |
+| **TOTAL (excl. venue)** | **₹38,000-71,500 + venue** |
+
+*Note: Venue pricing varies by guest count and space usage. Contact us for personalized quote.*
 
 ### Medium Barasala (100-150 guests)
 
@@ -455,7 +459,8 @@ Blessings of:
 
 | Item | Cost Range |
 |---|---|
-| Food (₹450/plate × 125) | ₹56,250 |
+| **Venue (SV Banquet Halls)** | **Call for quote: +91 6305 333 751** |
+| Food (your caterer, ~₹400-600/plate × 125) | ₹50,000-75,000 |
 | Decoration (mid-range) | ₹10,000-20,000 |
 | Cradle (rental or purchase) | ₹5,000-15,000 |
 | Priest dakshina | ₹5,000-10,000 |
@@ -463,15 +468,18 @@ Blessings of:
 | Invitation cards | ₹1,500-4,000 |
 | Return gifts | ₹7,500-15,000 |
 | Miscellaneous | ₹5,000-10,000 |
-| **TOTAL** | **₹1,05,250-1,60,250** |
+| **TOTAL (excl. venue)** | **₹99,000-1,79,000 + venue** |
 
-### Large Barasala (200-250 guests)
+*Note: Venue pricing varies by guest count and space usage. Contact us for personalized quote.*
+
+### Large Barasala (200-300 guests)
 
 **Complete Cost Breakdown:**
 
 | Item | Cost Range |
 |---|---|
-| Food (₹500/plate × 225) | ₹1,12,500 |
+| **Venue (SV Banquet Halls - multi-floor)** | **Call for quote: +91 6305 333 751** |
+| Food (your caterer, ~₹400-600/plate × 250) | ₹1,00,000-1,50,000 |
 | Decoration (premium) | ₹25,000-50,000 |
 | Cradle (purchase silver) | ₹15,000-50,000 |
 | Priest + Musicians | ₹10,000-20,000 |
@@ -479,33 +487,40 @@ Blessings of:
 | Invitation cards | ₹4,000-7,500 |
 | Return gifts | ₹15,000-25,000 |
 | Miscellaneous | ₹10,000-15,000 |
-| **TOTAL** | **₹2,21,500-3,40,000** |
+| **TOTAL (excl. venue)** | **₹2,09,000-3,77,500 + venue** |
+
+*Note: Large events may require booking multiple floors. Pricing based on guest count and space usage. Contact us for detailed quote.*
 
 ### Money-Saving Tips
 
 **Cut Costs Without Compromising:**
 
 1. **Choose Morning Slot**
-   - Breakfast costs 60% less than dinner
+   - Breakfast costs 60% less than dinner from most caterers
    - Saves ₹15,000-30,000 for 100 guests
 
-2. **DIY Decorations**
+2. **Shop Around for Caterers**
+   - Get 3-4 quotes (prices vary widely)
+   - Negotiate for bulk orders
+   - Can save ₹50-150 per plate
+
+3. **DIY Decorations**
    - Family-made torans and flower arrangements
    - Saves ₹5,000-15,000
 
-3. **Digital Invitations**
+4. **Digital Invitations**
    - WhatsApp video invites
    - Saves ₹2,000-5,000
 
-4. **Rent vs. Buy Cradle**
+5. **Rent vs. Buy Cradle**
    - Rental: ₹2,000-5,000
    - Purchase: ₹15,000-50,000
    - Rent unless you plan multiple kids
 
-5. **Buffet Instead of Served Meal**
-   - Saves on service staff
+6. **Buffet Instead of Served Meal**
+   - Saves on caterer's service staff charges
    - Reduces food wastage
-   - Saves ₹5,000-10,000
+   - Can save ₹5,000-15,000
 
 ---
 
@@ -606,11 +621,11 @@ Blessings of:
 
 ### Affordable & Transparent
 
-**No Surprises:**
-- Hall included with catering
-- No "kitchen usage fee"
-- No mandatory decoration package
-- Transparent per-plate pricing
+**No Hidden Fees:**
+- No "kitchen usage fee" (kitchens free for your caterer)
+- No mandatory packages
+- No forced vendor tie-ups (bring ANY caterer)
+- Pricing based on guest count and space (call for quote)
 - Flexible timing (no hourly charges)
 
 ### Convenient Location
@@ -636,10 +651,16 @@ Blessings of:
 ### What to Discuss When You Call:
 
 1. Your preferred date and time
-2. Expected guest count
+2. Expected guest count (pricing varies by count)
 3. Morning or evening ceremony
-4. Catering preferences (own caterer or in-house)
-5. Any special requirements
+4. Which floors/halls you need (based on guest count)
+5. Any special requirements (extra power, specific setup, etc.)
+
+**We'll provide you with:**
+- Transparent pricing quote based on your guest count
+- Available dates and timing options
+- Information about our 2 kitchens and utensils (for your caterer)
+- Any additional services you might need
 
 ---
 

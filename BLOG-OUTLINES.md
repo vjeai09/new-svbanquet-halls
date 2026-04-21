@@ -32,7 +32,7 @@ Capacity Planning Formula:
 | Cost Component | Typical Range (Hyderabad) | What SV Offers |
 |---|---|---|
 | Hall rental | ₹15,000-50,000 | Included with catering |
-| Catering (veg) | ₹400-700/plate | From ₹450/plate |
+| Catering (veg) | ₹400-700/plate | From call for quote |
 | Decoration | ₹20,000-1,00,000 | Bring own or use in-house |
 | Photography | ₹15,000-50,000 | Bring own or use in-house |
 

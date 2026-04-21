@@ -10,7 +10,12 @@
 
 Premier banquet hall website in Mansoorabad, Hyderabad. React SPA showcasing event venues for weddings, traditional Telugu ceremonies (బారసాల, లంగా ఓణీ), birthdays, and corporate events.
 
-**Business Model:** WhatsApp/Call-first booking (no online booking system)
+**Business Model:** 
+- Venue rental only (customers bring own caterer)
+- Provide 2 kitchens + utensils
+- Pricing based on guest count and space usage
+- Call-for-quote model (prices NOT published online to encourage engagement)
+- WhatsApp/Call-first booking (no online booking system)
 
 ---
 
@@ -27,7 +32,10 @@ Premier banquet hall website in Mansoorabad, Hyderabad. React SPA showcasing eve
 
 ### ❌ DO NOT SUGGEST:
 - **Bapu-Ramana traditional aesthetic** — User explicitly rejected this. AI cannot authentically replicate hand-drawn borders, watercolor illustrations, kolam patterns. Keep modern design.
+- **Publishing hall rental prices online** — Intentional strategy to encourage calls (better conversion)
+- **In-house catering** — They do NOT provide food; customers bring own caterer
 - Email contact forms — Business uses WhatsApp/Call only
+- Online booking system — Call-first engagement model
 - Hand-drawn elements, parchment textures, silk weaves
 - Traditional ornate borders or illustrated dividers
 - Any "artisan" or "hand-crafted" design elements
@@ -56,9 +64,11 @@ Premier banquet hall website in Mansoorabad, Hyderabad. React SPA showcasing eve
 - Shows Google rating: 457+ reviews, 4.0 stars
 
 ### ✅ Pricing
-- **NO pricing displayed on site**
-- "Call or WhatsApp for pricing" model
-- Lists what's included + flexible options
+- **NO pricing displayed on site** (intentional strategy)
+- **Why:** Publishing prices online reduces calls → loses engagement opportunities
+- Actual pricing: ~₹17K (non-A/C), ~₹22-25K (A/C), varies by guest count
+- "Call or WhatsApp for quote" model
+- Lists what's included (kitchens, utensils, venue facilities)
 - CTA buttons: Call Us | WhatsApp Us
 
 ### ✅ Services
@@ -175,10 +185,14 @@ public/
 - Multi-floor floating: 660+ guests (guests use all floors for food, movement, etc.)
 
 **Venue:**
-- 2 A/C Halls
-- 1 Non-A/C Hall (1st floor)
-- Open terrace
-- 2 kitchens, elevator, parking
+- 2 A/C Halls (~₹22-25K each, varies by guest count)
+- 1 Non-A/C Hall (~₹17K, 1st floor)
+- Open terrace (available with hall bookings)
+- 2 fully equipped kitchens (for customer's caterer)
+- Utensils and crockery provided
+- Elevator, parking for 50+ vehicles
+
+**Important:** NO catering provided. Customers bring own caterer and use our kitchens.
 
 **Google Rating:** 4.0 ★ (457+ reviews)
 
