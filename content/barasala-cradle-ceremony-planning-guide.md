@@ -610,7 +610,7 @@ Blessings of:
 - No hidden fees
 
 **Why This Saves You Money:**
-> We own the building (100% — no rent overhead). This customer-first philosophy means:
+> We own the building (complete land and building — no rent overhead). This customer-first philosophy means:
 > - **30-50% savings** by using your trusted caterer (vs. forced in-house catering)
 > - **Better quality** — your family's favorite recipes, not generic hall food
 > - **Total flexibility** — spend saved money on what matters (better decoration, return gifts, baby's jewelry)
