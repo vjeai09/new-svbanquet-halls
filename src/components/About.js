@@ -24,6 +24,12 @@ const About = ({ id }) => {
             మేము స్థలం ఇస్తాం, వంటశాల ఇస్తాం, సౌకర్యం ఇస్తాం —
             మీరు మీ ప్రియమైన వారిని తీసుకురండి. మిగతాది మేము చూసుకుంటాం.
           </p>
+          <p className="about-body" style={{fontWeight: 600, color: '#8B0000', marginTop: '1.5rem'}}>
+            We own the complete land and building — no rent overhead means we pass savings
+            directly to you. Bring your trusted caterer, decorator, and photographer.
+            Save 30-50% compared to forced-package venues while enhancing your event with
+            people you trust.
+          </p>
           <div className="about-stats">
             <div className="about-stat">
               <span className="stat-number">8+</span>
