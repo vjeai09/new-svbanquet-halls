@@ -4,6 +4,8 @@
 **Reading Time:** 8 minutes  
 **Location:** SV Banquet Halls, Mansoorabad, Hyderabad
 
+> **💡 Price Disclosure:** All prices shown are approximate market ranges for Mansoorabad/LB Nagar area as of April 2026, provided for educational planning purposes only. Actual costs vary significantly based on vendor selection, menu choices, guest count, decoration complexity, and event date. Savings estimates are based on typical market rates observed in our area and individual results may vary. These examples are illustrative; your actual costs and savings will depend on your specific choices. Call +91 6305 333 751 for a specific quote tailored to your event requirements.
+
 ---
 
 ## Table of Contents

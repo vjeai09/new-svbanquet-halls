@@ -1,5 +1,9 @@
 # How SV Banquet Halls Saves You Money (And Enhances Your Event)
 
+> **💡 Price Disclosure:** All prices shown are approximate market ranges for Mansoorabad/LB Nagar area as of April 2026, provided for educational comparison purposes only. Actual costs vary significantly based on vendor selection, menu choices, guest count, decoration complexity, and event date. Savings estimates are based on typical market rates observed in our area and individual results may vary. These examples are illustrative; your actual costs and savings will depend on your specific choices. Call +91 6305 333 751 for a specific quote tailored to your event requirements.
+
+---
+
 ## The Traditional Banquet Hall Model (What Others Do)
 
 **Forced Packages Model:**

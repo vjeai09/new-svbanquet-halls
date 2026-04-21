@@ -1,6 +1,10 @@
 # Why SV Banquet Halls Saves You 30-50% (And Gives You Better Events)
 
-**Quick Answer:** We own the complete land and building with no rent overhead. We operate for customer benefit, not just profit. You bring your trusted caterer, decorator, and photographer — saving ₹50,000-80,000 on a typical 200-guest event while enhancing quality.
+**Quick Answer:** We own the complete land and building with no rent overhead. We operate for customer benefit, not just profit. You bring your trusted caterer, decorator, and photographer — typically saving ₹50,000-80,000 on a 200-guest event while enhancing quality.
+
+---
+
+> **💡 Price Disclosure:** All prices shown are approximate market ranges for Mansoorabad/LB Nagar area as of April 2026, provided for educational comparison purposes only. Actual costs vary significantly based on vendor selection, menu choices, guest count, decoration complexity, and event date. Savings estimates are based on typical market rates observed in our area and individual results may vary. These examples are illustrative; your actual costs and savings will depend on your specific choices. Call +91 6305 333 751 for a specific quote tailored to your event requirements.
 
 ---
 
