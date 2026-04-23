@@ -4,7 +4,7 @@
 **Reading Time:** 8 minutes  
 **Location:** SV Banquet Halls, Mansoorabad, Hyderabad
 
-> **💡 Price Disclosure:** All prices shown are approximate market ranges for Mansoorabad/LB Nagar area as of April 2026, provided for educational planning purposes only. Actual costs vary significantly based on vendor selection, menu choices, guest count, decoration complexity, and event date. Savings estimates are based on typical market rates observed in our area and individual results may vary. These examples are illustrative; your actual costs and savings will depend on your specific choices. Call +91 6305 333 751 for a specific quote tailored to your event requirements.
+> **💡 Planning Guide Disclaimer:** Price ranges mentioned are approximate market observations for Mansoorabad/LB Nagar area as of April 2026, provided for general planning purposes only. Actual vendor rates vary based on your choices, menu selections, guest count, and event date. This guide is educational; your specific costs depend on vendors you choose and rates you negotiate. Call +91 6305 333 751 for SV Banquet Halls venue quote.
 
 ---
 
@@ -493,36 +493,36 @@ Blessings of:
 
 *Note: Large events may require booking multiple floors. Pricing based on guest count and space usage. Contact us for detailed quote.*
 
-### Money-Saving Tips
+### Budget-Friendly Planning Tips
 
-**Cut Costs Without Compromising:**
+**Smart Planning Ideas:**
 
 1. **Choose Morning Slot**
-   - Breakfast costs 60% less than dinner from most caterers
-   - Saves ₹15,000-30,000 for 100 guests
+   - Breakfast menus typically cost less than dinner
+   - Simpler setup for daytime ceremony
 
 2. **Shop Around for Caterers**
    - Get 3-4 quotes (prices vary widely)
    - Negotiate for bulk orders
-   - Can save ₹50-150 per plate
+   - You control who you hire and at what rate
 
 3. **DIY Decorations**
    - Family-made torans and flower arrangements
-   - Saves ₹5,000-15,000
+   - Personal touch, meaningful traditions
 
 4. **Digital Invitations**
    - WhatsApp video invites
-   - Saves ₹2,000-5,000
+   - Quick, eco-friendly, easy to share
 
 5. **Rent vs. Buy Cradle**
-   - Rental: ₹2,000-5,000
-   - Purchase: ₹15,000-50,000
-   - Rent unless you plan multiple kids
+   - Rental: Lower upfront cost
+   - Purchase: Keep for future children
+   - Decide based on your family plans
 
 6. **Buffet Instead of Served Meal**
-   - Saves on caterer's service staff charges
+   - Less caterer service staff needed
    - Reduces food wastage
-   - Can save ₹5,000-15,000
+   - Guests take what they want
 
 ---
 
@@ -611,12 +611,13 @@ Blessings of:
 - Morning or evening slots
 - No hidden fees
 
-**Why This Saves You Money:**
-> We own the building (complete land and building — no rent overhead). This customer-first philosophy means:
-> - **30-50% savings** by using your trusted caterer (vs. forced in-house catering)
-> - **Better quality** — your family's favorite recipes, not generic hall food
-> - **Total flexibility** — spend saved money on what matters (better decoration, return gifts, baby's jewelry)
-> - **Enhance your event** — invest in quality, not hall markups
+**Why Choose SV Banquet Halls:**
+> We own the complete land and building. This customer-first philosophy means:
+> - **Complete flexibility** — bring your trusted caterer, cook family recipes yourself
+> - **Your traditions, your way** — not forced packages or generic menus
+> - **Budget control** — you negotiate directly with caterers, decorators you choose
+> - **Transparent pricing** — no hidden fees, call for specific venue quote
+> - **Quality focus** — invest your budget where it matters most to you
 >
 > We run this business for customer benefit, not just profit. Your satisfaction is our success.
 

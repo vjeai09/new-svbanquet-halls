@@ -62,104 +62,64 @@ const Pricing = () => {
 
       </div>
 
-      {/* Cost Planning Guide - Educational */}
+      {/* Budget Planning Guide - Educational Only */}
       <div className="pricing-cost-guide" data-aos="fade-up" data-aos-delay="150">
         <h3 className="cost-guide-title">
           <span className="telugu-subtitle">బడ్జెట్ ప్లానింగ్</span>
-          <span className="english-subtitle">Understanding Your Event Budget</span>
+          <span className="english-subtitle">Plan Your Event Budget</span>
         </h3>
 
         <p className="cost-guide-intro">
-          Planning a 150-guest event in Mansoorabad? Here's an approximate breakdown of typical costs
-          to help you budget. <em>Actual prices vary based on your choices.</em>
+          At SV Banquet Halls, you control your budget by choosing your own vendors.
+          Here's how our transparent model works.
         </p>
 
-        <div className="cost-comparison-boxes">
-
-          {/* Traditional Model */}
-          <div className="cost-box cost-box-traditional">
-            <h4 className="cost-box-header">Package-Based Venues</h4>
-            <p className="cost-box-subtitle">Many venues operate this way</p>
-            <div className="cost-breakdown">
-              <div className="cost-item">
-                <span className="cost-label">Hall rental</span>
-                <span className="cost-value">₹30,000-40,000</span>
-              </div>
-              <div className="cost-item">
-                <span className="cost-label">In-house catering (₹600-700/plate)</span>
-                <span className="cost-value">₹90,000-1,05,000</span>
-              </div>
-              <div className="cost-item">
-                <span className="cost-label">Tied-up vendors (decorator/photo)</span>
-                <span className="cost-value">₹50,000-70,000</span>
-              </div>
-              <div className="cost-total">
-                <span className="cost-label"><strong>Approximate Total</strong></span>
-                <span className="cost-value"><strong>₹1,70,000-2,15,000</strong></span>
-              </div>
-            </div>
-            <p className="cost-note">⚠️ Limited flexibility, vendor choice restricted</p>
-          </div>
-
-          {/* SV Model */}
-          <div className="cost-box cost-box-sv">
-            <h4 className="cost-box-header">SV Banquet Halls Model</h4>
-            <p className="cost-box-subtitle">Bring your own vendors</p>
-            <div className="cost-breakdown">
-              <div className="cost-item">
-                <span className="cost-label">Hall rental (call for quote)</span>
-                <span className="cost-value">Call us</span>
-              </div>
-              <div className="cost-item">
-                <span className="cost-label">Your caterer (₹450-550/plate)</span>
-                <span className="cost-value">₹67,500-82,500</span>
-              </div>
-              <div className="cost-item">
-                <span className="cost-label">Your decorator/photographer</span>
-                <span className="cost-value">₹40,000-60,000</span>
-              </div>
-              <div className="cost-total">
-                <span className="cost-label"><strong>Approx. Total (excl. hall)*</strong></span>
-                <span className="cost-value"><strong>₹1,07,500-1,42,500</strong></span>
-              </div>
-            </div>
-            <p className="cost-note">✅ Full flexibility, choose trusted vendors</p>
-          </div>
-
-        </div>
-
         <div className="cost-savings-explanation">
-          <h4 className="savings-title">💰 Why Our Model Typically Costs Less</h4>
+          <h4 className="savings-title">🏛️ Our Transparent Model</h4>
           <div className="savings-reasons">
             <div className="savings-reason">
-              <span className="reason-icon">🏢</span>
+              <span className="reason-icon">✓</span>
+              <div className="reason-content">
+                <strong>You choose your caterer</strong>
+                <p>Bring your trusted caterer or family recipes. Market rates in Mansoorabad: ₹400-800/plate depending on menu. You negotiate directly, you control quality and cost.</p>
+              </div>
+            </div>
+            <div className="savings-reason">
+              <span className="reason-icon">✓</span>
+              <div className="reason-content">
+                <strong>You choose your decorator & photographer</strong>
+                <p>Use vendors you trust or ones we recommend. No commissions, no markups. What they quote is what you pay.</p>
+              </div>
+            </div>
+            <div className="savings-reason">
+              <span className="reason-icon">✓</span>
+              <div className="reason-content">
+                <strong>Hall rental - transparent pricing</strong>
+                <p>Based on guest count and space usage. No hidden charges. Call us for a specific quote: +91 6305 333 751</p>
+              </div>
+            </div>
+            <div className="savings-reason">
+              <span className="reason-icon">✓</span>
               <div className="reason-content">
                 <strong>We own the property</strong>
-                <p>No rent overhead to pass on to customers</p>
-              </div>
-            </div>
-            <div className="savings-reason">
-              <span className="reason-icon">🍽️</span>
-              <div className="reason-content">
-                <strong>No catering markup</strong>
-                <p>You hire caterer directly at market rates (typically ₹100-150 less per plate)</p>
-              </div>
-            </div>
-            <div className="savings-reason">
-              <span className="reason-icon">🎨</span>
-              <div className="reason-content">
-                <strong>No vendor commissions</strong>
-                <p>Your decorator/photographer charges market rate without adding venue commission</p>
+                <p>No rent overhead means stable, transparent pricing. We operate for long-term relationships, not short-term profits.</p>
               </div>
             </div>
           </div>
+        </div>
+
+        <div style={{marginTop: '24px', padding: '20px', background: 'rgba(218, 165, 32, 0.08)', borderRadius: '12px', textAlign: 'center'}}>
+          <p style={{margin: 0, fontFamily: 'Poppins, sans-serif', fontSize: '0.9rem', color: '#555', lineHeight: 1.6}}>
+            <strong style={{color: '#8B0000'}}>Complete Budget Control:</strong> You decide your menu,
+            you choose your vendors, you negotiate your rates. We provide the venue, kitchens, and facilities.
+            Simple, transparent, flexible.
+          </p>
         </div>
 
         <p className="cost-disclaimer">
           <small>
-            * Prices shown are approximate market ranges for Mansoorabad/LB Nagar area (as of 2026)
-            for educational purposes only. Actual costs vary based on menu choices, vendor selection,
-            decoration complexity, guest count, and event date. Call us for specific quote for your event.
+            Market rates mentioned are approximate ranges observed in Mansoorabad/LB Nagar area as of 2026,
+            for general planning purposes only. Actual vendor rates vary. Call +91 6305 333 751 for venue quote.
           </small>
         </p>
       </div>
