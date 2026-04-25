@@ -191,7 +191,7 @@
 
 ### "Is there a kitchen usage fee?"
 
-**No.** 2 fully equipped kitchens + all utensils are included in hall rental. Many venues charge ₹5,000-15,000 for kitchen access - we don't.
+**No.** 2 fully equipped kitchens + all utensils are included in hall rental at no additional charge. Kitchen access is part of your venue booking.
 
 ### "Can I use any decorator?"
 
@@ -237,6 +237,8 @@ We'll give you exact quote.
 ## Compare Before You Book
 
 ### Questions to Ask ANY Venue
+
+**Note:** Different venues operate different models. We are sharing our approach so you can compare like-for-like and find the venue that matches your needs.
 
 Before booking any banquet hall (including ours), ask:
 

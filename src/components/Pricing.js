@@ -81,7 +81,7 @@ const Pricing = () => {
               <span className="reason-icon">✓</span>
               <div className="reason-content">
                 <strong>You choose your caterer</strong>
-                <p>Bring your trusted caterer or family recipes. Market rates in Mansoorabad: ₹400-800/plate depending on menu. You negotiate directly, you control quality and cost.</p>
+                <p>Bring your trusted caterer or family recipes. Approximate market rates in Mansoorabad (as of 2026): ₹400-800/plate depending on menu. Actual rates vary by vendor and menu complexity. You negotiate directly, you control quality and cost.</p>
               </div>
             </div>
             <div className="savings-reason">

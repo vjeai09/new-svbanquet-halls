@@ -44,23 +44,7 @@ const Testimonials = () => {
       source: "Google Reviews",
       avatar: "S",
       color: "#FF6347"
-    },
-    {
-      text: "Excellent venue with great ambiance. The staff were very helpful and the facilities were top-notch. Highly recommended for any celebration!",
-      author: "Priya Sharma",
-      rating: 5,
-      source: "Google Reviews",
-      avatar: "P",
-      color: "#4169E1"
-    },
-    {
-      text: "Beautiful halls with traditional decor. Perfect for our wedding reception. The team made everything seamless and stress-free.",
-      author: "Rajesh Kumar",
-      rating: 5,
-      source: "Google Reviews",
-      avatar: "R",
-      color: "#32CD32"
-    },
+    }
   ];
 
   return (

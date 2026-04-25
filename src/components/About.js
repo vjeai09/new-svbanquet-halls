@@ -25,9 +25,9 @@ const About = ({ id }) => {
             మీరు మీ ప్రియమైన వారిని తీసుకురండి. మిగతాది మేము చూసుకుంటాం.
           </p>
           <p className="about-body" style={{fontWeight: 600, color: '#8B0000', marginTop: '1.5rem'}}>
-            We own the complete land and building — no rent overhead, no forced packages.
+            We own the complete land and building — no rent overhead, complete flexibility in vendor choice.
             You bring your trusted caterer, decorator, and photographer. You negotiate directly,
-            you control your budget, you decide the quality. Full transparency, complete flexibility.
+            you control your budget, you decide the quality. Full transparency, zero restrictions.
           </p>
           <div className="about-stats">
             <div className="about-stat">

@@ -35,7 +35,7 @@ const HowToChooseBanquetHallGuide = () => {
         { label: "Write it down", desc: "Document their response conditions" },
         { label: "Look for partnership", desc: "Not gatekeeping" }
       ],
-      insight: "At the right hall, you don't negotiate WITH the venue. You collaborate. That's the difference between renting a space and renting a prison."
+      insight: "At the right hall, you don't negotiate WITH the venue. You collaborate. That's the difference between rigid contracts and genuine partnership."
     },
     {
       id: 3,

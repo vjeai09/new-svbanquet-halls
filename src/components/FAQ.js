@@ -37,6 +37,30 @@ const faqs = [
     q: "Is the venue wheelchair accessible?",
     a: "Yes. We have an elevator, wheelchair-friendly spaces, and thoughtfully designed steps throughout the venue.",
   },
+  {
+    q: "What is the hall rental cost for 200 guests?",
+    a: "Pricing varies based on date, hall selection, A/C preference, and add-on services like catering and decoration. Please call us on +91 6305 333 751 for a personalised quote tailored to your function size and date.",
+  },
+  {
+    q: "Is SV Banquet Halls good for Telugu weddings?",
+    a: "Yes — we are a family-run venue specialising in traditional Telugu weddings (పెళ్ళి), engagements (నిశ్చితార్థం), and all Hindu rituals. Our halls accommodate mandapam setup, homam, and traditional ceremonies with cultural authenticity.",
+  },
+  {
+    q: "Can I bring my own caterer to SV Banquet Halls?",
+    a: "Yes — bringing your own caterer is welcome and most families prefer it. Our two fully equipped kitchens have all the facilities outside caterers need to prepare and serve traditional South Indian, North Indian, or fusion menus.",
+  },
+  {
+    q: "What is included in hall rental at SV Banquet Halls?",
+    a: "Hall rental typically includes spacious seating, stage area, two kitchen facilities, elevator access, cellar parking, restrooms on every floor, basic lighting, and access to the terrace. Decoration, catering, photography, and A/C usage are arranged as add-ons. Call us for a detailed inclusion list.",
+  },
+  {
+    q: "Do you have cradle ceremony facilities?",
+    a: "Yes — we specialise in బారసాల (cradle ceremony / Naming Day). Our halls are perfect for the traditional setup, and we can guide you on cradle decoration vendors, priest arrangements, and family seating for this auspicious occasion.",
+  },
+  {
+    q: "What is the capacity of SV Banquet Halls?",
+    a: "We comfortably seat 250 guests across our three floors. With floating arrangements (cocktail-style or buffet-style functions), we have hosted 450+ guests. We can help you plan seating based on your exact guest count and function type.",
+  },
 ];
 
 const FAQ = () => {
@@ -60,12 +84,80 @@ const FAQ = () => {
     }))
   };
 
+  // EventVenue / LocalBusiness Schema for Google Maps, Local SEO & AEO
+  const venueSchema = {
+    "@context": "https://schema.org",
+    "@type": "EventVenue",
+    "@id": "https://svbanquethalls.com/#venue",
+    "name": "SV Banquet Halls",
+    "description": "Premium banquet halls in Mansoorabad, LB Nagar, Hyderabad — specialising in Telugu traditional ceremonies including cradle ceremony (బారసాల), half-saree (లంగా ఓణీ), engagement (నిశ్చితార్థం), Upanayanam, Namakaran and weddings. Capacity for 250 seated, 450+ floating guests across three floors.",
+    "url": "https://svbanquethalls.com",
+    "telephone": "+91-6305-333751",
+    "image": "https://svbanquethalls.com/og-image.jpg",
+    "priceRange": "₹₹",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ragala Enclave, Sri Ram Hills Colony, Mansoorabad, LB Nagar",
+      "addressLocality": "Hyderabad",
+      "addressRegion": "Telangana",
+      "postalCode": "500068",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 17.3494,
+      "longitude": 78.5577
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "09:30",
+      "closes": "21:30"
+    }],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.0",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Wheelchair Accessible", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Elevator", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Cellar Parking", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Valet Parking", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "In-house Catering Kitchen", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "External Caterers Allowed", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Terrace Access", "value": true }
+    ],
+    "maximumAttendeeCapacity": 450,
+    "areaServed": [
+      { "@type": "City", "name": "Hyderabad" },
+      { "@type": "Place", "name": "LB Nagar" },
+      { "@type": "Place", "name": "Mansoorabad" },
+      { "@type": "Place", "name": "Vanasthalipuram" },
+      { "@type": "Place", "name": "Hayathnagar" }
+    ],
+    "knowsLanguage": ["te", "en", "hi"]
+  };
+
   return (
     <section className="faq-section" id="faq">
-      {/* FAQ Schema for Google Rich Results & AI Discoverability */}
+      {/* FAQ + EventVenue Schema for Google Rich Results, Maps & AI Discoverability */}
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(venueSchema)}
         </script>
       </Helmet>
 

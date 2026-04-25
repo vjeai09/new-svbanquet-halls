@@ -10,6 +10,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import "./App.css";
 
 const Planning = lazy(() => import("./pages/Planning"));
+const TermsOfService = lazy(() => import("./components/TermsOfService"));
 const About = lazy(() => import("./components/About"));
 const Services = lazy(() => import("./components/Services"));
 const GalleryCTA = lazy(() => import("./components/GalleryCTA"));
@@ -99,6 +100,7 @@ function App() {
           <Routes>
             <Route path="/planning" element={<Planning />} />
             <Route path="/planning/:slug" element={<Planning />} />
+            <Route path="/terms" element={<TermsOfService />} />
             <Route path="/" element={(
               <>
               <SEO
