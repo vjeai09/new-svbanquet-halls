@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: "Is the venue available for Telugu traditional ceremonies?",
-    a: "Absolutely — we specialise in బారసాల (cradle), లంగా ఓణీ (half-saree), నిశ్చితార్థం (engagement), Upanayanam, Namakaran, and all Hindu functions.",
+    a: "Absolutely — we specialise in బారసాల (cradle ceremony), లంగా ఓణీ వేడుక (half-saree ceremony), నిశ్చితార్థం (engagement), Upanayanam, Namakaran, and all Hindu functions.",
   },
   {
     q: "What is the booking process?",
@@ -90,7 +90,7 @@ const FAQ = () => {
     "@type": "EventVenue",
     "@id": "https://svbanquethalls.com/#venue",
     "name": "SV Banquet Halls",
-    "description": "Premium banquet halls in Mansoorabad, LB Nagar, Hyderabad — specialising in Telugu traditional ceremonies including cradle ceremony (బారసాల), half-saree (లంగా ఓణీ), engagement (నిశ్చితార్థం), Upanayanam, Namakaran and weddings. Capacity for 250 seated, 450+ floating guests across three floors.",
+    "description": "Premium banquet halls in Mansoorabad, LB Nagar, Hyderabad — specialising in Telugu traditional ceremonies including cradle ceremony (బారసాల), half-saree ceremony (లంగా ఓణీ వేడుక), engagement (నిశ్చితార్థం), Upanayanam, Namakaran and weddings. Capacity for 250 seated, 450+ floating guests across three floors.",
     "url": "https://svbanquethalls.com",
     "telephone": "+91-6305-333751",
     "image": "https://svbanquethalls.com/og-image.jpg",
@@ -125,6 +125,7 @@ const FAQ = () => {
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.0",
+      "reviewCount": "457",
       "bestRating": "5",
       "worstRating": "1"
     },

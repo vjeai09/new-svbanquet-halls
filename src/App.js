@@ -11,6 +11,8 @@ import "./App.css";
 
 const Planning = lazy(() => import("./pages/Planning"));
 const TermsOfService = lazy(() => import("./components/TermsOfService"));
+const PrivacyPolicy = lazy(() => import("./components/PrivacyPolicy"));
+const CancellationPolicy = lazy(() => import("./components/CancellationPolicy"));
 const About = lazy(() => import("./components/About"));
 const Services = lazy(() => import("./components/Services"));
 const GalleryCTA = lazy(() => import("./components/GalleryCTA"));
@@ -101,11 +103,13 @@ function App() {
             <Route path="/planning" element={<Planning />} />
             <Route path="/planning/:slug" element={<Planning />} />
             <Route path="/terms" element={<TermsOfService />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/cancellation-policy" element={<CancellationPolicy />} />
             <Route path="/" element={(
               <>
               <SEO
                 title="SV Banquet Halls | Premier Banquet Hall in Hyderabad for Weddings & Events"
-                description="SV Banquet Halls in Mansoorabad, Hyderabad — venues for weddings, receptions, birthday parties, cradle ceremonies (బారసాల), half-saree ceremonies (లంగా ఓణీ) & corporate events. Call +91 6305 333 751."
+                description="SV Banquet Halls in Mansoorabad, Hyderabad — venues for weddings, receptions, birthday parties, cradle ceremonies (బారసాల), half-saree ceremonies (లంగా ఓణీ వేడుక) & corporate events. Call +91 6305 333 751."
                 canonical="https://www.svbanquethalls.com/"
               />
               <main id="main-content">

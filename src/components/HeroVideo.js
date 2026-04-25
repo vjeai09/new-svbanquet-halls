@@ -65,9 +65,11 @@ const HeroVideo = () => {
               <Typewriter
                 options={{
                   strings: [
-                    'వివాహ వేడుకలు | Weddings',
-                    'బారసాల · లంగా ఓణీ | Family Ceremonies',
-                    'పుట్టినరోజు వేడుకలు | Birthdays',
+                    'వివాహ వేడుకలు | Wedding Ceremonies',
+                    'బారసాల వేడుక | Cradle Ceremony',
+                    'లంగా ఓణీ వేడుక | Half-Saree Ceremony',
+                    'నిశ్చితార్థం వేడుకలు | Engagement Ceremonies',
+                    'పుట్టినరోజు వేడుకలు | Birthday Celebrations',
                     "A Mansoorabad Favourite Since 2016"
                   ],
                   autoStart: true,
@@ -89,7 +91,7 @@ const HeroVideo = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="google-rating-badge"
-                aria-label="4.0 stars on Google"
+                aria-label="4.0 stars on Google – 457 reviews"
               >
                 <img
                   src="https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png"
@@ -100,7 +102,7 @@ const HeroVideo = () => {
                   <span className="google-rating-score">4.0</span>
                   <span className="google-rating-stars-icons">★★★★★</span>
                 </div>
-                <span className="google-rating-count">Google Reviews</span>
+                <span className="google-rating-count">457 reviews</span>
               </a>
             )}
           </div>

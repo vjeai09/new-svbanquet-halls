@@ -1,331 +1,119 @@
-# SV Banquet Halls — Project Context for Claude Code
+# SV Banquet Halls — Claude Code Context
 
-**Live Site:** https://www.svbanquethalls.com/  
-**Deployment:** Vercel (auto-deploys from `main` branch)  
-**Last Updated:** 2026-04-21
-
----
-
-## Project Overview
-
-Premier banquet hall website in Mansoorabad, Hyderabad. React SPA showcasing event venues for weddings, traditional Telugu ceremonies (బారసాల, లంగా ఓణీ), birthdays, and corporate events.
-
-**Business Model - Customer-First Philosophy:** 
-- **Venue rental only** (customers bring own caterer)
-- **Why:** Own the building (no rent overhead) → pass savings to customers
-- **Customer benefit:** Save 30-50% by using trusted caterer vs. forced in-house catering
-- **Total event enhancement:** Use trusted vendors → better quality, better prices
-- Provide 2 kitchens + utensils (free to use)
-- Pricing based on guest count and space usage
-- Call-for-quote model (prices NOT published online to encourage engagement)
-- WhatsApp/Call-first booking (no online booking system)
-
-**Core Message:** "We run this business for customer benefit, not just profit. Own the land, operate responsibly, pass savings to you."
+**Live:** https://www.svbanquethalls.com/ | **Deploy:** Vercel auto-deploy from `main`  
+**Stack:** React 18 CRA, React Router v7, Bootstrap 5, MUI, Framer Motion  
+**Business:** Banquet hall in Mansoorabad, Hyderabad — venue rental only (customers bring own caterer)
 
 ---
 
-## Design Direction — CRITICAL
+## Design Rules — CRITICAL
 
-### ✅ DO: Modern Elegant with Cultural Accents
-- Clean contemporary layouts
-- Cinematic hero video
-- Serif headers (Playfair Display) + sans-serif body (Poppins)
-- Traditional Indian color palette (ivory/vermillion/gold)
-- Minimal decorative elements (gold corner brackets, gradients)
-- Bilingual content (Telugu + English)
-- Premium event venue aesthetic (upscale hotel style)
+### ✅ DO: Modern Elegant
+- Clean contemporary layouts, cinematic hero video
+- Serif headers (Playfair Display) + sans-serif (Poppins)
+- Traditional palette: ivory (#fdf6e3), vermillion (#8B0000), gold (#DAA520)
+- Bilingual Telugu + English
 
-### ❌ DO NOT SUGGEST:
-- **Bapu-Ramana traditional aesthetic** — User explicitly rejected this. AI cannot authentically replicate hand-drawn borders, watercolor illustrations, kolam patterns. Keep modern design.
-- **Publishing hall rental prices online** — Intentional strategy to encourage calls (better conversion)
-- **In-house catering** — They do NOT provide food; customers bring own caterer
-- Email contact forms — Business uses WhatsApp/Call only
-- Online booking system — Call-first engagement model
-- Hand-drawn elements, parchment textures, silk weaves
-- Traditional ornate borders or illustrated dividers
-- Any "artisan" or "hand-crafted" design elements
-
-**Why:** AI-generated traditional artwork is low quality. Modern elegant design converts better for banquet hall business.
+### ❌ NEVER Suggest:
+- **Bapu-Ramana traditional aesthetic** — User rejected. AI can't do authentic hand-drawn art. Stay modern.
+- Publishing hall rental prices online — Call-for-quote strategy
+- Email contact forms — WhatsApp/Call only
+- Online booking system — Call-first model
+- Internal photo gallery — External links only (Google Photos/FB/Insta)
+- Google Reviews API — Manual reviews only
 
 ---
 
-## What Already Exists (DO NOT Suggest Re-implementing)
+## What Already Exists (DO NOT Re-implement)
 
-### ✅ Contact & Booking
-- **NO email form** — Contact section has WhatsApp/Call cards only
-- Three contact methods: Call (+91 6305 333 751), WhatsApp (Telugu pre-filled), Visit Us
-- Sticky CTAs: Desktop (right side circles) + Mobile (bottom bar)
-- Pre-filled WhatsApp message: "నమస్కారం, హాల్ బుకింగ్ గురించి అడగాలనుకుంటున్నాను"
+**Contact:** WhatsApp/Call cards only (NO forms). Pre-filled Telugu message.  
+**Reviews:** 5 manual Google reviews in Swiper carousel. Trust stats: 10K+ guests, 4.0★, 8+ years.  
+**Gallery:** External links only (Google Photos, FB, Insta). Shows "457+ reviews, 4.0 stars".  
+**Pricing:** NOT displayed (intentional). "Call/WhatsApp for quote" model. Actual: ₹17K (non-A/C), ₹22-25K (A/C).  
+**Services:** 7 expandable cards (Food, Events, Halls, Parking, Accessibility, Ceremonies, Amenities).  
+**SEO:** Schema.org (EventVenue + WebSite), OG tags, GA4: G-HRKS08E0ZZ, Google/Bing verified.
 
-### ✅ Reviews & Testimonials
-- **5 manual Google reviews** embedded in Testimonials section (Swiper carousel)
-- Trust stats: 10,000+ guests, 4.0★ rating, 8+ years
-- "Write a Review on Google" CTA button
-- **NO live Google Reviews API integration** — manual only
-
-### ✅ Gallery
-- **NO internal photo gallery**
-- Links to external: Google Photos, Facebook, Instagram
-- Shows Google rating: 457+ reviews, 4.0 stars
-
-### ✅ Pricing
-- **NO pricing displayed on site** (intentional strategy)
-- **Why:** Publishing prices online reduces calls → loses engagement opportunities
-- Actual pricing: ~₹17K (non-A/C), ~₹22-25K (A/C), varies by guest count
-- "Call or WhatsApp for quote" model
-- Lists what's included (kitchens, utensils, venue facilities)
-- CTA buttons: Call Us | WhatsApp Us
-
-### ✅ Services
-- 7 service categories with expandable details
-- Food, Events, Halls, Parking, Accessibility, Traditional Ceremonies, Amenities
-- All have Telugu + English titles
-
-### ✅ SEO & Analytics
-- Schema.org structured data (EventVenue + WebSite)
-- Open Graph + Twitter Cards
-- GA4: G-HRKS08E0ZZ
-- Google Search Console + Bing verified
-- IndexNow integration
+**Known Issues:**
+- 404 page missing (low priority for banquet hall traffic)
+- `/planning` section has minimal content (TBD)
 
 ---
 
-## Known Issues
-
-### ❌ 404 Page Missing
-- Non-existent URLs show blank page with footer only
-- No catch-all route in React Router
-- **Status:** Low priority (user confirmed not important for banquet hall traffic)
-
-### ⚠️ Planning Section
-- Route exists (`/planning`, `/planning/:slug`) but content TBD
-- Currently shows minimal content
-
----
-
-## Tech Stack
-
-```
-Framework: React 18 (Create React App)
-Routing: React Router DOM v7
-Styling: CSS3 + Bootstrap 5
-Animations: AOS, Framer Motion, Swiper
-Typography: Playfair Display, Poppins, Noto Sans Telugu
-Icons: Font Awesome, React Icons
-SEO: React Helmet Async
-Build: 4.4 MB optimized
-```
-
-**Key Dependencies:**
-- `puppeteer` (for screenshot automation)
-- `aos` (animate on scroll)
-- `swiper` (carousels)
-- `typewriter-effect` (hero text)
-
----
-
-## File Structure (Key Components)
+## File Structure
 
 ```
 src/
-├── App.js                      # Main router + error boundary
-├── App.css                     # Global styles, color palette
+├── App.js, App.css
 ├── components/
-│   ├── Header.js               # Nav + top bar (hides on scroll)
-│   ├── HeroVideo.js            # Cinematic video + typewriter
-│   ├── VenueHighlightsBar.js   # Scrolling feature marquee
-│   ├── About.js                # 8 years, 10k guests, stats
-│   ├── Services.js             # 7 expandable service cards
-│   ├── GalleryCTA.js           # Links to Google/FB/Insta photos
-│   ├── Testimonials.js         # 5 manual reviews + trust stats
-│   ├── Pricing.js              # What's included + flexible options
-│   ├── FAQ.js                  # 8 questions (accordion)
-│   ├── ContactForm.js          # WhatsApp/Call cards (NO form!)
-│   ├── Footer.js               # Links, hours, copyright
-│   ├── BottomBar.js            # Mobile sticky CTAs
-│   └── StickyCTA.js            # Desktop sticky buttons
-└── pages/
-    └── Planning.js             # Event planning content
+│   ├── Header.js, HeroVideo.js, VenueHighlightsBar.js
+│   ├── About.js, Services.js, GalleryCTA.js
+│   ├── Testimonials.js, Pricing.js, FAQ.js
+│   ├── ContactForm.js, Footer.js
+│   ├── BottomBar.js, StickyCTA.js
+└── pages/Planning.js
 
 public/
-├── hero-fixed.mp4              # Main hero video
-├── venues.jpg                  # Venue photos
-├── foodnew.jpg, events.jpg, etc.
+├── hero-fixed.mp4 (main video)
+├── venues.jpg, foodnew.jpg, events.jpg
 ```
 
 ---
 
-## Color Palette
+## Common Mistakes to Avoid
 
-```css
---ivory:        #fdf6e3  /* Background */
---ivory-deep:   #f5e6c8
---vermillion:   #8B0000  /* Primary accent */
---turmeric:     #DAA520  /* Gold/highlights */
---ink:          #2C1810  /* Text */
---forest:       #2D5016  /* Secondary */
-```
-
-**Usage:**
-- Background: Ivory
-- Headers/CTAs: Vermillion (dark red)
-- Buttons/highlights: Turmeric (gold)
-- Text: Ink (dark brown)
+❌ Suggesting email forms (WhatsApp/Call only)  
+❌ Google Reviews API (manual only)  
+❌ Display pricing (call-for-quote model)  
+❌ Internal gallery (external links)  
+❌ Traditional Bapu-Ramana design (rejected)  
+❌ 404 page as priority (low priority)
 
 ---
 
-## Business Information
+## Security (Inherits from Global)
 
-**Name:** SV Banquet Halls  
-**Tagline:** "Made Memories"  
-**Phone:** +91 6305 333 751  
-**Location:** Mansoorabad, LB Nagar, Hyderabad 500068  
-**Hours:** Open daily 9 AM – 9 PM  
-**Established:** 8+ years (since ~2018)
-
-**Capacity:**
-- Per floor (seated): 220 guests
-- Total floors: 3 floors + terrace
-- Single floor event: 220 seated
-- Multi-floor floating: 660+ guests (guests use all floors for food, movement, etc.)
-
-**Venue:**
-- 2 A/C Halls (~₹22-25K each, varies by guest count)
-- 1 Non-A/C Hall (~₹17K, 1st floor)
-- Open terrace (available with hall bookings)
-- 2 fully equipped kitchens (for customer's caterer)
-- Utensils and crockery provided
-- Elevator, parking for 50+ vehicles
-
-**Important:** NO catering provided. Customers bring own caterer and use our kitchens.
-
-**Google Rating:** 4.0 ★ (457+ reviews)
+- Parameterized queries (N/A — static site, no backend)
+- Never hardcode secrets (`.env` for API keys)
+- No forms = minimal input validation needed
 
 ---
 
-## Deployment Workflow
+## Deployment
 
 ```bash
-# Development
-npm start              # Local: localhost:3000
-
-# Production
-git add .
-git commit -m "..."
-git push origin main   # Auto-deploys to Vercel
+npm start                # Local dev
+git push origin main     # Auto-deploys to Vercel
 ```
 
-**Live URL:** https://www.svbanquethalls.com/  
-**Platform:** Vercel (GitHub integration)  
-**GitHub Repo:** https://github.com/vjeai09/new-svbanquet-halls
-
-**Note:** `gh-pages` scripts in package.json are **legacy** — NOT used. Vercel handles deployment.
+**Note:** `gh-pages` scripts in package.json are legacy — NOT used.
 
 ---
 
-## When Working on This Project
+## Legal Compliance
 
-### Before Suggesting Improvements:
-
-1. **Check this file** for what already exists
-2. **Check `/Users/tusshar/Documents/brain/MapsOfConent/svbanquethalls-complete-features.md`** for complete feature inventory
-3. **Run screenshot script** if unsure: `node screenshot-review.js` (creates 14 screenshots in `/screenshots/`)
-4. **Verify live site** at https://www.svbanquethalls.com/
-
-### Common Mistakes to Avoid:
-
-❌ Suggesting email contact forms (they don't want forms)  
-❌ Suggesting Google Reviews API integration (they use manual reviews)  
-❌ Suggesting pricing display (call-for-quote model)  
-❌ Suggesting internal photo gallery (external links only)  
-❌ Suggesting Bapu-Ramana traditional design (explicitly rejected)  
-❌ Suggesting 404 page as high priority (low priority for this business)
-
-### High-Value Improvements:
-
-✅ Google My Business optimization  
-✅ WhatsApp Business features (quick replies, catalog)  
-✅ Customer photo gallery (with permission)  
-✅ Faster booking response workflow  
-✅ Content for `/planning` section  
-✅ Performance optimization (image formats, lazy loading)
+**Status:** Conditional Pass (78/100) — See memory for details  
+**Full Audit:** `/docs/LEGAL-COMPLIANCE-AUDIT.md` (reference only)
 
 ---
 
-## Security Considerations
+## Workspace Configuration
 
-**Per user's global CLAUDE.md:**
-- Always use parameterized queries
-- Never hardcode secrets (use `.env`)
-- Validate all inputs
-- Generic error messages only
-- Least privilege principle
+**Token Optimization:** Ruflo MCP disabled for this project (configured in `.claude/settings.json`)  
+**Full Guide:** `/docs/CLAUDE-CODE-WORKSPACE-SETUP.md`
 
-**This Project:**
-- No backend/database (static React site)
-- No forms = no input validation needed (except analytics tracking)
-- `.env` exists for any API keys
-- No sensitive data handling
+**Use this workspace for:** Website dev, SEO, marketing, Instagram (Composio only)  
+**Use `/Documents/brain` for:** Obsidian notes, Ruflo workflows, cross-project work
 
 ---
 
-## Screenshot Automation
+## Before Making Changes
 
-**Script:** `/screenshot-review.js`
-
-```bash
-node screenshot-review.js
-```
-
-**Creates 14 screenshots:**
-- Desktop: Homepage sections, Planning page, 404 test
-- Mobile: Homepage, Contact section
-
-**Saves to:** `/screenshots/`
-
-**Use when:** Verifying changes before suggesting improvements
+1. Check this file for existing features
+2. Run `node screenshot-review.js` if unsure (creates 14 screenshots)
+3. Verify live site at https://www.svbanquethalls.com/
+4. Test WhatsApp links, Telugu fonts, mobile animations
 
 ---
 
-## Key WhatsApp Links
-
-**Primary CTA:**
-```
-https://wa.me/916305333751?text=నమస్కారం, హాల్ బుకింగ్ గురించి అడగాలనుకుంటున్నాను
-```
-
-**Translation:** "Hello, I'd like to inquire about hall booking"
-
-**Used in:**
-- All Contact CTAs
-- Testimonials section
-- Pricing section
-- Sticky buttons (mobile + desktop)
-
----
-
-## Testing Checklist
-
-Before marking work complete:
-
-- [ ] Test on mobile (Safari iOS, Chrome Android)
-- [ ] Test WhatsApp links open correctly with pre-filled message
-- [ ] Test phone links (`tel:`) work on mobile
-- [ ] Verify Google Maps links open in app/browser
-- [ ] Check Telugu fonts render correctly
-- [ ] Verify animations don't lag on mobile
-- [ ] Run screenshot script to capture changes
-- [ ] Test on Vercel preview deploy before merging to main
-
----
-
-## Contact
-
-**Project Owner:** VijayaLakshmi  
-**Email:** vjeai.tech@gmail.com  
-**For Questions:** Check this file first, then Obsidian `/MapsOfConent/svbanquethalls-complete-features.md`
-
----
-
-**Last Updated:** 2026-04-21  
-**Audit Status:** ✅ Complete (code + screenshots reviewed)
+**Contact:** VijayaLakshmi | vjeai.tech@gmail.com  
+**Last Updated:** 2026-04-25

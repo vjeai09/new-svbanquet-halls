@@ -196,7 +196,10 @@ const HowToChooseBanquetHallGuide = () => {
           <div className="insight-content">
             <h2>The Real Currency</h2>
             <p>When you bring your own vendors, you negotiate <strong>directly with them</strong>. They compete to win your business. Prices drop. Quality rises. This is how markets actually work—when you have choice.</p>
-            <p className="insight-highlight">It's called freedom. And it saves money.</p>
+            <p className="insight-highlight">It's called freedom. And it can save you money.</p>
+            <p style={{ fontSize: '0.9em', marginTop: '0.5rem', opacity: 0.8 }}>
+              <em>Actual savings depend on the vendors you choose and the rates you negotiate with them.</em>
+            </p>
           </div>
           <div className="insight-decorative">
             <div className="insight-badge">✓ Your Choice</div>

@@ -14,28 +14,43 @@
   gap: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid #333;
+  align-items: start; /* Align all columns to top */
 }
 
 /* Brand column */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-logo {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.5rem;
+  font-weight: 700;
   color: #DAA520;
-  margin: 0 0 10px;
+  margin: 0 0 16px; /* Match other column title spacing */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .footer-tagline {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #DAA520;
-  margin: 0 0 8px;
-  line-height: 1.5;
+  margin: 0 0 12px;
+  line-height: 1.6;
 }
 
 .footer-tagline-en {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: #999;
   line-height: 1.6;
   margin: 0;
+}
+
+/* Column containers */
+.footer-col {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Column headings */
@@ -46,6 +61,7 @@
   margin: 0 0 16px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  line-height: 1.5;
 }
 
 /* Contact list */
@@ -60,7 +76,7 @@
 
 .footer-contact-list li {
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* Center-align icons with text */
   gap: 10px;
   font-size: 0.9rem;
   line-height: 1.5;
@@ -70,9 +86,9 @@
   color: #ccc;
   text-decoration: none;
   transition: color 0.2s;
-  display: inline-block;
-  min-height: 44px;
-  line-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px; /* Touch target size */
   padding: 0 4px;
 }
 
@@ -80,11 +96,16 @@
   color: #DAA520;
 }
 
+.footer-contact-list span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
 .footer-icon {
   color: #DAA520;
   flex-shrink: 0;
-  margin-top: 3px;
-  font-size: 0.95rem;
+  font-size: 1rem; /* Slightly larger for better visibility */
 }
 
 .footer-icon--wa {

@@ -1,0 +1,46 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl *)",
+      "Bash(lsof *)",
+      "Bash(npm search *)",
+      "Bash(npm info *)",
+      "Bash(npm audit *)",
+      "mcp__composio__COMPOSIO_SEARCH_TOOLS"
+    ],
+    "bash": {
+      "default": "ask",
+      "allowed": [
+        "npm start",
+        "npm test",
+        "npm run build",
+        "git status",
+        "git diff",
+        "git log",
+        "git add",
+        "git commit",
+        "git push",
+        "node screenshot-review.js",
+        "ls",
+        "find",
+        "grep"
+      ]
+    },
+    "read": {
+      "default": "allow"
+    },
+    "edit": {
+      "default": "ask"
+    },
+    "write": {
+      "default": "ask"
+    }
+  },
+  "mcpServers": {
+    "ruflo": null
+  },
+  "hooks": {
+    "enabled": false,
+    "comment": "Simple project - no automation hooks needed"
+  }
+}
