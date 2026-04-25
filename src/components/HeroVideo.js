@@ -65,10 +65,12 @@ const HeroVideo = () => {
               <Typewriter
                 options={{
                   strings: [
-                    'వివాహ వేడుకలు | Weddings',
-                    'బారసాల · లంగా ఓణీ | Family Ceremonies',
-                    'పుట్టినరోజు వేడుకలు | Birthdays',
-                    "Mansoorabad's Favourite Celebration Hall"
+                    'వివాహ వేడుకలు | Wedding Ceremonies',
+                    'బారసాల వేడుక | Cradle Ceremony',
+                    'లంగా ఓణీ వేడుక | Half-Saree Ceremony',
+                    'నిశ్చితార్థం వేడుకలు | Engagement Ceremonies',
+                    'పుట్టినరోజు వేడుకలు | Birthday Celebrations',
+                    "A Mansoorabad Favourite Since 2016"
                   ],
                   autoStart: true,
                   loop: true,

@@ -44,29 +44,13 @@ const Testimonials = () => {
       source: "Google Reviews",
       avatar: "S",
       color: "#FF6347"
-    },
-    {
-      text: "Excellent venue with great ambiance. The staff were very helpful and the facilities were top-notch. Highly recommended for any celebration!",
-      author: "Priya Sharma",
-      rating: 5,
-      source: "Google Reviews",
-      avatar: "P",
-      color: "#4169E1"
-    },
-    {
-      text: "Beautiful halls with traditional decor. Perfect for our wedding reception. The team made everything seamless and stress-free.",
-      author: "Rajesh Kumar",
-      rating: 5,
-      source: "Google Reviews",
-      avatar: "R",
-      color: "#32CD32"
-    },
+    }
   ];
 
   return (
     <div id="testimonials" className="testimonials">
       <div className="section-divider"></div>
-      
+
       {/* Decorative Elements */}
       <div className="testimonial-deco deco-1">✨</div>
       <div className="testimonial-deco deco-2">🪔</div>
@@ -90,8 +74,22 @@ const Testimonials = () => {
           modules={[Autoplay, Pagination, Navigation, EffectCoverflow]}
           effect={isMobile ? "slide" : "coverflow"}
           grabCursor={true}
-          centeredSlides={true}
-          slidesPerView="auto"
+          centeredSlides={false}
+          slidesPerView={isMobile ? 1 : 2}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              centeredSlides: false,
+            },
+            900: {
+              slidesPerView: 2,
+              centeredSlides: false,
+            },
+            1400: {
+              slidesPerView: 2,
+              centeredSlides: false,
+            }
+          }}
           coverflowEffect={isMobile ? undefined : {
             rotate: 15,
             stretch: 0,
@@ -117,7 +115,7 @@ const Testimonials = () => {
               <div className="testimonial">
                 {/* Background Pattern */}
                 <div className="testimonial-pattern"></div>
-                
+
                 {/* Quote Icon */}
                 <div className="quote-icon">
                   <FaQuoteLeft />

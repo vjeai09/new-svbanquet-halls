@@ -84,7 +84,7 @@
 /* ── Content — sits at the bottom like a film title ── */
 .hero-content {
   width: 100%;
-  max-width: 860px;
+  max-width: 1200px; /* Increased for longer Telugu ceremony names */
   color: #fff;
   text-align: left;
 }
@@ -98,6 +98,8 @@
   text-shadow: 0 1px 8px rgba(0,0,0,0.9);
   margin-bottom: 8px;
   min-height: 28px;
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: visible; /* Don't cut off text */
   letter-spacing: 0.03em;
 }
 

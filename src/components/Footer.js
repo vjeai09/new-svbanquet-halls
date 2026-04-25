@@ -1,5 +1,6 @@
 // src/components/Footer.js
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaPhone, FaWhatsapp, FaMapMarkerAlt, FaClock, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import "./Footer.css";
 
@@ -13,7 +14,7 @@ const Footer = () => (
         <p className="footer-tagline" style={{fontFamily:"'Noto Sans Telugu',sans-serif"}}>
           మీ ప్రత్యేక క్షణాలకు అత్యుత్తమ వేదిక
         </p>
-        <p className="footer-tagline-en">Hyderabad's trusted venue for weddings,<br/>ceremonies &amp; celebrations since years.</p>
+        <p className="footer-tagline-en">A trusted Mansoorabad venue for weddings,<br/>ceremonies &amp; celebrations since 2016.</p>
       </div>
 
       {/* Column 2 — Contact */}
@@ -76,7 +77,21 @@ const Footer = () => (
     </div>
 
     <div className="footer-bottom">
-      <p>&copy; {new Date().getFullYear()} SV Banquet Halls. All Rights Reserved.</p>
+      <p>
+        &copy; {new Date().getFullYear()} SV Banquet Halls. All Rights Reserved.
+        {" · "}
+        <Link to="/terms" style={{ color: "inherit", textDecoration: "underline" }}>
+          Terms of Service
+        </Link>
+        {" · "}
+        <Link to="/privacy" style={{ color: "inherit", textDecoration: "underline" }}>
+          Privacy Policy
+        </Link>
+        {" · "}
+        <Link to="/cancellation-policy" style={{ color: "inherit", textDecoration: "underline" }}>
+          Cancellation Policy
+        </Link>
+      </p>
     </div>
   </footer>
 );

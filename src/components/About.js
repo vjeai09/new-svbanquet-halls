@@ -24,6 +24,11 @@ const About = ({ id }) => {
             మేము స్థలం ఇస్తాం, వంటశాల ఇస్తాం, సౌకర్యం ఇస్తాం —
             మీరు మీ ప్రియమైన వారిని తీసుకురండి. మిగతాది మేము చూసుకుంటాం.
           </p>
+          <p className="about-body" style={{fontWeight: 600, color: '#8B0000', marginTop: '1.5rem'}}>
+            We own the complete land and building — no rent overhead, complete flexibility in vendor choice.
+            You bring your trusted caterer, decorator, and photographer. You negotiate directly,
+            you control your budget, you decide the quality. Full transparency, zero restrictions.
+          </p>
           <div className="about-stats">
             <div className="about-stat">
               <span className="stat-number">8+</span>
@@ -51,7 +56,7 @@ const About = ({ id }) => {
           </div>
           <div className="about-badge">
             <span className="badge-icon">🏛️</span>
-            <span className="badge-text">Established in Mansoorabad</span>
+            <span className="badge-text">Established in Mansoorabad, Hyderabad</span>
           </div>
         </div>
       </div>
