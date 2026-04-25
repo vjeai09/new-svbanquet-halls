@@ -72,6 +72,11 @@
   gap: 12px;
 }
 
+.faq-question span:first-child {
+  text-align: left;
+  flex: 1;
+}
+
 .faq-chevron {
   font-size: 0.65rem;
   color: #8B0000;
