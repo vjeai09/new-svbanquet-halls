@@ -54,10 +54,10 @@ const Services = () => {
       image: "/venues.jpg",
       icon: <FaBuilding />,
       details: [
-        "2 A/C Halls: Elegant and comfortable, featuring cozy curtains and premium sound systems.",
-        "1 Non-A/C Hall (1st Floor): Spacious and versatile — ideal for daytime and evening functions.",
-        "Terrace Space: Open-air area perfect for additional seating or outdoor moments.",
-        "Book one hall for a small gathering or combine all for a grand celebration — call us to plan your event.",
+        "2 Fully A/C Halls: Elegant and comfortable, each seats 220 guests with premium sound systems and climate control.",
+        "1 Spacious Non-A/C Hall: Seats 220 guests — ideal for daytime functions and evening events with natural ventilation.",
+        "Independent Terrace Space: Not tied to any hall — perfect for cocktail hours, outdoor photo sessions, or overflow seating.",
+        "Flexible Configuration: Book one hall for 220 guests, two halls for 440, or all three for 660 seated (900+ floating).",
       ],
     },
     {

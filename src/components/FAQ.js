@@ -7,11 +7,11 @@ import "./FAQ.css";
 const faqs = [
   {
     q: "How many guests can you accommodate?",
-    a: "Our halls comfortably seat 250 guests across three floors. With flexible floating arrangements we have hosted 450+ guests. Call us to plan your exact count.",
+    a: "We have 3 halls: 2 fully A/C and 1 spacious Non-A/C hall. Each hall seats 220 guests. Plus an independent terrace space. Total capacity: 660 seated or 900+ floating (cocktail-style, buffet). We can configure the space for your exact guest count.",
   },
   {
     q: "Can I bring my own caterer?",
-    a: "Yes. We allow external caterers and provide two fully equipped kitchens. Our in-house chefs are also available if you prefer.",
+    a: "Absolutely, yes. Bring your trusted caterer and we provide two fully equipped kitchens with utensils. OR use our in-house catering team if you prefer. Completely your choice — zero restrictions, zero mandatory packages.",
   },
   {
     q: "Is the venue available for Telugu traditional ceremonies?",
@@ -27,11 +27,11 @@ const faqs = [
   },
   {
     q: "Are the halls air-conditioned?",
-    a: "Two of our halls are fully A/C. We also have a spacious Non-A/C hall with terrace access — ideal for evening functions or overflow seating.",
+    a: "Two of our halls are fully A/C. We also have a spacious Non-A/C hall — ideal for daytime and evening functions with natural ventilation. Plus, we have an independent terrace space (not tied to any specific hall) for outdoor moments or overflow seating.",
   },
   {
     q: "Do you provide decoration and photography?",
-    a: "We work with in-house decorators and a photographer, or you are welcome to bring your own preferred vendors.",
+    a: "Completely your choice. Bring your own trusted decorators and photographer, OR use our in-house team — we have experienced decorators and a photographer available if you prefer. No restrictions, no mandatory packages. Your event, your vendors.",
   },
   {
     q: "Is the venue wheelchair accessible?",
@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "What is the hall rental cost for 200 guests?",
-    a: "Pricing varies based on date, hall selection, A/C preference, and add-on services like catering and decoration. Please call us on +91 6305 333 751 for a personalised quote tailored to your function size and date.",
+    a: "Pricing varies based on date, hall selection (A/C vs Non-A/C), and optional services like catering and decoration. A/C and power backup are included in the base hall rental. Call us on +91 6305 333 751 for a personalised quote tailored to your function size and date.",
   },
   {
     q: "Is SV Banquet Halls good for Telugu weddings?",
@@ -47,11 +47,11 @@ const faqs = [
   },
   {
     q: "Can I bring my own caterer to SV Banquet Halls?",
-    a: "Yes — bringing your own caterer is welcome and most families prefer it. Our two fully equipped kitchens have all the facilities outside caterers need to prepare and serve traditional South Indian, North Indian, or fusion menus.",
+    a: "Absolutely — most families prefer it! Bring your trusted caterer and use our two fully equipped kitchens with all facilities for South Indian, North Indian, or fusion menus. OR use our in-house catering if you prefer. Completely your choice, zero restrictions.",
   },
   {
     q: "What is included in hall rental at SV Banquet Halls?",
-    a: "Hall rental typically includes spacious seating, stage area, two kitchen facilities, elevator access, cellar parking, restrooms on every floor, basic lighting, and access to the terrace. Decoration, catering, photography, and A/C usage are arranged as add-ons. Call us for a detailed inclusion list.",
+    a: "Hall rental includes: spacious seating, stage area, A/C (for A/C halls), full power backup, two fully equipped kitchens with utensils, elevator access, cellar + street parking, restrooms on every floor, basic lighting, and terrace access. Decoration, catering, and photography are optional — bring your own vendors or use our in-house team. Call +91 6305 333 751 for detailed pricing.",
   },
   {
     q: "Do you have cradle ceremony facilities?",
@@ -59,7 +59,7 @@ const faqs = [
   },
   {
     q: "What is the capacity of SV Banquet Halls?",
-    a: "We comfortably seat 250 guests across our three floors. With floating arrangements (cocktail-style or buffet-style functions), we have hosted 450+ guests. We can help you plan seating based on your exact guest count and function type.",
+    a: "Each hall seats 220 guests. We have 3 halls (2 A/C, 1 Non-A/C) plus independent terrace. Total: 660 seated or 900+ floating. Book one hall for small events (220 guests) or all three for large weddings (660+ guests). We configure to your exact count.",
   },
 ];
 
@@ -90,7 +90,7 @@ const FAQ = () => {
     "@type": "EventVenue",
     "@id": "https://svbanquethalls.com/#venue",
     "name": "SV Banquet Halls",
-    "description": "Premium banquet halls in Mansoorabad, LB Nagar, Hyderabad — specialising in Telugu traditional ceremonies including cradle ceremony (బారసాల), half-saree ceremony (లంగా ఓణీ వేడుక), engagement (నిశ్చితార్థం), Upanayanam, Namakaran and weddings. Capacity for 250 seated, 450+ floating guests across three floors.",
+    "description": "Premium banquet halls in Mansoorabad, LB Nagar, Hyderabad — specialising in Telugu traditional ceremonies including cradle ceremony (బారసాల), half-saree ceremony (లంగా ఓణీ వేడుక), engagement (నిశ్చితార్థం), Upanayanam, Namakaran and weddings. Three separate halls (2 fully A/C, 1 Non-A/C) each seating 220 guests, plus independent terrace space. Total capacity: 660 seated or 900+ floating guests.",
     "url": "https://svbanquethalls.com",
     "telephone": "+91-6305-333751",
     "image": "https://svbanquethalls.com/og-image.jpg",
@@ -139,7 +139,7 @@ const FAQ = () => {
       { "@type": "LocationFeatureSpecification", "name": "External Caterers Allowed", "value": true },
       { "@type": "LocationFeatureSpecification", "name": "Terrace Access", "value": true }
     ],
-    "maximumAttendeeCapacity": 450,
+    "maximumAttendeeCapacity": 900,
     "areaServed": [
       { "@type": "City", "name": "Hyderabad" },
       { "@type": "Place", "name": "LB Nagar" },
