@@ -56,7 +56,7 @@ const About = ({ id }) => {
           </div>
           <div className="about-badge">
             <span className="badge-icon">🏛️</span>
-            <span className="badge-text">Established in Mansoorabad</span>
+            <span className="badge-text">Established in Mansoorabad, Hyderabad</span>
           </div>
         </div>
       </div>
