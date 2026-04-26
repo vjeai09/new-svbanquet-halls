@@ -1,7 +1,7 @@
 // src/components/PrivacyPolicy.js
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaPhone, FaEnvelope } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
 import "./TermsOfService.css";
 
 const PrivacyPolicy = () => {
