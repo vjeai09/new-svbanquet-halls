@@ -23,15 +23,6 @@ const TermsOfService = () => {
 
       <article className="tos-content">
 
-        {/* Navigation */}
-        <div style={{ marginBottom: '32px', paddingBottom: '20px', borderBottom: '1px solid rgba(218, 165, 32, 0.2)', fontSize: '0.9rem' }}>
-          <Link to="/" style={{ color: '#8B0000', textDecoration: 'none', fontWeight: '500' }}>← Back to Home</Link>
-          <span style={{ margin: '0 12px', color: '#ccc' }}>|</span>
-          <Link to="/privacy" style={{ color: '#0066cc', textDecoration: 'underline' }}>Privacy Policy</Link>
-          <span style={{ margin: '0 12px', color: '#ccc' }}>|</span>
-          <Link to="/cancellation-policy" style={{ color: '#0066cc', textDecoration: 'underline' }}>Cancellation Policy</Link>
-        </div>
-
         {/* Intro */}
         <section className="tos-section">
           <h2 className="tos-section-title">
@@ -381,21 +372,13 @@ const TermsOfService = () => {
           </ul>
         </section>
 
-        {/* CTA */}
-        <div className="tos-cta-block">
-          <p className="tos-cta-telugu">ప్రశ్నలు ఉన్నాయా?</p>
-          <h3 className="tos-cta-heading">Questions? Call +91 6305 333 751</h3>
-          <p className="tos-cta-sub">
-            We are happy to walk you through any clause before you sign.
-          </p>
-          <div className="tos-cta-actions">
-            <a href="tel:+916305333751" className="tos-cta-btn tos-cta-btn--primary">
-              Call Now
-            </a>
-            <Link to="/" className="tos-cta-btn tos-cta-btn--ghost">
-              Back to Home
-            </Link>
-          </div>
+        {/* Navigation */}
+        <div style={{ marginTop: '40px', paddingTop: '24px', borderTop: '1px solid rgba(218, 165, 32, 0.2)', fontSize: '0.95rem', textAlign: 'center' }}>
+          <Link to="/" style={{ color: '#8B0000', textDecoration: 'none', fontWeight: '600' }}>← Back to Home</Link>
+          <span style={{ margin: '0 16px', color: '#ccc' }}>|</span>
+          <Link to="/privacy" style={{ color: '#0066cc', textDecoration: 'underline', fontWeight: '600' }}>Privacy Policy</Link>
+          <span style={{ margin: '0 16px', color: '#ccc' }}>|</span>
+          <Link to="/cancellation-policy" style={{ color: '#0066cc', textDecoration: 'underline', fontWeight: '600' }}>Cancellation Policy</Link>
         </div>
 
       </article>

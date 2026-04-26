@@ -22,15 +22,6 @@ const PrivacyPolicy = () => {
 
       <article className="tos-content">
 
-        {/* Navigation */}
-        <div style={{ marginBottom: '32px', paddingBottom: '20px', borderBottom: '1px solid rgba(218, 165, 32, 0.2)', fontSize: '0.9rem' }}>
-          <Link to="/" style={{ color: '#8B0000', textDecoration: 'none', fontWeight: '500' }}>← Back to Home</Link>
-          <span style={{ margin: '0 12px', color: '#ccc' }}>|</span>
-          <Link to="/terms" style={{ color: '#0066cc', textDecoration: 'underline' }}>Terms of Service</Link>
-          <span style={{ margin: '0 12px', color: '#ccc' }}>|</span>
-          <Link to="/cancellation-policy" style={{ color: '#0066cc', textDecoration: 'underline' }}>Cancellation Policy</Link>
-        </div>
-
         {/* Introduction */}
         <section className="tos-section">
           <h2 className="tos-section-title">
@@ -303,16 +294,14 @@ const PrivacyPolicy = () => {
           </p>
         </section>
 
-        {/* Footer Navigation */}
-        <section className="tos-section" style={{ borderTop: '2px solid #DAA520', paddingTop: '2rem', marginTop: '3rem' }}>
-          <p style={{ textAlign: 'center' }}>
-            <Link to="/" className="tos-back-link">← Back to Home</Link>
-            {' | '}
-            <Link to="/terms">Terms of Service</Link>
-            {' | '}
-            <Link to="/cancellation-policy">Cancellation Policy</Link>
-          </p>
-        </section>
+        {/* Navigation */}
+        <div style={{ marginTop: '40px', paddingTop: '24px', borderTop: '1px solid rgba(218, 165, 32, 0.2)', fontSize: '0.95rem', textAlign: 'center' }}>
+          <Link to="/" style={{ color: '#8B0000', textDecoration: 'none', fontWeight: '600' }}>← Back to Home</Link>
+          <span style={{ margin: '0 16px', color: '#ccc' }}>|</span>
+          <Link to="/terms" style={{ color: '#0066cc', textDecoration: 'underline', fontWeight: '600' }}>Terms of Service</Link>
+          <span style={{ margin: '0 16px', color: '#ccc' }}>|</span>
+          <Link to="/cancellation-policy" style={{ color: '#0066cc', textDecoration: 'underline', fontWeight: '600' }}>Cancellation Policy</Link>
+        </div>
 
       </article>
     </main>
