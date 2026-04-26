@@ -108,7 +108,7 @@ function App() {
             <Route path="/" element={(
               <>
               <SEO
-                title="SV Banquet Halls | Premier Banquet Hall in Hyderabad for Weddings & Events"
+                title="SV Banquet Halls | Banquet Hall in Mansoorabad, Hyderabad for Weddings & Events"
                 description="SV Banquet Halls in Mansoorabad, Hyderabad — venues for weddings, receptions, birthday parties, cradle ceremonies (బారసాల), half-saree ceremonies (లంగా ఓణీ వేడుక) & corporate events. Call +91 6305 333 751."
                 canonical="https://www.svbanquethalls.com/"
               />
