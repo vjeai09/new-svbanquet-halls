@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./GalleryCTA.css";
@@ -7,10 +7,46 @@ const GOOGLE_PHOTOS_URL = "https://maps.app.goo.gl/ThwXdnYJ7bueRzst9";
 const INSTAGRAM_URL = "https://www.instagram.com/svbanquethalls";
 const FACEBOOK_URL = "https://www.facebook.com/svbanquethalls";
 
+const GALLERY_PHOTOS = [
+  { src: "/gallery/event-ceremony-stage.jpg", alt: "Wedding ceremony at SV Banquet Halls", caption: "Traditional Ceremony" },
+  { src: "/gallery/building-exterior.jpg", alt: "SV Banquet Halls building exterior", caption: "Our Venue" },
+];
+
 export default function GalleryCTA() {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState(0);
+
   useEffect(() => {
     AOS.init({ once: true, duration: 700, disable: 'mobile' });
   }, []);
+
+  const openLightbox = (index) => {
+    setCurrentImage(index);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+  };
+
+  const nextImage = () => {
+    setCurrentImage((currentImage + 1) % GALLERY_PHOTOS.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImage((currentImage - 1 + GALLERY_PHOTOS.length) % GALLERY_PHOTOS.length);
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!lightboxOpen) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') nextImage();
+      if (e.key === 'ArrowLeft') prevImage();
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [lightboxOpen, currentImage]);
 
   return (
     <section className="gallery-cta">
@@ -21,8 +57,23 @@ export default function GalleryCTA() {
             <span className="gallery-english">Real Celebrations, Real Families</span>
           </h2>
           <p className="gallery-cta-subtitle">
-            మీలాంటి కుటుంబాల అసలైన వేడుకలు — Google Maps, Facebook, లేదా Instagram లో చూడండి
+            మీలాంటి కుటుంబాల అసలైన వేడుకలు
           </p>
+        </div>
+
+        <div className="gallery-grid">
+          {GALLERY_PHOTOS.map((photo, index) => (
+            <div key={index} className="gallery-item" onClick={() => openLightbox(index)}>
+              <img src={photo.src} alt={photo.alt} loading="lazy" />
+              <div className="gallery-overlay">
+                <span className="gallery-caption">{photo.caption}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="gallery-cta-subtitle" style={{ marginTop: '2rem', opacity: 0.9 }}>
+          <span style={{ fontSize: '0.9rem' }}>More photos on:</span>
         </div>
 
         <div className="gallery-cta-buttons">
@@ -87,6 +138,20 @@ export default function GalleryCTA() {
           </a>
         </div>
       </div>
+
+      {lightboxOpen && (
+        <div className="lightbox" onClick={closeLightbox}>
+          <button className="lightbox-close" onClick={closeLightbox} aria-label="Close">×</button>
+          <button className="lightbox-prev" onClick={(e) => { e.stopPropagation(); prevImage(); }} aria-label="Previous">‹</button>
+          <button className="lightbox-next" onClick={(e) => { e.stopPropagation(); nextImage(); }} aria-label="Next">›</button>
+          <img
+            src={GALLERY_PHOTOS[currentImage].src}
+            alt={GALLERY_PHOTOS[currentImage].alt}
+            onClick={(e) => e.stopPropagation()}
+          />
+          <div className="lightbox-caption">{GALLERY_PHOTOS[currentImage].caption}</div>
+        </div>
+      )}
     </section>
   );
 }
