@@ -16,7 +16,7 @@ const DEFAULT_IMAGE = `${SITE_URL}/og-image.jpg`;
  *   noIndex      {bool}   – set true to block indexing on a page
  */
 const SEO = ({
-  title = "SV Banquet Halls | Premier Banquet Hall in Hyderabad",
+  title = "SV Banquet Halls | Banquet Hall in Mansoorabad, Hyderabad",
   description = "SV Banquet Halls in Mansoorabad, Hyderabad offers elegant spaces for weddings, receptions, birthday parties, and corporate events. Call +91 6305 333 751 to book today.",
   canonical = SITE_URL + "/",
   image = DEFAULT_IMAGE,
