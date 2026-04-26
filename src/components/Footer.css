@@ -2,7 +2,7 @@
 .footer {
   background-color: #1a1a1a;
   color: #ccc;
-  padding: 50px 30px 0;
+  padding: 40px 30px 0;
   margin-top: auto;
 }
 
@@ -11,8 +11,8 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1.4fr 1.4fr 1fr;
-  gap: 40px;
-  padding-bottom: 40px;
+  gap: 32px;
+  padding-bottom: 32px;
   border-bottom: 1px solid #333;
   align-items: start; /* Align all columns to top */
 }
@@ -28,22 +28,22 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: #DAA520;
-  margin: 0 0 16px; /* Match other column title spacing */
+  margin: 0 0 12px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
 .footer-tagline {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #DAA520;
-  margin: 0 0 12px;
-  line-height: 1.6;
+  margin: 0 0 8px;
+  line-height: 1.5;
 }
 
 .footer-tagline-en {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #999;
-  line-height: 1.6;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -55,13 +55,13 @@
 
 /* Column headings */
 .footer-col-title {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: #fff;
-  margin: 0 0 16px;
+  margin: 0 0 12px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 /* Contact list */
@@ -71,7 +71,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 
 .footer-contact-list li {
@@ -79,7 +79,7 @@
   align-items: center; /* Center-align icons with text */
   gap: 10px;
   font-size: 0.9rem;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .footer-contact-list a {
@@ -88,8 +88,7 @@
   transition: color 0.2s;
   display: inline-flex;
   align-items: center;
-  min-height: 44px; /* Touch target size */
-  padding: 0 4px;
+  padding: 6px 4px;
 }
 
 .footer-contact-list a:hover {
@@ -99,7 +98,6 @@
 .footer-contact-list span {
   display: inline-flex;
   align-items: center;
-  min-height: 44px;
 }
 
 .footer-icon {
