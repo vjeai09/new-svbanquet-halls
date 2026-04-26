@@ -146,6 +146,14 @@
   color: #666;
 }
 
+.footer-bottom a {
+  display: inline-block;
+  padding: 8px 4px;
+  min-height: 44px;
+  line-height: 1.4;
+  vertical-align: middle;
+}
+
 /* Tablet: 2-column */
 @media (max-width: 900px) {
   .footer-grid {
@@ -167,5 +175,16 @@
   }
   .footer-brand {
     grid-column: auto;
+  }
+
+  /* Make footer links more tappable on mobile */
+  .footer-bottom {
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+
+  .footer-bottom a {
+    padding: 10px 6px;
+    margin: 0 2px;
   }
 }
