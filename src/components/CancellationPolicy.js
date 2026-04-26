@@ -22,6 +22,15 @@ const CancellationPolicy = () => {
 
       <article className="tos-content">
 
+        {/* Navigation */}
+        <div style={{ marginBottom: '32px', paddingBottom: '20px', borderBottom: '1px solid rgba(218, 165, 32, 0.2)', fontSize: '0.9rem' }}>
+          <Link to="/" style={{ color: '#8B0000', textDecoration: 'none', fontWeight: '500' }}>← Back to Home</Link>
+          <span style={{ margin: '0 12px', color: '#ccc' }}>|</span>
+          <Link to="/terms" style={{ color: '#0066cc', textDecoration: 'underline' }}>Terms of Service</Link>
+          <span style={{ margin: '0 12px', color: '#ccc' }}>|</span>
+          <Link to="/privacy" style={{ color: '#0066cc', textDecoration: 'underline' }}>Privacy Policy</Link>
+        </div>
+
         {/* Introduction */}
         <section className="tos-section">
           <h2 className="tos-section-title">

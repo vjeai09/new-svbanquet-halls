@@ -11,8 +11,9 @@
   background: #fdf6e3;
   position: relative;
   color: #2c2c2c;
-  padding: 120px 20px 60px;
+  padding: 140px 20px 60px;
   text-align: center;
+  margin-top: 0;
 }
 
 .tos-hero::before {
@@ -37,6 +38,9 @@
   font-weight: 700;
   letter-spacing: 0.04em;
   margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+  display: block;
 }
 
 .tos-heading {
@@ -227,16 +231,16 @@
 
 .tos-contact-list a,
 .tos-content a[href^="tel:"] {
-  color: #8B0000;
-  text-decoration: none;
-  font-weight: 500;
+  color: #0066cc;
+  text-decoration: underline;
+  font-weight: 600;
   transition: color 0.2s ease;
 }
 
 .tos-contact-list a:hover,
 .tos-content a[href^="tel:"]:hover {
-  color: #DAA520;
-  text-decoration: none;
+  color: #004080;
+  text-decoration: underline;
 }
 
 .tos-contact-icon {
