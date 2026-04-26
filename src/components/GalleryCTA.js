@@ -10,6 +10,21 @@ const FACEBOOK_URL = "https://www.facebook.com/svbanquethalls";
 const GALLERY_PHOTOS = [
   { src: "/gallery/event-ceremony-stage.jpg", alt: "Wedding ceremony at SV Banquet Halls", caption: "Traditional Ceremony" },
   { src: "/gallery/building-exterior.jpg", alt: "SV Banquet Halls building exterior", caption: "Our Venue" },
+  { src: "/gallery/c1.png", alt: "Ceremony celebration at SV Banquet Halls", caption: "Family Celebration" },
+  { src: "/gallery/c2.png", alt: "Event ceremony at SV Banquet Halls", caption: "Special Occasion" },
+  { src: "/gallery/c3.png", alt: "Cultural ceremony at SV Banquet Halls", caption: "Cultural Event" },
+  { src: "/gallery/food-ok-not0-highfi.png", alt: "Food and dining setup", caption: "Dining Setup" },
+  { src: "/gallery/group-photo-1.png", alt: "Group photo at event", caption: "Happy Guests" },
+  { src: "/gallery/Screenshot 2026-04-26 at 16.02.18.png", alt: "Event at SV Banquet Halls", caption: "Celebration Moments" },
+  { src: "/gallery/Screenshot 2026-04-26 at 16.02.55.png", alt: "Hall decoration and setup", caption: "Hall Decoration" },
+  { src: "/gallery/Screenshot 2026-04-26 at 16.03.18.png", alt: "Function at SV Banquet Halls", caption: "Function Hall" },
+  { src: "/gallery/Screenshot 2026-04-26 at 16.04.00.png", alt: "Event setup at SV Banquet Halls", caption: "Event Setup" },
+  { src: "/gallery/Screenshot 2026-04-26 at 16.04.19.png", alt: "Celebration at SV Banquet Halls", caption: "Joyful Moments" },
+  { src: "/gallery/Screenshot 2026-04-26 at 16.05.23.png", alt: "Hall interior and setup", caption: "Hall Interior" },
+  { src: "/gallery/Screenshot 2026-04-26 at 16.05.38.png", alt: "Wedding reception setup", caption: "Reception Setup" },
+  { src: "/gallery/Screenshot 2026-04-26 at 16.05.59.png", alt: "Event photography at SV Banquet Halls", caption: "Event Memories" },
+  { src: "/gallery/Screenshot 2026-04-26 at 16.06.23.png", alt: "Banquet hall decoration", caption: "Decorated Hall" },
+  { src: "/gallery/Screenshot 2026-04-26 at 16.07.11.png", alt: "Celebration at SV Banquet Halls", caption: "Celebrations" },
 ];
 
 export default function GalleryCTA() {
