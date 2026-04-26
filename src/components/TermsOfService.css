@@ -11,7 +11,7 @@
   background: #fdf6e3;
   position: relative;
   color: #2c2c2c;
-  padding: 70px 20px 60px;
+  padding: 120px 20px 60px;
   text-align: center;
 }
 
@@ -74,6 +74,19 @@
   padding: 48px 44px;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
   position: relative;
+}
+
+/* Links in content - make them visible and clear */
+.tos-content a {
+  color: #8B0000;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.tos-content a:hover {
+  color: #b30000;
+  text-decoration: underline;
 }
 
 .tos-section {
