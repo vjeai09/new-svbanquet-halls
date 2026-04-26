@@ -74,6 +74,7 @@
   padding: 48px 44px;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
   position: relative;
+  text-align: left;
 }
 
 /* Links in content - subtle but clear */
@@ -92,6 +93,7 @@
   margin-bottom: 36px;
   padding-bottom: 28px;
   border-bottom: 1px solid rgba(218, 165, 32, 0.18);
+  text-align: left;
 }
 
 .tos-section:last-of-type {
