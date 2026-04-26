@@ -144,6 +144,7 @@
   color: #666;
   position: relative;
   z-index: 1001; /* Above fixed mobile bars (z-index 999-1000) */
+  display: none; /* Hidden temporarily */
 }
 
 .footer-bottom a {
@@ -169,7 +170,7 @@
 /* Mobile: single column, visible */
 @media (max-width: 600px) {
   .footer {
-    padding: 28px 20px 130px; /* Tighter: 130px clears 116px fixed bars */
+    padding: 28px 20px 20px; /* Minimal bottom padding - body has 116px */
   }
   .footer-grid {
     grid-template-columns: 1fr;
@@ -182,7 +183,7 @@
   .footer-bottom {
     font-size: 0.85rem;
     line-height: 1.6;
-    padding: 16px 12px 12px; /* Tighter padding */
+    padding: 16px 12px 12px;
     margin-bottom: 0;
   }
 
