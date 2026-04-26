@@ -177,16 +177,22 @@
 
   /* Make footer links more tappable on mobile */
   .footer-bottom {
-    font-size: 0.95rem;
-    line-height: 2;
-    padding: 20px 0;
+    font-size: 1rem;
+    line-height: 2.2;
+    padding: 30px 16px 40px;
+    position: relative;
+    z-index: 10;
   }
 
   .footer-bottom a {
-    display: inline-block;
-    padding: 12px 8px;
-    margin: 4px 0;
-    min-height: 48px;
+    display: block;
+    width: 100%;
+    padding: 16px 12px;
+    margin: 8px 0;
+    min-height: 56px;
     line-height: 1.6;
+    background: rgba(139, 0, 0, 0.05);
+    border-radius: 8px;
+    border: 1px solid rgba(139, 0, 0, 0.1);
   }
 }
