@@ -89,9 +89,6 @@ export default function GalleryCTA() {
           {GALLERY_PHOTOS.map((photo, index) => (
             <div key={index} className="gallery-item" onClick={() => openLightbox(index)}>
               <img src={photo.src} alt={photo.alt} loading="lazy" />
-              <div className="gallery-overlay">
-                <span className="gallery-caption">{photo.caption}</span>
-              </div>
             </div>
           ))}
         </div>
@@ -173,7 +170,6 @@ export default function GalleryCTA() {
             alt={GALLERY_PHOTOS[currentImage].alt}
             onClick={(e) => e.stopPropagation()}
           />
-          <div className="lightbox-caption">{GALLERY_PHOTOS[currentImage].caption}</div>
         </div>
       )}
     </section>

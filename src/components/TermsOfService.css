@@ -8,10 +8,21 @@
 
 /* Hero */
 .tos-hero {
-  background: linear-gradient(135deg, #8B0000, #5b1a1a);
-  color: #fff;
+  background: #fdf6e3;
+  position: relative;
+  color: #2c2c2c;
   padding: 70px 20px 60px;
   text-align: center;
+}
+
+.tos-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #8B0000 0%, #DAA520 100%);
 }
 
 .tos-hero-inner {
@@ -22,7 +33,7 @@
 .tos-telugu-label {
   font-family: "Noto Sans Telugu", sans-serif;
   font-size: 1rem;
-  color: #DAA520;
+  color: #8B0000;
   font-weight: 700;
   letter-spacing: 0.04em;
   margin-bottom: 10px;
@@ -34,13 +45,14 @@
   margin: 0 0 14px;
   font-weight: 700;
   letter-spacing: 0.01em;
+  color: #2c2c2c;
 }
 
 .tos-sub {
   font-family: "Poppins", sans-serif;
   font-size: 1.02rem;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.92);
+  color: #666;
   max-width: 640px;
   margin: 0 auto 14px;
 }
@@ -48,7 +60,7 @@
 .tos-meta {
   font-family: "Poppins", sans-serif;
   font-size: 0.82rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: #888;
   margin-top: 8px;
   font-style: italic;
 }
@@ -151,7 +163,7 @@
 }
 
 .tos-table thead {
-  background: linear-gradient(135deg, #8B0000, #b30000);
+  background: #8B0000;
   color: #fff;
 }
 
@@ -273,7 +285,7 @@
 }
 
 .tos-cta-btn--primary {
-  background: linear-gradient(135deg, #8B0000, #b30000);
+  background: #8B0000;
   color: #fff;
 }
 
