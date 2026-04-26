@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./GalleryCTA.css";
@@ -49,17 +49,17 @@ export default function GalleryCTA() {
     setLightboxOpen(true);
   };
 
-  const closeLightbox = () => {
+  const closeLightbox = useCallback(() => {
     setLightboxOpen(false);
-  };
+  }, []);
 
-  const nextImage = () => {
-    setCurrentImage((currentImage + 1) % GALLERY_PHOTOS.length);
-  };
+  const nextImage = useCallback(() => {
+    setCurrentImage((prev) => (prev + 1) % GALLERY_PHOTOS.length);
+  }, []);
 
-  const prevImage = () => {
-    setCurrentImage((currentImage - 1 + GALLERY_PHOTOS.length) % GALLERY_PHOTOS.length);
-  };
+  const prevImage = useCallback(() => {
+    setCurrentImage((prev) => (prev - 1 + GALLERY_PHOTOS.length) % GALLERY_PHOTOS.length);
+  }, []);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -70,7 +70,7 @@ export default function GalleryCTA() {
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [lightboxOpen, currentImage]);
+  }, [lightboxOpen, closeLightbox, nextImage, prevImage]);
 
   return (
     <section className="gallery-cta">
