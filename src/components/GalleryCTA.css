@@ -1,6 +1,6 @@
 .gallery-cta {
-  padding: 70px 20px;
-  background: linear-gradient(135deg, #8B0000 0%, #6b0000 50%, #DAA520 100%);
+  padding: 80px 20px;
+  background: #fdf6e3;
   position: relative;
   overflow: hidden;
 }
@@ -8,15 +8,11 @@
 .gallery-cta::before {
   content: '';
   position: absolute;
-  inset: 0;
-  background-image: repeating-linear-gradient(
-    45deg,
-    transparent,
-    transparent 20px,
-    rgba(255, 255, 255, 0.03) 20px,
-    rgba(255, 255, 255, 0.03) 40px
-  );
-  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #8B0000 0%, #DAA520 100%);
 }
 
 .gallery-cta-inner {
@@ -46,18 +42,18 @@
   font-family: 'Noto Sans Telugu', sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
-  color: rgba(255, 215, 0, 0.85);
+  color: #8B0000;
 }
 
 .gallery-english {
   font-size: 2.8rem;
   font-weight: 800;
-  color: #ffffff;
+  color: #2c2c2c;
 }
 
 .gallery-cta-subtitle {
   font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: #666;
   line-height: 1.6;
   max-width: 560px;
   margin: 0 auto;
@@ -212,26 +208,29 @@
 /* Gallery Grid */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
   width: 100%;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto 30px;
 }
 
 .gallery-item {
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 8px;
   cursor: pointer;
   aspect-ratio: 4/3;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(139, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background: #fff;
 }
 
 .gallery-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(139, 0, 0, 0.15);
+  border-color: rgba(139, 0, 0, 0.2);
 }
 
 .gallery-item img {
