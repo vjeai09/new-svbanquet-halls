@@ -144,6 +144,7 @@
   color: #666;
   position: relative;
   z-index: 1001; /* Above fixed mobile bars (z-index 999-1000) */
+  display: none; /* Hidden temporarily */
 }
 
 .footer-bottom a {
