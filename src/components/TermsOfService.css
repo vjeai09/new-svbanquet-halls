@@ -76,17 +76,16 @@
   position: relative;
 }
 
-/* Links in content - make them visible and clear */
+/* Links in content - subtle but clear */
 .tos-content a {
-  color: #8B0000;
+  color: #0066cc;
   text-decoration: underline;
-  font-weight: 600;
+  font-weight: normal;
   transition: color 0.2s ease;
 }
 
 .tos-content a:hover {
-  color: #b30000;
-  text-decoration: underline;
+  color: #004080;
 }
 
 .tos-section {
