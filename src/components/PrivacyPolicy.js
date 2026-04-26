@@ -51,31 +51,28 @@ const PrivacyPolicy = () => {
           <h3>Personal Information You Provide:</h3>
           <ul className="tos-list">
             <li>
-              <strong>Name</strong> — When you call, WhatsApp, or use our contact form
+              <strong>Name</strong> — When you call or WhatsApp us for inquiries
             </li>
             <li>
               <strong>Phone Number</strong> — For booking confirmations and communication
             </li>
             <li>
-              <strong>Email Address</strong> — If you provide it for booking confirmation
+              <strong>Email Address</strong> — If you choose to provide it (optional)
             </li>
             <li>
               <strong>Event Details</strong> — Date, guest count, type of function (wedding, birthday, బారసాల, etc.)
             </li>
           </ul>
 
-          <h3>Information Collected Automatically:</h3>
+          <h3>Information Collected Automatically (Website Visit Only):</h3>
           <ul className="tos-list">
             <li>
-              <strong>Device Information</strong> — Browser type, operating system, IP address
-            </li>
-            <li>
-              <strong>Usage Data</strong> — Pages visited, time spent on site, referral source
-            </li>
-            <li>
-              <strong>Cookies</strong> — We may use cookies for analytics (see Section 6)
+              <strong>Basic Analytics</strong> — Google Analytics tracks page views for website improvement only. We do not track individual user behavior or use cookies for marketing.
             </li>
           </ul>
+          <p>
+            <em><strong>Note:</strong> We do NOT have online booking. All bookings are made via WhatsApp or phone call only.</em>
+          </p>
 
           <h3>We DO NOT Collect:</h3>
           <ul className="tos-list">
@@ -188,16 +185,21 @@ const PrivacyPolicy = () => {
             6. Cookies & Analytics
           </h2>
           <p>
-            We may use cookies and third-party analytics tools (such as Google Analytics)
-            to understand how visitors use our website.
+            We use <strong>Google Analytics</strong> to understand basic website traffic
+            (page views, visitor count). This helps us improve the website experience.
           </p>
           <p>
-            <strong>What are cookies?</strong> Small text files stored on your device to
-            remember your preferences and track site usage.
+            <strong>We do NOT:</strong>
           </p>
+          <ul className="tos-list">
+            <li>Use cookies for advertising or marketing</li>
+            <li>Track individual user behavior</li>
+            <li>Sell analytics data to third parties</li>
+            <li>Use cookies for online booking (we don't have online booking)</li>
+          </ul>
           <p>
-            <strong>How to control cookies:</strong> You can disable cookies in your
-            browser settings. Note that disabling cookies may affect site functionality.
+            You can disable analytics tracking using browser extensions like "uBlock Origin"
+            or by disabling cookies in your browser settings.
           </p>
         </section>
 
@@ -256,13 +258,9 @@ const PrivacyPolicy = () => {
             <p>Mansoorabad, LB Nagar, Hyderabad - 500068</p>
             <p>
               <FaPhone style={{ marginRight: 8 }} />
-              <a href="tel:+916305333751">+91 6305 333 751</a>
+              <strong>Phone/WhatsApp:</strong> <a href="tel:+916305333751">+91 6305 333 751</a>
             </p>
-            <p>
-              <FaEnvelope style={{ marginRight: 8 }} />
-              Email: privacy@svbanquethalls.com (or call the number above)
-            </p>
-            <p><em>Response time: Within 30 days of receiving your request</em></p>
+            <p><em>Response time: Within 7 days of receiving your request</em></p>
           </div>
         </section>
 
