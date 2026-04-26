@@ -7,11 +7,11 @@ const GOOGLE_PHOTOS_URL = "https://maps.app.goo.gl/ThwXdnYJ7bueRzst9";
 const INSTAGRAM_URL = "https://www.instagram.com/svbanquethalls";
 const FACEBOOK_URL = "https://www.facebook.com/svbanquethalls";
 
-// Auto-load all images from public/gallery folder
+// Auto-load all images from src/assets/gallery folder
 // Just add/remove files in the folder - no code changes needed!
 const importAll = (r) => {
   return r.keys().map((fileName) => {
-    const imagePath = fileName.replace('./', '/gallery/');
+    const imageModule = r(fileName);
     const imageName = fileName.replace('./', '').replace(/\.(jpg|jpeg|png|JPG|PNG)$/, '');
 
     // Generate caption from filename
@@ -24,16 +24,16 @@ const importAll = (r) => {
       .join(' ');
 
     return {
-      src: imagePath,
+      src: imageModule,
       alt: `Event at SV Banquet Halls - ${caption}`,
       caption: caption
     };
   });
 };
 
-// This automatically finds all images in public/gallery/
+// This automatically finds all images in src/assets/gallery/
 const GALLERY_PHOTOS = importAll(
-  require.context('../../../public/gallery', false, /\.(png|jpe?g|JPE?G|PNG)$/)
+  require.context('../assets/gallery', false, /\.(png|jpe?g|JPE?G|PNG)$/)
 );
 
 export default function GalleryCTA() {
