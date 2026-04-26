@@ -11,8 +11,9 @@
   background: #fdf6e3;
   position: relative;
   color: #2c2c2c;
-  padding: 120px 20px 60px;
+  padding: 140px 20px 60px;
   text-align: center;
+  margin-top: 0;
 }
 
 .tos-hero::before {
@@ -37,6 +38,9 @@
   font-weight: 700;
   letter-spacing: 0.04em;
   margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+  display: block;
 }
 
 .tos-heading {
