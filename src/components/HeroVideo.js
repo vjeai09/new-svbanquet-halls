@@ -91,7 +91,7 @@ const HeroVideo = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="google-rating-badge"
-                aria-label="4.0 stars on Google – 457 reviews"
+                aria-label="View our Google reviews"
               >
                 <img
                   src="https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png"
@@ -102,7 +102,7 @@ const HeroVideo = () => {
                   <span className="google-rating-score">4.0</span>
                   <span className="google-rating-stars-icons">★★★★★</span>
                 </div>
-                <span className="google-rating-count">457 reviews</span>
+                <span className="google-rating-count">See Reviews</span>
               </a>
             )}
           </div>

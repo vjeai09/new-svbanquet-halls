@@ -113,7 +113,7 @@ export default function GalleryCTA() {
             </svg>
             <span className="btn-text">
               <span className="btn-label">Photos on Google</span>
-              <span className="btn-sub">457+ reviews · 4.0 ★</span>
+              <span className="btn-sub">See our reviews</span>
             </span>
           </a>
 
