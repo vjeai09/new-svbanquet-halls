@@ -122,13 +122,6 @@ const FAQ = () => {
       "opens": "09:30",
       "closes": "21:30"
     }],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.0",
-      "reviewCount": "457",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
     "amenityFeature": [
       { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
       { "@type": "LocationFeatureSpecification", "name": "Wheelchair Accessible", "value": true },
