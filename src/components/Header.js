@@ -136,20 +136,13 @@ const Header = () => {
           </a>
 
           <button className={`hamburger ${isMenuOpen ? 'is-open' : ''}`} onClick={toggleMenu} aria-label={isMenuOpen ? 'Close menu' : 'Open menu'} aria-expanded={isMenuOpen}>
-            {isMenuOpen ? '✕' : '☰'}
+            <span className="hamburger-icon" key={isMenuOpen ? 'close' : 'open'}>
+              {isMenuOpen ? '✕' : '☰'}
+            </span>
           </button>
           {isMenuOpen && <div className="nav-backdrop" onClick={toggleMenu} aria-hidden="true" />}
           <nav>
             <ul className={isMenuOpen ? "active" : ""}>
-              {isMenuOpen && (
-                <button
-                  className="menu-close-btn"
-                  onClick={toggleMenu}
-                  aria-label="Close menu"
-                >
-                  ✕
-                </button>
-              )}
               <li>
                 <button className="nav-button" onClick={()=>goToSection('hero-video')}>Home</button>
               </li>

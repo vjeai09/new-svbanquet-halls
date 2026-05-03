@@ -70,7 +70,7 @@ const HeroVideo = () => {
                     'లంగా ఓణీ వేడుక | Half-Saree Ceremony',
                     'నిశ్చితార్థం వేడుకలు | Engagement Ceremonies',
                     'పుట్టినరోజు వేడుకలు | Birthday Celebrations',
-                    "A Mansoorabad Favourite Since 2016"
+                    "A Mansoorabad Favourite Since 2018"
                   ],
                   autoStart: true,
                   loop: true,
