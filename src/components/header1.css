@@ -283,7 +283,7 @@ html {
     .nav-backdrop {
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.70);
+      background: rgba(0, 0, 0, 0.88);
       z-index: 998;
       animation: backdropFadeIn 0.25s ease forwards;
     }
@@ -332,8 +332,8 @@ html {
       max-height: 100dvh;
       background: linear-gradient(
         160deg,
-        rgba(8, 8, 8, 0.99) 0%,
-        rgba(90, 0, 0, 0.98) 100%
+        rgb(8, 8, 8) 0%,
+        rgb(60, 0, 0) 100%
       );
       border-left: 1px solid rgba(218, 165, 32, 0.25);
       border-bottom-left-radius: 16px;
