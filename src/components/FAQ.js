@@ -14,6 +14,22 @@ const faqs = [
     a: "Absolutely, yes. Bring your trusted caterer and we provide two fully equipped kitchens with utensils. OR use our in-house catering team if you prefer. Completely your choice — zero restrictions, zero mandatory packages.",
   },
   {
+    q: "Why should I choose a vendor-freedom hall over an all-inclusive package?",
+    a: "All-inclusive sounds convenient, but here's what families discover: you pay a premium for vendors you didn't choose. At SV Banquet Halls, you negotiate directly with caterers, decorators, and photographers. They compete for YOUR business — which means better prices and better service. Plus, you can bring the vendors who know your family, your taste, and your traditions. That authenticity is priceless.",
+  },
+  {
+    q: "How much can I save by bringing my own vendors instead of using a bundled package?",
+    a: "Families report saving ₹30,000–₹70,000 on average by bringing their own caterer, decorator, and photographer. Why? Because all-inclusive packages include vendor commissions (10-20% markup). When you negotiate directly, vendors give you better rates to win your business. Your budget goes to quality, not middleman fees.",
+  },
+  {
+    q: "Do you provide event management support, or do I have to coordinate everything myself?",
+    a: "You get the best of both worlds. We provide full venue management — our staff helps coordinate vendor access, setup timing, kitchen logistics, and event flow. But YOU choose which vendors walk through our doors. Think of it this way: we manage the venue perfectly so your chosen team can shine.",
+  },
+  {
+    q: "What if I don't have trusted vendors? Can you still help?",
+    a: "Absolutely. While we don't mandate vendors, we're happy to recommend trusted caterers, decorators, and photographers we've worked with. The difference? You negotiate with them directly, you control the contract, and you pay them — not us. No hidden markups, no mandatory packages.",
+  },
+  {
     q: "Is the venue available for Telugu traditional ceremonies?",
     a: "Absolutely — we specialise in బారసాల (cradle ceremony), లంగా ఓణీ వేడుక (half-saree ceremony), నిశ్చితార్థం (engagement), Upanayanam, Namakaran, and all Hindu functions.",
   },

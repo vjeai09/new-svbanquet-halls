@@ -161,7 +161,7 @@ const Services = () => {
             <div className="service-image-container">
               <img
                 src={service.image}
-                alt={service.title}
+                alt={`${service.title} at SV Banquet Halls — ${service.description}`}
                 className="service-image"
                 loading="lazy"
               />

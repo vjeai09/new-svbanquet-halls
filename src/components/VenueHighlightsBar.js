@@ -2,14 +2,14 @@ import React from "react";
 import "./VenueHighlightsBar.css";
 
 const highlights = [
-  { icon: "🏛️", text: "A/C & Non-A/C Halls" },
-  { icon: "👥", text: "220–660 Guests" },
-  { icon: "🍳", text: "Kitchen & Utensils Included" },
-  { icon: "🧑‍🍳", text: "Bring Your Own Caterer" },
-  { icon: "🚗", text: "Valet & Street Parking" },
-  { icon: "♿", text: "Wheelchair Accessible" },
-  { icon: "🔋", text: "Full Power Backup" },
-  { icon: "🛗", text: "Elevator Access" },
+  { icon: "✅", text: "Bring Your Own Vendors | విక్రేతల స్వేచ్ఛ" },
+  { icon: "✅", text: "Zero Mandatory Packages | ఎలాంటి బలవంతం లేదు" },
+  { icon: "✅", text: "Direct Vendor Negotiation | నేరుగా చర్చలు" },
+  { icon: "✅", text: "8+ Years Trusted by Mansoorabad | 8+ సంవత్సరాల నమ్మకం" },
+  { icon: "🏛️", text: "3 Halls: 2 A/C + 1 Non-A/C" },
+  { icon: "👥", text: "220–660 Guests Capacity" },
+  { icon: "🍳", text: "2 Fully Equipped Kitchens" },
+  { icon: "♿", text: "Wheelchair Accessible + Elevator" },
 ];
 
 const VenueHighlightsBar = () => {
