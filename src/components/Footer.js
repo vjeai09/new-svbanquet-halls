@@ -14,7 +14,7 @@ const Footer = () => (
         <p className="footer-tagline" style={{fontFamily:"'Noto Sans Telugu',sans-serif"}}>
           మీ ప్రత్యేక క్షణాలకు అత్యుత్తమ వేదిక
         </p>
-        <p className="footer-tagline-en">A trusted Mansoorabad venue for weddings,<br/>ceremonies &amp; celebrations since 2016.</p>
+        <p className="footer-tagline-en">A trusted Mansoorabad venue for weddings,<br/>ceremonies &amp; celebrations since 2018.</p>
       </div>
 
       {/* Column 2 — Contact */}
