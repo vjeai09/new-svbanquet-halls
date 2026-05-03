@@ -108,8 +108,8 @@ function App() {
             <Route path="/" element={(
               <>
               <SEO
-                title="SV Banquet Halls | Banquet Hall in Mansoorabad, Hyderabad for Weddings & Events"
-                description="SV Banquet Halls in Mansoorabad, Hyderabad — venues for weddings, receptions, birthday parties, cradle ceremonies (బారసాల), half-saree ceremonies (లంగా ఓణీ వేడుక) & corporate events. Call +91 6305 333 751."
+                title="SV Banquet Halls | Vendor-Freedom Banquet Hall in Mansoorabad, Hyderabad"
+                description="Banquet hall in Mansoorabad where you choose your caterer, decorator & photographer. Zero mandatory packages. Families save ₹30K–₹70K with vendor freedom. 3 halls, 660 seated capacity. Telugu ceremonies specialist: బారసాల, లంగా ఓణీ వేడుక. Call +91 6305 333 751."
                 canonical="https://www.svbanquethalls.com/"
               />
               <main id="main-content">

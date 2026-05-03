@@ -13,21 +13,22 @@ const About = ({ id }) => {
       <div className="about-inner">
         <div className="about-text" data-aos="fade-right">
           <p className="about-telugu-label">మా గురించి</p>
-          <h2 className="about-heading">Where Mansoorabad<br />Families Celebrate Life</h2>
+          <h2 className="about-heading">Where Mansoorabad Families<br />Choose Their Own Vendors</h2>
           <p className="about-body">
-            For over 8 years, SV Banquet Halls has stood at the heart of Mansoorabad —
-            where brides have arrived, babies have been named, daughters have worn their
-            first half-sarees, and families have gathered with joy in their eyes.
-            Every event that happens here is a chapter in someone's story.
+            Most banquet halls lock you into their vendors. Their caterer. Their decorator. Their prices.
+            At SV Banquet Halls, we believe your celebration deserves your choices.
+          </p>
+          <p className="about-body" style={{fontWeight: 600, color: '#8B0000', marginTop: '1rem', marginBottom: '1rem'}}>
+            ✅ Bring your family's trusted caterer — the one who makes biryani that tastes like home<br/>
+            ✅ Choose your own decorator — someone who actually understands your vision<br/>
+            ✅ Hire your photographer — the person who's captured every family milestone<br/>
+            ✅ Negotiate directly with vendors — better prices, better quality, your budget
           </p>
           <p className="about-body">
-            మేము స్థలం ఇస్తాం, వంటశాల ఇస్తాం, సౌకర్యం ఇస్తాం —
-            మీరు మీ ప్రియమైన వారిని తీసుకురండి. మిగతాది మేము చూసుకుంటాం.
+            We provide the perfect venue. You provide the perfect team. That's real freedom.
           </p>
-          <p className="about-body" style={{fontWeight: 600, color: '#8B0000', marginTop: '1.5rem'}}>
-            We own the complete land and building — no rent overhead, complete flexibility in vendor choice.
-            You bring your trusted caterer, decorator, and photographer. You negotiate directly,
-            you control your budget, you decide the quality. Full transparency, zero restrictions.
+          <p className="about-body" style={{marginTop: '1.5rem', fontStyle: 'italic'}}>
+            మేము అందమైన వేదికను అందిస్తాము. మీరు మీ జట్టును తీసుకురండి. ఇదే నిజమైన స్వేచ్ఛ.
           </p>
           <div className="about-stats">
             <div className="about-stat">
@@ -52,7 +53,7 @@ const About = ({ id }) => {
 
         <div className="about-image-side" data-aos="fade-left">
           <div className="about-image-frame">
-            <img src="/venues.jpg" alt="SV Banquet Halls interior" loading="lazy" />
+            <img src="/venues.jpg" alt="Elegant air-conditioned banquet hall interior at SV Banquet Halls, Mansoorabad — venue for Telugu weddings and traditional ceremonies" loading="lazy" />
           </div>
           <div className="about-badge">
             <span className="badge-icon">🏛️</span>

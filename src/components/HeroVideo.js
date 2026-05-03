@@ -55,8 +55,8 @@ const HeroVideo = () => {
 
           {!isMobile && (
             <h1 className="hero-title" data-aos="fade-up" data-aos-delay="200">
-              <span className="title-main">మీ శుభ వేళ</span>
-              <span className="title-highlight">Your Celebration Awaits</span>
+              <span className="title-main">మీ వేడుక. మీ ఎంపిక. మీ స్వేచ్ఛ.</span>
+              <span className="title-highlight">Your Event. Your Vendors. Your Freedom.</span>
             </h1>
           )}
 
@@ -83,7 +83,7 @@ const HeroVideo = () => {
 
           <div className="hero-bottom-row" data-aos="fade-up" data-aos-delay="600">
             <a href="tel:+916305333751" className="cta-button primary-cta">
-              Book Now
+              Check Availability — No Mandatory Packages
             </a>
             {!isMobile && (
               <a
