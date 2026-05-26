@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaPhone, FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
+import SEO from "./SEO";
 import "./TermsOfService.css";
 
 const TermsOfService = () => {
@@ -9,6 +10,12 @@ const TermsOfService = () => {
 
   return (
     <main className="tos-page" id="main-content">
+      <SEO
+        title="Terms of Service"
+        description="Booking terms and conditions for SV Banquet Halls, Mansoorabad, Hyderabad. Read our venue rental agreement, cancellation policy, and client responsibilities."
+        canonical="https://www.svbanquethalls.com/terms"
+        noIndex={true}
+      />
       <header className="tos-hero">
         <div className="tos-hero-inner">
           <p className="tos-telugu-label">నిబంధనలు మరియు షరతులు</p>

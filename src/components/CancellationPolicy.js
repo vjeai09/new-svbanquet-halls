@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaPhone, FaWhatsapp } from "react-icons/fa";
+import SEO from "./SEO";
 import "./TermsOfService.css";
 
 const CancellationPolicy = () => {
@@ -9,6 +10,12 @@ const CancellationPolicy = () => {
 
   return (
     <main className="tos-page" id="main-content">
+      <SEO
+        title="Cancellation & Refund Policy"
+        description="Cancellation and refund policy for SV Banquet Halls venue bookings. Fair and transparent terms for event date changes and cancellations."
+        canonical="https://www.svbanquethalls.com/cancellation-policy"
+        noIndex={true}
+      />
       <header className="tos-hero">
         <div className="tos-hero-inner">
           <p className="tos-telugu-label">రద్దు విధానం</p>

@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaPhone } from "react-icons/fa";
+import SEO from "./SEO";
 import "./TermsOfService.css";
 
 const PrivacyPolicy = () => {
@@ -9,6 +10,12 @@ const PrivacyPolicy = () => {
 
   return (
     <main className="tos-page" id="main-content">
+      <SEO
+        title="Privacy Policy"
+        description="Privacy policy for SV Banquet Halls. Learn how we collect, use, and protect your personal information in compliance with Indian data protection laws."
+        canonical="https://www.svbanquethalls.com/privacy"
+        noIndex={true}
+      />
       <header className="tos-hero">
         <div className="tos-hero-inner">
           <p className="tos-telugu-label">గోప్యతా విధానం</p>
